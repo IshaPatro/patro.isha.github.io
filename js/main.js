@@ -277,6 +277,9 @@
 				case 'paintings':
 					hobbyImage.css('background-image', 'url(images/paintings.png)');
 					break;
+				case 'digital art':
+					hobbyImage.css('background-image', 'url(images/digitalArt.png)');
+					break;
 				case 'classical dance':
 					hobbyImage.css('background-image', 'url(images/odissi.png)');
 					break;
