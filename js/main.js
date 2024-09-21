@@ -238,7 +238,6 @@
 	};
 	contentWayPoint();
 
-	// magnific popup
 	$('.image-popup').magnificPopup({
     type: 'image',
     closeOnContentClick: true,
@@ -270,41 +269,92 @@
   });
 
   $(document).ready(function() {
-		const hobbyImage = $('#hobby-image');
-		const hobbies = $('#about-section p span.hobby');
-		hobbies.hover(function() {
-			switch ($(this).text()) {
-				case 'paintings':
-					hobbyImage.css('background-image', 'url(images/paintings.png)');
-					break;
-				case 'digital art':
-					hobbyImage.css('background-image', 'url(images/digitalArt.png)');
-					break;
-				case 'classical dance':
-					hobbyImage.css('background-image', 'url(images/odissi.png)');
-					break;
-				case 'candles':
-					hobbyImage.css('background-image', 'url(images/candle-making.png)');
-					break;
-				case 'tribal dance':
-					hobbyImage.css('background-image', 'url(images/tribaldance.png)');
-					break;
-				case 'DIY club':
-					hobbyImage.css('background-image', 'url(images/diy-club.png)');
-					break;				
-				case 'school leader':
-					hobbyImage.css('background-image', 'url(images/captain.png)');
-					break;
-				case 'NCC cadet':
-					hobbyImage.css('background-image', 'url(images/ncc.png)');
-					break;					
-			}
-		}, function() {
-			hobbyImage.css('background-image', 'url(images/bg_1.png)'); 
-		});
-	});
+    const hobbyImage = $('#hobby-image');
+    const hobbies = $('#about-section p span.hobby');
+    let slideIndex = 0;
+    let slideInterval;
+
+    function showSlide(index) {
+        const hobby = $(hobbies[index]);
+        hobbies.css({
+            'font-size': '',
+            'text-transform': '',
+            '-webkit-text-fill-color': '',
+            '-moz-text-fill-color': '',
+            'letter-spacing': ''
+        });
+
+        hobby.css({
+            'font-size': '1.2em',
+            'text-transform': 'uppercase',
+            '-webkit-text-fill-color': '#8f00ff',
+            '-moz-text-fill-color': '#8f00ff',
+            'letter-spacing': '2px'
+        });
+
+        switch (hobby.text()) {
+            case 'paintings':
+                hobbyImage.css('background-image', 'url(images/paintings.png)');
+                break;
+            case 'digital art':
+                hobbyImage.css('background-image', 'url(images/digitalArt.png)');
+                break;
+            case 'classical dance':
+                hobbyImage.css('background-image', 'url(images/odissi.png)');
+                break;
+            case 'candles':
+                hobbyImage.css('background-image', 'url(images/candle-making.png)');
+                break;
+            case 'tribal dance':
+                hobbyImage.css('background-image', 'url(images/tribaldance.png)');
+                break;
+            case 'DIY club':
+                hobbyImage.css('background-image', 'url(images/diy-club.png)');
+                break;
+            case 'school leader':
+                hobbyImage.css('background-image', 'url(images/captain.png)');
+                break;
+            case 'NCC cadet':
+                hobbyImage.css('background-image', 'url(images/ncc.png)');
+                break;
+        }
+    }
+
+    // Function to start the slideshow
+    function startSlideshow() {
+        slideInterval = setInterval(function() {
+            showSlide(slideIndex);
+            slideIndex = (slideIndex + 1) % hobbies.length; // Loop through the hobbies
+        }, 2000); // Change slide every 2 seconds
+    }
+
+    // Function to stop the slideshow
+    function stopSlideshow() {
+        clearInterval(slideInterval);
+    }
+
+    hobbies.hover(function() {
+        stopSlideshow(); 
+        showSlide(hobbies.index(this));
+    }, function() {
+        hobbyImage.css('background-image', 'url(images/bg_1.png)');
+        startSlideshow(); 
+    });
+
+    $('#about-section').on('mouseenter', function() {
+        startSlideshow(); 
+    }).on('mouseleave', function() {
+        stopSlideshow(); 
+        hobbyImage.css('background-image', 'url(images/bg_1.png)'); 
+        hobbies.css('background-color', ''); // Remove any highlights
+    });
+});
 
 
 
 })(jQuery);
+
+
+
+
 
