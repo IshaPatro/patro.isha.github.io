@@ -320,15 +320,13 @@
         }
     }
 
-    // Function to start the slideshow
     function startSlideshow() {
         slideInterval = setInterval(function() {
             showSlide(slideIndex);
-            slideIndex = (slideIndex + 1) % hobbies.length; // Loop through the hobbies
-        }, 2000); // Change slide every 2 seconds
+            slideIndex = (slideIndex + 1) % hobbies.length; 
+        }, 2000); 
     }
 
-    // Function to stop the slideshow
     function stopSlideshow() {
         clearInterval(slideInterval);
     }
@@ -346,7 +344,7 @@
     }).on('mouseleave', function() {
         stopSlideshow(); 
         hobbyImage.css('background-image', 'url(images/bg_1.png)'); 
-        hobbies.css('background-color', ''); // Remove any highlights
+        hobbies.css('background-color', ''); 
     });
 });
 
