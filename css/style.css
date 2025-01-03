@@ -9939,3 +9939,6 @@ textarea.form-control {
     transition: background-image 0.5s ease-in-out;
 }
   
+.certificate{
+  height: 500px;
+}
