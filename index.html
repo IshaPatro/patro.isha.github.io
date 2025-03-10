@@ -21,28 +21,82 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
+    
+    <!-- Add this custom CSS after style.css -->
+    <style>
+        /* Mobile-specific styles */
+        @media screen and (max-width: 768px) {
+            .slider-item .one-third {
+                height: 400px !important;
+            }
+            
+            .slider-item .one-forth {
+                padding-top: 20px;
+                text-align: center;
+            }
+            
+            .name-outlier, .name-solid {
+                font-size: 2.5em !important;
+            }
+            
+            .certificate {
+                margin-bottom: 30px;
+            }
+            
+            .project img {
+                height: 250px !important;
+            }
+            
+            .timeline-panel {
+                padding: 15px !important;
+            }
+            
+            .blog-entry .block-20 {
+                height: 200px !important;
+            }
+            
+            .contact-info .box {
+                margin-bottom: 20px;
+            }
+            
+            .navbar-nav {
+                background: rgba(0, 0, 0, 0.8);
+                padding: 10px;
+                border-radius: 5px;
+            }
+            
+            .about-info {
+                padding: 0 15px !important;
+            }
+            
+            #hobby-image {
+                height: 300px !important;
+            }
+        }
+    </style>
+</head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">ISHA</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+	      <!-- Update the navbar toggle button for better mobile visibility -->
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" style="background: rgba(0, 0, 0, 0.5); padding: 8px;">
+          <span class="oi oi-menu" style="color: white;"></span> Menu
+      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#certification-section" class="nav-link"><span>Certification</span></a></li>
-	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-			  <li class="nav-item"><a href="#publications-section" class="nav-link"><span>Publications</span></a></li>
-	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blogs</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	          <li class="nav-item"><a href="#home-section" class="nav-link" data-toggle="collapse" data-target="#ftco-nav"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link" data-toggle="collapse" data-target="#ftco-nav"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link" data-toggle="collapse" data-target="#ftco-nav"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#certification-section" class="nav-link" data-toggle="collapse" data-target="#ftco-nav"><span>Certification</span></a></li>
+	          <li class="nav-item"><a href="#skills-section" class="nav-link" data-toggle="collapse" data-target="#ftco-nav"><span>Skills</span></a></li>
+	          <li class="nav-item"><a href="#projects-section" class="nav-link" data-toggle="collapse" data-target="#ftco-nav"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#publications-section" class="nav-link" data-toggle="collapse" data-target="#ftco-nav"><span>Publications</span></a></li>
+	          <li class="nav-item"><a href="#blog-section" class="nav-link" data-toggle="collapse" data-target="#ftco-nav"><span>Blogs</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link" data-toggle="collapse" data-target="#ftco-nav"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -470,6 +524,18 @@
 						<h3>Autonomous humanoid robot</h3>
 						<p style="color: #D3D3D3;">Biped Robot powered by Amazon’s Alexa with custom skills. Made possible by Raspberry Pi and Arduino.</p>
 						<p style="color: white;">Won 1st Prize, Engineering Clinics Expo FALL-2017</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12">
+				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/algo-trading.jpg);">
+					<a href="https://trade-pulse-sma-5a35e3311900.herokuapp.com/" class="overlay"></a>
+					<div class="text text-center p-4">
+						<a href="https://trade-pulse-sma-5a35e3311900.herokuapp.com/">
+							<h3>Trade Pulse</h3>
+							<p style="color: #D3D3D3;">TradePulse is an algorithmic trading platform that implements SMA-based trading strategies for the EUR/USD forex pair on OANDA. It features a real-time dashboard for monitoring trades, visualizing price movements with technical indicators, and includes machine learning-based price prediction capabilities to assist with trading decisions.</p>
+						</a>
 					</div>
 				</div>
 			</div>

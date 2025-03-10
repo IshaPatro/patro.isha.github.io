@@ -1,0 +1,73 @@
+/* Additional responsive styles */
+@media screen and (max-width: 576px) {
+    .big {
+        font-size: 4em !important;
+    }
+    
+    .heading-section h2 {
+        font-size: 1.8em !important;
+    }
+    
+    .timeline-title {
+        font-size: 1.2em !important;
+    }
+    
+    .project h3 {
+        font-size: 1.3em !important;
+    }
+
+    .project h3 a {
+        font-size: 0.9em !important;
+    }
+
+    .project .text span {
+        font-size: 0.8em !important;
+    }
+    
+    .blog-entry h3 {
+        font-size: 1.2em !important;
+    }
+    
+    .contact-section .box {
+        min-height: auto;
+    }
+    
+    .skills-section .progress-wrap h3 {
+        font-size: 1em !important;
+    }
+}
+
+/* Improve touch targets on mobile */
+@media screen and (max-width: 768px) {
+    .nav-item {
+        padding: 8px 0;
+    }
+    
+    .nav-link {
+        padding: 10px 15px !important;
+    }
+    
+    .btn {
+        padding: 12px 24px !important;
+    }
+    
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .project .text {
+        max-width: 100%;
+    }
+}
+
+/* Fix image aspect ratios */
+.project img, .blog-entry .block-20 {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Improve scrolling performance */
+* {
+    -webkit-overflow-scrolling: touch;
+}
