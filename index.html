@@ -49,18 +49,322 @@
         }
       }
       
+      /* Hide mobile-only elements on desktop by default */
+      .sidebar-brand,
+      .sidebar-close,
+      .mobile-overlay {
+        display: none;
+      }
+      
+      /* Mobile Sidebar Styles */
       @media (max-width: 991.98px) {
-        .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-          padding-left: 0 !important;
-          padding-right: 0 !important;
-          padding-bottom: 1rem !important;
-          padding-top: 0 !important;
+        /* Show mobile-only elements on mobile */
+        .sidebar-brand,
+        .mobile-overlay {
+          display: block;
+        }
+        
+        .sidebar-close {
+          display: flex;
+        }
+        
+        /* Mobile navbar adjustments */
+        .ftco-navbar-light {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+          z-index: 10001 !important; /* Ensure navbar (sidebar container) sits above overlay */
+        }
+        
+        /* Hide the default bootstrap collapse behavior */
+        .navbar-collapse {
+          position: fixed;
+          top: 0;
+          left: -100%;
+          width: 280px;
+          height: 100vh;
+          background: linear-gradient(135deg, rgba(10, 0, 20, 0.98) 0%, rgba(0, 0, 0, 0.96) 100%);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          z-index: 10002; /* Above overlay and navbar */
+          padding: 80px 0 30px 0;
+          transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+          overflow-y: auto;
+          overflow-x: hidden;
+          box-shadow: 2px 0 30px rgba(0, 0, 0, 0.5), inset -1px 0 0 rgba(143, 0, 255, 0.1);
+        }
+        
+        /* Custom scrollbar for sidebar */
+        .navbar-collapse::-webkit-scrollbar {
+          width: 4px;
+        }
+        
+        .navbar-collapse::-webkit-scrollbar-track {
+          background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .navbar-collapse::-webkit-scrollbar-thumb {
+          background: rgba(143, 0, 255, 0.4);
+          border-radius: 2px;
+        }
+        
+        .navbar-collapse::-webkit-scrollbar-thumb:hover {
+          background: rgba(143, 0, 255, 0.6);
+        }
+        
+        /* Show sidebar when active */
+        .navbar-collapse.show {
+          left: 0;
+        }
+        
+        /* Mobile sidebar navigation */
+        .navbar-nav {
+          flex-direction: column !important;
+          padding: 0 25px;
+          width: 100%;
+          gap: 6px;
+          position: relative;
+        }
+        
+        /* Subtle divider line above nav items */
+        .navbar-nav::before {
+          content: '';
+          position: absolute;
+          top: -15px;
+          left: 25px;
+          right: 25px;
+          height: 1px;
+          background: linear-gradient(90deg, transparent 0%, rgba(143, 0, 255, 0.3) 50%, transparent 100%);
+        }
+        
+        .navbar-nav .nav-item {
+          margin-bottom: 0;
+          opacity: 0;
+          transform: translateX(-20px);
+          animation: slideIn 0.3s ease forwards;
+        }
+        
+        /* Stagger animation for each item */
+        .navbar-nav .nav-item:nth-child(1) { animation-delay: 0.05s; }
+        .navbar-nav .nav-item:nth-child(2) { animation-delay: 0.1s; }
+        .navbar-nav .nav-item:nth-child(3) { animation-delay: 0.15s; }
+        .navbar-nav .nav-item:nth-child(4) { animation-delay: 0.2s; }
+        .navbar-nav .nav-item:nth-child(5) { animation-delay: 0.25s; }
+        .navbar-nav .nav-item:nth-child(6) { animation-delay: 0.3s; }
+        .navbar-nav .nav-item:nth-child(7) { animation-delay: 0.35s; }
+        .navbar-nav .nav-item:nth-child(8) { animation-delay: 0.4s; }
+        .navbar-nav .nav-item:nth-child(9) { animation-delay: 0.45s; }
+        .navbar-nav .nav-item:nth-child(10) { animation-delay: 0.5s; }
+        
+        @keyframes slideIn {
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        
+        .navbar-nav .nav-item .nav-link {
+          padding: 16px 20px !important;
+          color: rgba(255, 255, 255, 0.8) !important;
+          font-size: 15px !important;
+          font-weight: 500;
+          letter-spacing: 0.3px;
+          border-radius: 10px;
+          transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+          text-align: left;
+          position: relative;
+          overflow: hidden;
+          background: transparent;
+        }
+        
+        /* Subtle gradient overlay on hover */
+        .navbar-nav .nav-item .nav-link::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(255, 255, 255, 0.05);
+          opacity: 0;
+          transition: opacity 0.25s ease;
+          z-index: -1;
+          border-radius: 10px;
+        }
+        
+        .navbar-nav .nav-item .nav-link:hover::before {
+          opacity: 1;
+        }
+        
+        .navbar-nav .nav-item .nav-link:hover {
+          background: rgba(255, 255, 255, 0.08);
+          transform: translateX(3px);
+          color: #fff !important;
+        }
+        
+        .navbar-nav .nav-item .nav-link.active,
+        .navbar-nav .nav-item.active .nav-link {
+          background: rgba(143, 0, 255, 0.15);
+          color: #8f00ff !important;
+          font-weight: 600;
+        }
+        
+        /* Remove template underline on mobile */
+        .navbar-nav .nav-item .nav-link span::before {
+          display: none !important;
+        }
+        
+        /* Mobile hamburger button */
+        .navbar-toggler {
+          border: 1px solid rgba(255, 255, 255, 0.15) !important;
+          padding: 10px 14px !important;
+          font-size: 14px !important;
+          color: rgba(255, 255, 255, 0.9) !important;
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 10px;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-toggler:hover,
+        .navbar-toggler:focus {
+          background: rgba(143, 0, 255, 0.2) !important;
+          border-color: rgba(143, 0, 255, 0.4) !important;
+          color: #fff !important;
+          outline: none !important;
+          box-shadow: 0 4px 12px rgba(143, 0, 255, 0.25) !important;
+          transform: translateY(-1px);
+        }
+        
+        .navbar-toggler:active {
+          transform: translateY(0);
+        }
+        
+        .navbar-toggler.active {
+          background: rgba(143, 0, 255, 0.35) !important;
+          border-color: rgba(143, 0, 255, 0.5) !important;
+        }
+        
+        .navbar-toggler .oi {
+          margin-right: 6px;
+        }
+        
+        /* Mobile overlay */
+        .mobile-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background: radial-gradient(circle at 30% 50%, rgba(143, 0, 255, 0.15) 0%, rgba(0, 0, 0, 0.7) 100%);
+          backdrop-filter: blur(3px);
+          -webkit-backdrop-filter: blur(3px);
+          z-index: 9998;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .mobile-overlay.show {
+          opacity: 1;
+          visibility: visible;
+        }
+        
+        /* Close button for sidebar */
+        .sidebar-close {
+          position: absolute;
+          top: 22px;
+          right: 22px;
+          background: rgba(255, 255, 255, 0.08);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          color: rgba(255, 255, 255, 0.7);
+          font-size: 20px;
+          cursor: pointer;
+          padding: 0;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          width: 38px;
+          height: 38px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 10px;
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+        }
+        
+        .sidebar-close:hover {
+          background: rgba(143, 0, 255, 0.25);
+          border-color: rgba(143, 0, 255, 0.4);
+          color: #fff;
+          transform: rotate(90deg);
+          box-shadow: 0 4px 12px rgba(143, 0, 255, 0.3);
+        }
+        
+        .sidebar-close:active {
+          transform: rotate(90deg) scale(0.95);
+        }
+        
+        /* Brand in sidebar */
+        .sidebar-brand {
+          position: absolute;
+          top: 22px;
+          left: 25px;
+          color: #8f00ff;
+          font-size: 26px;
+          font-weight: 900;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          letter-spacing: 1px;
+          text-shadow: 0 2px 8px rgba(143, 0, 255, 0.3);
+        }
+        
+        .sidebar-brand:hover {
+          color: #a64dff;
+          text-decoration: none;
+          transform: scale(1.05);
+          text-shadow: 0 4px 12px rgba(143, 0, 255, 0.5);
+        }
+        
+        /* Prevent body scroll when sidebar is open */
+        body.sidebar-open {
+          overflow: hidden;
+        }
+        
+        /* Smooth transition for sidebar */
+        .navbar-collapse {
+          transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        /* Active nav item indicator */
+        .navbar-nav .nav-item.active .nav-link::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 4px;
+          height: 20px;
+          background: #8f00ff;
+          border-radius: 0 2px 2px 0;
+        }
+        
+        /* Improve touch targets for mobile */
+        .navbar-nav .nav-item .nav-link {
+          position: relative;
+          min-height: 44px;
+          display: flex;
+          align-items: center;
         }
       }
     </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
+    
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
@@ -70,6 +374,12 @@
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
+          <!-- Sidebar brand and close button for mobile -->
+          <a href="index.html" class="sidebar-brand">ISHA</a>
+          <button type="button" class="sidebar-close" id="sidebar-close" aria-label="Close sidebar">
+            <span class="oi oi-x"></span>
+          </button>
+          
 	        <ul class="navbar-nav nav ml-auto" style="font-size: 0.75rem;">
           <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
           <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
@@ -92,7 +402,7 @@
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/portfolio-image-2.png); transform: scaleX(-1);">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/portfolio-image-1.png); transform: scaleX(-1);">
 	          		<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
