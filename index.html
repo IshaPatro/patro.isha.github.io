@@ -1,424 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title> Isha Patro - Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+<head>
+	<title> Isha Patro - Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/aos.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-      /* Custom CSS to make navbar fit in one line */
-      .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-        font-size: 14px !important;
-      }
-      
-      /* Ensure navbar doesn't wrap */
-      .navbar-nav {
-        flex-wrap: nowrap !important;
-        white-space: nowrap !important;
-      }
-      
-      /* Adjust container width if needed */
-      .ftco-navbar-light .container {
-        max-width: 100% !important;
-      }
-      
-      /* Responsive adjustments */
-      @media (max-width: 1199.98px) {
-        .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-          padding-left: 8px !important;
-          padding-right: 8px !important;
-          font-size: 13px !important;
-        }
-      }
-      
-      /* Hide mobile-only elements on desktop by default */
-      .sidebar-brand,
-      .sidebar-close,
-      .mobile-overlay {
-        display: none;
-      }
-      
-      /* Mobile Sidebar Styles */
-      @media (max-width: 991.98px) {
-        /* Show mobile-only elements on mobile */
-        .sidebar-brand,
-        .mobile-overlay {
-          display: block;
-        }
-        
-        .sidebar-close {
-          display: flex;
-        }
-        
-        /* Mobile navbar adjustments */
-        .ftco-navbar-light {
-          padding-left: 15px !important;
-          padding-right: 15px !important;
-          z-index: 10001 !important; /* Ensure navbar (sidebar container) sits above overlay */
-        }
-        
-        /* Hide the default bootstrap collapse behavior */
-        .navbar-collapse {
-          position: fixed;
-          top: 0;
-          left: -100%;
-          width: 280px;
-          height: 100vh;
-          background: linear-gradient(135deg, rgba(10, 0, 20, 0.98) 0%, rgba(0, 0, 0, 0.96) 100%);
-          backdrop-filter: blur(20px);
-          -webkit-backdrop-filter: blur(20px);
-          z-index: 10002; /* Above overlay and navbar */
-          padding: 80px 0 30px 0;
-          transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-          overflow-y: auto;
-          overflow-x: hidden;
-          box-shadow: 2px 0 30px rgba(0, 0, 0, 0.5), inset -1px 0 0 rgba(143, 0, 255, 0.1);
-        }
-        
-        /* Custom scrollbar for sidebar */
-        .navbar-collapse::-webkit-scrollbar {
-          width: 4px;
-        }
-        
-        .navbar-collapse::-webkit-scrollbar-track {
-          background: rgba(255, 255, 255, 0.05);
-        }
-        
-        .navbar-collapse::-webkit-scrollbar-thumb {
-          background: rgba(143, 0, 255, 0.4);
-          border-radius: 2px;
-        }
-        
-        .navbar-collapse::-webkit-scrollbar-thumb:hover {
-          background: rgba(143, 0, 255, 0.6);
-        }
-        
-        /* Show sidebar when active */
-        .navbar-collapse.show {
-          left: 0;
-        }
-        
-        /* Mobile sidebar navigation */
-        .navbar-nav {
-          flex-direction: column !important;
-          padding: 0 25px;
-          width: 100%;
-          gap: 6px;
-          position: relative;
-        }
-        
-        /* Subtle divider line above nav items */
-        .navbar-nav::before {
-          content: '';
-          position: absolute;
-          top: -15px;
-          left: 25px;
-          right: 25px;
-          height: 1px;
-          background: linear-gradient(90deg, transparent 0%, rgba(143, 0, 255, 0.3) 50%, transparent 100%);
-        }
-        
-        .navbar-nav .nav-item {
-          margin-bottom: 0;
-          opacity: 0;
-          transform: translateX(-20px);
-          animation: slideIn 0.3s ease forwards;
-        }
-        
-        /* Stagger animation for each item */
-        .navbar-nav .nav-item:nth-child(1) { animation-delay: 0.05s; }
-        .navbar-nav .nav-item:nth-child(2) { animation-delay: 0.1s; }
-        .navbar-nav .nav-item:nth-child(3) { animation-delay: 0.15s; }
-        .navbar-nav .nav-item:nth-child(4) { animation-delay: 0.2s; }
-        .navbar-nav .nav-item:nth-child(5) { animation-delay: 0.25s; }
-        .navbar-nav .nav-item:nth-child(6) { animation-delay: 0.3s; }
-        .navbar-nav .nav-item:nth-child(7) { animation-delay: 0.35s; }
-        .navbar-nav .nav-item:nth-child(8) { animation-delay: 0.4s; }
-        .navbar-nav .nav-item:nth-child(9) { animation-delay: 0.45s; }
-        .navbar-nav .nav-item:nth-child(10) { animation-delay: 0.5s; }
-        
-        @keyframes slideIn {
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-        
-        .navbar-nav .nav-item .nav-link {
-          padding: 16px 20px !important;
-          color: rgba(255, 255, 255, 0.8) !important;
-          font-size: 15px !important;
-          font-weight: 500;
-          letter-spacing: 0.3px;
-          border-radius: 10px;
-          transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-          text-align: left;
-          position: relative;
-          overflow: hidden;
-          background: transparent;
-        }
-        
-        /* Subtle gradient overlay on hover */
-        .navbar-nav .nav-item .nav-link::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: rgba(255, 255, 255, 0.05);
-          opacity: 0;
-          transition: opacity 0.25s ease;
-          z-index: -1;
-          border-radius: 10px;
-        }
-        
-        .navbar-nav .nav-item .nav-link:hover::before {
-          opacity: 1;
-        }
-        
-        .navbar-nav .nav-item .nav-link:hover {
-          background: rgba(255, 255, 255, 0.08);
-          transform: translateX(3px);
-          color: #fff !important;
-        }
-        
-        .navbar-nav .nav-item .nav-link.active,
-        .navbar-nav .nav-item.active .nav-link {
-          background: rgba(143, 0, 255, 0.15);
-          color: #8f00ff !important;
-          font-weight: 600;
-        }
-        
-        /* Remove template underline on mobile */
-        .navbar-nav .nav-item .nav-link span::before {
-          display: none !important;
-        }
-        
-        /* Mobile hamburger button */
-        .navbar-toggler {
-          border: 1px solid rgba(255, 255, 255, 0.15) !important;
-          padding: 10px 14px !important;
-          font-size: 14px !important;
-          color: rgba(255, 255, 255, 0.9) !important;
-          background: rgba(255, 255, 255, 0.08);
-          border-radius: 10px;
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-          font-weight: 500;
-          letter-spacing: 0.5px;
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .navbar-toggler:hover,
-        .navbar-toggler:focus {
-          background: rgba(143, 0, 255, 0.2) !important;
-          border-color: rgba(143, 0, 255, 0.4) !important;
-          color: #fff !important;
-          outline: none !important;
-          box-shadow: 0 4px 12px rgba(143, 0, 255, 0.25) !important;
-          transform: translateY(-1px);
-        }
-        
-        .navbar-toggler:active {
-          transform: translateY(0);
-        }
-        
-        .navbar-toggler.active {
-          background: rgba(143, 0, 255, 0.35) !important;
-          border-color: rgba(143, 0, 255, 0.5) !important;
-        }
-        
-        .navbar-toggler .oi {
-          margin-right: 6px;
-        }
-        
-        /* Mobile overlay */
-        .mobile-overlay {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100vw;
-          height: 100vh;
-          background: radial-gradient(circle at 30% 50%, rgba(143, 0, 255, 0.15) 0%, rgba(0, 0, 0, 0.7) 100%);
-          backdrop-filter: blur(3px);
-          -webkit-backdrop-filter: blur(3px);
-          z-index: 9998;
-          opacity: 0;
-          visibility: hidden;
-          transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .mobile-overlay.show {
-          opacity: 1;
-          visibility: visible;
-        }
-        
-        /* Close button for sidebar */
-        .sidebar-close {
-          position: absolute;
-          top: 22px;
-          right: 22px;
-          background: rgba(255, 255, 255, 0.08);
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          color: rgba(255, 255, 255, 0.7);
-          font-size: 20px;
-          cursor: pointer;
-          padding: 0;
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-          width: 38px;
-          height: 38px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 10px;
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
-        }
-        
-        .sidebar-close:hover {
-          background: rgba(143, 0, 255, 0.25);
-          border-color: rgba(143, 0, 255, 0.4);
-          color: #fff;
-          transform: rotate(90deg);
-          box-shadow: 0 4px 12px rgba(143, 0, 255, 0.3);
-        }
-        
-        .sidebar-close:active {
-          transform: rotate(90deg) scale(0.95);
-        }
-        
-        /* Brand in sidebar */
-        .sidebar-brand {
-          position: absolute;
-          top: 22px;
-          left: 25px;
-          color: #8f00ff;
-          font-size: 26px;
-          font-weight: 900;
-          text-decoration: none;
-          transition: all 0.3s ease;
-          letter-spacing: 1px;
-          text-shadow: 0 2px 8px rgba(143, 0, 255, 0.3);
-        }
-        
-        .sidebar-brand:hover {
-          color: #a64dff;
-          text-decoration: none;
-          transform: scale(1.05);
-          text-shadow: 0 4px 12px rgba(143, 0, 255, 0.5);
-        }
-        
-        /* Prevent body scroll when sidebar is open */
-        body.sidebar-open {
-          overflow: hidden;
-        }
-        
-        /* Smooth transition for sidebar */
-        .navbar-collapse {
-          transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        /* Active nav item indicator */
-        .navbar-nav .nav-item.active .nav-link::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 4px;
-          height: 20px;
-          background: #8f00ff;
-          border-radius: 0 2px 2px 0;
-        }
-        
-        /* Improve touch targets for mobile */
-        .navbar-nav .nav-item .nav-link {
-          position: relative;
-          min-height: 44px;
-          display: flex;
-          align-items: center;
-        }
-      }
-    </style>
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    
-    <!-- Mobile Overlay -->
-    <div class="mobile-overlay" id="mobile-overlay"></div>
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">ISHA</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-          <!-- Sidebar brand and close button for mobile -->
-          <a href="index.html" class="sidebar-brand">ISHA</a>
-          <button type="button" class="sidebar-close" id="sidebar-close" aria-label="Close sidebar">
-            <span class="oi oi-x"></span>
-          </button>
-          
-	        <ul class="navbar-nav nav ml-auto" style="font-size: 0.75rem;">
-          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-          <li class="nav-item"><a href="#achievements-section" class="nav-link"><span>Achievements</span></a></li>
-          <li class="nav-item"><a href="#certification-section" class="nav-link"><span>Certifications</span></a></li>
-          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-		  <li class="nav-item"><a href="#publications-section" class="nav-link"><span>Research</span></a></li>
-          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blogs</span></a></li>
-          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		/* Custom CSS to make navbar fit in one line */
+		.ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
+			padding-left: 10px !important;
+			padding-right: 10px !important;
+			font-size: 14px !important;
+		}
+
+		/* Ensure navbar doesn't wrap */
+		.navbar-nav {
+			flex-wrap: nowrap !important;
+			white-space: nowrap !important;
+		}
+
+		/* Adjust container width if needed */
+		.ftco-navbar-light .container {
+			max-width: 100% !important;
+		}
+
+		/* Responsive adjustments */
+		@media (max-width: 1199.98px) {
+			.ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
+				padding-left: 8px !important;
+				padding-right: 8px !important;
+				font-size: 13px !important;
+			}
+		}
+
+		/* Hide mobile-only elements on desktop by default */
+		.sidebar-brand,
+		.sidebar-close,
+		.mobile-overlay {
+			display: none;
+		}
+
+		/* Mobile Sidebar Styles */
+		@media (max-width: 991.98px) {
+
+			/* Show mobile-only elements on mobile */
+			.sidebar-brand,
+			.mobile-overlay {
+				display: block;
+			}
+
+			.sidebar-close {
+				display: flex;
+			}
+
+			/* Mobile navbar adjustments */
+			.ftco-navbar-light {
+				padding-left: 15px !important;
+				padding-right: 15px !important;
+				z-index: 10001 !important;
+				/* Ensure navbar (sidebar container) sits above overlay */
+			}
+
+			/* Hide the default bootstrap collapse behavior */
+			.navbar-collapse {
+				position: fixed;
+				top: 0;
+				left: -100%;
+				width: 280px;
+				height: 100vh;
+				background: linear-gradient(135deg, rgba(10, 0, 20, 0.98) 0%, rgba(0, 0, 0, 0.96) 100%);
+				backdrop-filter: blur(20px);
+				-webkit-backdrop-filter: blur(20px);
+				z-index: 10002;
+				/* Above overlay and navbar */
+				padding: 80px 0 30px 0;
+				transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+				overflow-y: auto;
+				overflow-x: hidden;
+				box-shadow: 2px 0 30px rgba(0, 0, 0, 0.5), inset -1px 0 0 rgba(143, 0, 255, 0.1);
+			}
+
+			/* Custom scrollbar for sidebar */
+			.navbar-collapse::-webkit-scrollbar {
+				width: 4px;
+			}
+
+			.navbar-collapse::-webkit-scrollbar-track {
+				background: rgba(255, 255, 255, 0.05);
+			}
+
+			.navbar-collapse::-webkit-scrollbar-thumb {
+				background: rgba(143, 0, 255, 0.4);
+				border-radius: 2px;
+			}
+
+			.navbar-collapse::-webkit-scrollbar-thumb:hover {
+				background: rgba(143, 0, 255, 0.6);
+			}
+
+			/* Show sidebar when active */
+			.navbar-collapse.show {
+				left: 0;
+			}
+
+			/* Mobile sidebar navigation */
+			.navbar-nav {
+				flex-direction: column !important;
+				padding: 0 25px;
+				width: 100%;
+				gap: 6px;
+				position: relative;
+			}
+
+			/* Subtle divider line above nav items */
+			.navbar-nav::before {
+				content: '';
+				position: absolute;
+				top: -15px;
+				left: 25px;
+				right: 25px;
+				height: 1px;
+				background: linear-gradient(90deg, transparent 0%, rgba(143, 0, 255, 0.3) 50%, transparent 100%);
+			}
+
+			.navbar-nav .nav-item {
+				margin-bottom: 0;
+				opacity: 0;
+				transform: translateX(-20px);
+				animation: slideIn 0.3s ease forwards;
+			}
+
+			/* Stagger animation for each item */
+			.navbar-nav .nav-item:nth-child(1) {
+				animation-delay: 0.05s;
+			}
+
+			.navbar-nav .nav-item:nth-child(2) {
+				animation-delay: 0.1s;
+			}
+
+			.navbar-nav .nav-item:nth-child(3) {
+				animation-delay: 0.15s;
+			}
+
+			.navbar-nav .nav-item:nth-child(4) {
+				animation-delay: 0.2s;
+			}
+
+			.navbar-nav .nav-item:nth-child(5) {
+				animation-delay: 0.25s;
+			}
+
+			.navbar-nav .nav-item:nth-child(6) {
+				animation-delay: 0.3s;
+			}
+
+			.navbar-nav .nav-item:nth-child(7) {
+				animation-delay: 0.35s;
+			}
+
+			.navbar-nav .nav-item:nth-child(8) {
+				animation-delay: 0.4s;
+			}
+
+			.navbar-nav .nav-item:nth-child(9) {
+				animation-delay: 0.45s;
+			}
+
+			.navbar-nav .nav-item:nth-child(10) {
+				animation-delay: 0.5s;
+			}
+
+			@keyframes slideIn {
+				to {
+					opacity: 1;
+					transform: translateX(0);
+				}
+			}
+
+			.navbar-nav .nav-item .nav-link {
+				padding: 16px 20px !important;
+				color: rgba(255, 255, 255, 0.8) !important;
+				font-size: 15px !important;
+				font-weight: 500;
+				letter-spacing: 0.3px;
+				border-radius: 10px;
+				transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+				text-align: left;
+				position: relative;
+				overflow: hidden;
+				background: transparent;
+			}
+
+			/* Subtle gradient overlay on hover */
+			.navbar-nav .nav-item .nav-link::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: rgba(255, 255, 255, 0.05);
+				opacity: 0;
+				transition: opacity 0.25s ease;
+				z-index: -1;
+				border-radius: 10px;
+			}
+
+			.navbar-nav .nav-item .nav-link:hover::before {
+				opacity: 1;
+			}
+
+			.navbar-nav .nav-item .nav-link:hover {
+				background: rgba(255, 255, 255, 0.08);
+				transform: translateX(3px);
+				color: #fff !important;
+			}
+
+			.navbar-nav .nav-item .nav-link.active,
+			.navbar-nav .nav-item.active .nav-link {
+				background: rgba(143, 0, 255, 0.15);
+				color: #8f00ff !important;
+				font-weight: 600;
+			}
+
+			/* Remove template underline on mobile */
+			.navbar-nav .nav-item .nav-link span::before {
+				display: none !important;
+			}
+
+			/* Mobile hamburger button */
+			.navbar-toggler {
+				border: 1px solid rgba(255, 255, 255, 0.15) !important;
+				padding: 10px 14px !important;
+				font-size: 14px !important;
+				color: rgba(255, 255, 255, 0.9) !important;
+				background: rgba(255, 255, 255, 0.08);
+				border-radius: 10px;
+				transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+				font-weight: 500;
+				letter-spacing: 0.5px;
+				backdrop-filter: blur(10px);
+				-webkit-backdrop-filter: blur(10px);
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+			}
+
+			.navbar-toggler:hover,
+			.navbar-toggler:focus {
+				background: rgba(143, 0, 255, 0.2) !important;
+				border-color: rgba(143, 0, 255, 0.4) !important;
+				color: #fff !important;
+				outline: none !important;
+				box-shadow: 0 4px 12px rgba(143, 0, 255, 0.25) !important;
+				transform: translateY(-1px);
+			}
+
+			.navbar-toggler:active {
+				transform: translateY(0);
+			}
+
+			.navbar-toggler.active {
+				background: rgba(143, 0, 255, 0.35) !important;
+				border-color: rgba(143, 0, 255, 0.5) !important;
+			}
+
+			.navbar-toggler .oi {
+				margin-right: 6px;
+			}
+
+			/* Mobile overlay */
+			.mobile-overlay {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+				background: radial-gradient(circle at 30% 50%, rgba(143, 0, 255, 0.15) 0%, rgba(0, 0, 0, 0.7) 100%);
+				backdrop-filter: blur(3px);
+				-webkit-backdrop-filter: blur(3px);
+				z-index: 9998;
+				opacity: 0;
+				visibility: hidden;
+				transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+			}
+
+			.mobile-overlay.show {
+				opacity: 1;
+				visibility: visible;
+			}
+
+			/* Close button for sidebar */
+			.sidebar-close {
+				position: absolute;
+				top: 22px;
+				right: 22px;
+				background: rgba(255, 255, 255, 0.08);
+				border: 1px solid rgba(255, 255, 255, 0.1);
+				color: rgba(255, 255, 255, 0.7);
+				font-size: 20px;
+				cursor: pointer;
+				padding: 0;
+				transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+				width: 38px;
+				height: 38px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 10px;
+				backdrop-filter: blur(10px);
+				-webkit-backdrop-filter: blur(10px);
+			}
+
+			.sidebar-close:hover {
+				background: rgba(143, 0, 255, 0.25);
+				border-color: rgba(143, 0, 255, 0.4);
+				color: #fff;
+				transform: rotate(90deg);
+				box-shadow: 0 4px 12px rgba(143, 0, 255, 0.3);
+			}
+
+			.sidebar-close:active {
+				transform: rotate(90deg) scale(0.95);
+			}
+
+			/* Brand in sidebar */
+			.sidebar-brand {
+				position: absolute;
+				top: 22px;
+				left: 25px;
+				color: #8f00ff;
+				font-size: 26px;
+				font-weight: 900;
+				text-decoration: none;
+				transition: all 0.3s ease;
+				letter-spacing: 1px;
+				text-shadow: 0 2px 8px rgba(143, 0, 255, 0.3);
+			}
+
+			.sidebar-brand:hover {
+				color: #a64dff;
+				text-decoration: none;
+				transform: scale(1.05);
+				text-shadow: 0 4px 12px rgba(143, 0, 255, 0.5);
+			}
+
+			/* Prevent body scroll when sidebar is open */
+			body.sidebar-open {
+				overflow: hidden;
+			}
+
+			/* Smooth transition for sidebar */
+			.navbar-collapse {
+				transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+			}
+
+			/* Active nav item indicator */
+			.navbar-nav .nav-item.active .nav-link::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 4px;
+				height: 20px;
+				background: #8f00ff;
+				border-radius: 0 2px 2px 0;
+			}
+
+			/* Improve touch targets for mobile */
+			.navbar-nav .nav-item .nav-link {
+				position: relative;
+				min-height: 44px;
+				display: flex;
+				align-items: center;
+			}
+		}
+	</style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+	<!-- Mobile Overlay -->
+	<div class="mobile-overlay" id="mobile-overlay"></div>
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">ISHA</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<!-- Sidebar brand and close button for mobile -->
+				<a href="index.html" class="sidebar-brand">ISHA</a>
+				<button type="button" class="sidebar-close" id="sidebar-close" aria-label="Close sidebar">
+					<span class="oi oi-x"></span>
+				</button>
+
+				<ul class="navbar-nav nav ml-auto" style="font-size: 0.75rem;">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+					<li class="nav-item"><a href="#achievements-section" class="nav-link"><span>Achievements</span></a>
+					</li>
+					<li class="nav-item"><a href="#certification-section"
+							class="nav-link"><span>Certifications</span></a></li>
+					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#publications-section" class="nav-link"><span>Research</span></a></li>
+					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blogs</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
 	</nav>
 
 	<section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	      <div class="slider-item ">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/portfolio-image-1.png); transform: scaleX(-1);">
-	          		<div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello! </span> I'm
-			            <h1 class="mb-4 mt-3"><span class="name-outlier">ISHA</span><br><span class="name-solid">PATRO</span></h1>
-			            <p><a href="resume.pdf" download class="btn btn-primary py-3 px-4">Download CV</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-	    </div>
-    </section>
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third js-fullheight order-md-last img"
+							style="background-image:url(images/portfolio-image-1.png); transform: scaleX(-1);">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello! </span> I'm
+								<h1 class="mb-4 mt-3"><span class="name-outlier">ISHA</span><br><span
+										class="name-solid">PATRO</span></h1>
+								<p><a href="resume.pdf" download class="btn btn-primary py-3 px-4">Download CV</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
 		<div class="row justify-content-center pb-5">
 			<div class="col-md-10 heading-section text-center ftco-animate">
 				<h1 class="big big-2">About Me</h1>
@@ -429,14 +470,24 @@
 			<div class="col-md-6 col-lg-5 d-flex">
 				<div class="img-about img d-flex align-items-stretch">
 					<div class="overlay"></div>
-					<div class="img d-flex align-self-stretch align-items-center" id="hobby-image" style="background-image:url(images/bg_1.png);">
+					<div class="img d-flex align-self-stretch align-items-center" id="hobby-image"
+						style="background-image:url(images/bg_1.png);">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
 				<div class="row justify-content-start pb-3">
 					<div class="col-md-12 heading-section ftco-animate">
-						<p>Outside of work, I channel my creativity and energy into a variety of hobbies. Whether I'm creating vibrant <span class="hobby">paintings</span>, producing captivating <span class="hobby">digital art</span>, mastering intricate <span class="hobby">classical dance</span> routines, performing traditional <span class="hobby">tribal dance</span>, or crafting aromatic <span class="hobby">candles</span>, my free time is a testament to my love for the arts and hands-on projects. Leading the <span class="hobby">DIY club</span> in college allowed me to innovate and inspire others. My roles as a <span class="hobby">school leader</span> and <span class="hobby">NCC cadet</span> have further refined my leadership and discipline. These experiences have shaped me, driving my ambition to leave a lasting impact.</p>
+						<p>Outside of work, I channel my creativity and energy into a variety of hobbies. Whether I'm
+							creating vibrant <span class="hobby">paintings</span>, producing captivating <span
+								class="hobby">digital art</span>, mastering intricate <span class="hobby">classical
+								dance</span> routines, performing traditional <span class="hobby">tribal dance</span>,
+							or crafting aromatic <span class="hobby">candles</span>, my free time is a testament to my
+							love for the arts and hands-on projects. Leading the <span class="hobby">DIY club</span> in
+							college allowed me to innovate and inspire others. My roles as a <span class="hobby">school
+								leader</span> and <span class="hobby">NCC cadet</span> have further refined my
+							leadership and discipline. These experiences have shaped me, driving my ambition to leave a
+							lasting impact.</p>
 						<ul class="about-info mt-4 px-md-0 px-2">
 							<li class="d-flex"><span>Name:</span> <span>Isha</span></li>
 							<li class="d-flex"><span>Date of birth:</span> <span>May 21, 1999</span></li>
@@ -448,198 +499,232 @@
 				</div>
 			</div>
 		</div>
-	</section>	
+	</section>
 
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-		<div class="row justify-content-center pb-5">
-		<div class="col-md-10 heading-section text-center ftco-animate">
-			<h1 class="big big-2">Resume</h1>
-			<h2 class="mb-4">Resume</h2>
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Resume</h1>
+					<h2 class="mb-4">Resume</h2>
+				</div>
 			</div>
-        </div>
-		<div id="fh5co-resume" class="fh5co-bg-color">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 col-md-offset-0">
-						<ul class="timeline">
-							<li class="timeline-heading text-center animate-box">
-								<div><h3 class="resume-heading">Work Experience</h3></div>
-							</li>
-							<li class="animate-box timeline-unverted">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Software Developer Engineer - II</h3>
-										<span class="company">J.P Morgan Chase & Co.- Jan 2024 - Aug 2025</span>
+			<div id="fh5co-resume" class="fh5co-bg-color">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-md-offset-0">
+							<ul class="timeline">
+								<li class="timeline-heading text-center animate-box">
+									<div>
+										<h3 class="resume-heading">Work Experience</h3>
 									</div>
-									<div class="timeline-body">
-										<p>Led the development and post-launch ownership of Trade Activity Monitoring (TAM) as Epic Owner, collaborating with stakeholders to achieve a 50% latency reduction and significantly improve trading floor execution efficiency.<br><br>Pioneered and architected a comprehensive Mortgage Matrix modernization initiative driving 12% latency improvement supporting $5B+ annual trading volume.</p>
+								</li>
+								<li class="animate-box timeline-unverted">
+									<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h3 class="timeline-title">Software Developer Engineer - II</h3>
+											<span class="company">J.P Morgan Chase & Co.- Jan 2024 - Aug 2025</span>
+										</div>
+										<div class="timeline-body">
+											<p>Led the development and post-launch ownership of Trade Activity
+												Monitoring (TAM) as Epic Owner, collaborating with stakeholders to
+												achieve a 50% latency reduction and significantly improve trading floor
+												execution efficiency.<br><br>Pioneered and architected a comprehensive
+												Mortgage Matrix modernization initiative driving 12% latency improvement
+												supporting $5B+ annual trading volume.</p>
+										</div>
 									</div>
-								</div>
-							</li>
-							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Software Developer Engineer - I</h3>
-										<span class="company">J.P Morgan Chase & Co. - Aug 2021 - Jan 2024</span>
+								</li>
+								<li class="timeline-inverted animate-box">
+									<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h3 class="timeline-title">Software Developer Engineer - I</h3>
+											<span class="company">J.P Morgan Chase & Co. - Aug 2021 - Jan 2024</span>
+										</div>
+										<div class="timeline-body">
+											<p>Designed and implemented Trade Reporting and Compliance Engine (TRACE) in
+												an agile environment collaborating with cross-functional teams to boost
+												data processing efficiency by 30% and streamline regulatory reporting
+												workflows.</p>
+										</div>
 									</div>
-									<div class="timeline-body">
-										<p>Designed and implemented Trade Reporting and Compliance Engine (TRACE) in an agile environment collaborating with cross-functional teams to boost data processing efficiency by 30% and streamline regulatory reporting workflows.</p>
+								</li>
+								<li class="animate-box timeline-unverted">
+									<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h3 class="timeline-title">Software Developer - Intern</h3>
+											<span class="company">J.P Morgan Chase & Co. - Jan 2021 - Jul 2021</span>
+										</div>
+										<div class="timeline-body">
+											<p>Built a JIRA ticket management app that enabled bulk creation and
+												updates, reducing ticket handling time by ~70% and improving cross-team
+												collaboration at J.P. Morgan.</p>
+										</div>
 									</div>
-								</div>
-							</li>
-							<li class="animate-box timeline-unverted">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Software Developer - Intern</h3>
-										<span class="company">J.P Morgan Chase & Co. - Jan 2021 - Jul 2021</span>
+								</li>
+								<li class="animate-box timeline-inverted">
+									<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h3 class="timeline-title">ACMS Intern</h3>
+											<span class="company">Amazon - May 2020 - Jun 2020</span>
+										</div>
+										<div class="timeline-body">
+											<p>Designed wireframes and contributed to the full lifecycle of a responsive
+												Appointment Scheduler website, focusing on user needs and
+												goals.<br><br>Prepared the website for integration with Chime and
+												implemented best practices to ensure a seamless user experience and
+												robust functionality.</p>
+										</div>
 									</div>
-									<div class="timeline-body">
-										<p>Built a JIRA ticket management app that enabled bulk creation and updates, reducing ticket handling time by ~70% and improving cross-team collaboration at J.P. Morgan.</p>
+								</li>
+								<li class="animate-box timeline-unverted">
+									<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h3 class="timeline-title">Data Analyst Intern</h3>
+											<span class="company">Octathorpe Web Consultant - Apr 2019 - Jul 2019</span>
+										</div>
+										<div class="timeline-body">
+											<p>Procured and analyzed data from diverse primary and secondary sources to
+												extract insights contributing to a 15% increase in user
+												engagement.<br><br>Tracked Conversion, Retention, and Monetization
+												metrics to provide a comprehensive analysis of business performance,
+												supporting a 6% boost in revenue.</p>
+										</div>
 									</div>
-								</div>
-							</li>
-							<li class="animate-box timeline-inverted">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">ACMS Intern</h3>
-										<span class="company">Amazon - May 2020 - Jun 2020</span>
+								</li>
+								<li class="animate-box timeline-inverted">
+									<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h3 class="timeline-title">Data Engineering Intern</h3>
+											<span class="company">Collpoll - Apr 2018 - May 2018</span>
+										</div>
+										<div class="timeline-body">
+											<p>Extracted and analyzed large datasets; contributed to product strategies
+												that improved feature adoption by 10% and increased active users by 18%.
+											</p>
+										</div>
 									</div>
-									<div class="timeline-body">
-										<p>Designed wireframes and contributed to the full lifecycle of a responsive Appointment Scheduler website, focusing on user needs and goals.<br><br>Prepared the website for integration with Chime and implemented best practices to ensure a seamless user experience and robust functionality.</p>
+								</li>
+
+								<br>
+								<li class="timeline-heading text-center animate-box">
+									<div>
+										<h3>Education</h3>
 									</div>
-								</div>
-							</li>
-							<li class="animate-box timeline-unverted">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Data Analyst Intern</h3>
-										<span class="company">Octathorpe Web Consultant - Apr 2019 - Jul 2019</span>
+								</li>
+								<li class="timeline-unverted animate-box">
+									<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h3 class="timeline-title">Master of Science in Financial Engineering</h3>
+											<span class="company">New York University, Tandon School of Engineering -
+												Brooklyn, NY - Expected 05/27</span>
+										</div>
+										<div class="timeline-body">
+											<p>GPA: Pending, currently in first semester of program</p>
+										</div>
 									</div>
-									<div class="timeline-body">
-										<p>Procured and analyzed data from diverse primary and secondary sources to extract insights contributing to a 15% increase in user engagement.<br><br>Tracked Conversion, Retention, and Monetization metrics to provide a comprehensive analysis of business performance, supporting a 6% boost in revenue.</p>
+								</li>
+								<li class="timeline-inverted animate-box">
+									<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h3 class="timeline-title">Bachelors in Computer Science</h3>
+											<span class="company">Vellore Institute of Technology, AP - Aug 2017 - Jul
+												2021</span>
+										</div>
+										<div class="timeline-body">
+											<p>Completed 156 credits with an overall CGPA of 8.8 in my bachelor's degree
+											</p>
+										</div>
 									</div>
-								</div>
-							</li>
-							<li class="animate-box timeline-inverted">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Data Engineering Intern</h3>
-										<span class="company">Collpoll - Apr 2018 - May 2018</span>
+								</li>
+								<li class="timeline-unverted animate-box">
+									<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h3 class="timeline-title">Senior Secondary Education</h3>
+											<span class="company">Khalikote University - Aug 2015 - Jun 2017</span>
+										</div>
+										<div class="timeline-body">
+											<p>Recognized as a meritorious student by the Government of Odisha and
+												received a laptop award under the Biju Yuva Sashaktikaran Yojana for
+												achieving a 75% score in the CHSE Science stream.</p>
+										</div>
 									</div>
-									<div class="timeline-body">
-										<p>Extracted and analyzed large datasets; contributed to product strategies that improved feature adoption by 10% and increased active users by 18%.</p>
+								</li>
+								<li class="timeline-inverted animate-box">
+									<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h3 class="timeline-title">High School Education</h3>
+											<span class="company">D. A. V Public School - Aug 2003 - Jun 2015</span>
+										</div>
+										<div class="timeline-body">
+											<p>Completed my high school education under the CBSE board, achieving a
+												commendable CGPA of 9.6</p>
+										</div>
 									</div>
-								</div>
-							</li>
-	
-							<br>
-							<li class="timeline-heading text-center animate-box">
-								<div><h3>Education</h3></div>
-							</li>
-							<li class="timeline-unverted animate-box">
-								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Master of Science in Financial Engineering</h3>
-										<span class="company">New York University, Tandon School of Engineering - Brooklyn, NY - Expected 05/27</span>
-									</div>
-									<div class="timeline-body">
-										<p>GPA: Pending, currently in first semester of program</p>
-									</div>
-								</div>
-							</li>
-							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Bachelors in Computer Science</h3>
-										<span class="company">Vellore Institute of Technology, AP - Aug 2017 - Jul 2021</span>
-									</div>
-									<div class="timeline-body">
-										<p>Completed 156 credits with an overall CGPA of 8.8 in my bachelor's degree</p>
-									</div>
-								</div>
-							</li>
-							<li class="timeline-unverted animate-box">
-								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Senior Secondary Education</h3>
-										<span class="company">Khalikote University - Aug 2015 - Jun 2017</span>
-									</div>
-									<div class="timeline-body">
-										<p>Recognized as a meritorious student by the Government of Odisha and received a laptop award under the Biju Yuva Sashaktikaran Yojana for achieving a 75% score in the CHSE Science stream.</p>
-									</div>
-								</div>
-							</li>
-							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">High School Education</h3>
-										<span class="company">D. A. V Public School - Aug 2003 - Jun 2015</span>
-									</div>
-									<div class="timeline-body">
-										<p>Completed my high school education under the CBSE board, achieving a commendable CGPA of 9.6</p>
-									</div>
-								</div>
-							</li>
-						</ul>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>	
-    </section>
+	</section>
 
 	<section id="certification-section" class="hero">
 		<div class="container">
-    	<div class="row justify-content-center py-5 mt-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Certifications</h1>
-            <h2 class="mb-4">Certifications</h2>
-          </div>
-        </div>
-    		<div class="row">
+			<div class="row justify-content-center py-5 mt-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Certifications</h1>
+					<h2 class="mb-4">Certifications</h2>
+				</div>
+			</div>
+			<div class="row">
 				<div class="col-md-4 text-center d-flex ftco-animate certificate">
 					<a class="services-1">
 						<div class="desc">
 							<h3 class="mb-5">AWS Practitioner</h3>
 						</div>
-						<img src="images/aws.png" alt="AWS Practitioner Certificate" style="width: 100%; height: 100%; object-fit: contain;">					
+						<img src="images/aws.png" alt="AWS Practitioner Certificate"
+							style="width: 100%; height: 100%; object-fit: contain;">
 					</a>
-				</div>				
+				</div>
 				<div class="col-md-4 text-center d-flex ftco-animate certificate">
 					<a class="services-1">
 						<div class="desc">
 							<h3 class="mb-5">Machine Learning</h3>
 						</div>
-						<img src="images/machine-learning.jpg" alt="Machine Learning Certificate" style="width: 100%; height: 100%; object-fit: contain;">					
+						<img src="images/machine-learning.jpg" alt="Machine Learning Certificate"
+							style="width: 100%; height: 100%; object-fit: contain;">
 					</a>
-				</div>	
-					<div class="col-md-4 text-center d-flex ftco-animate certificate">
-						<a href="#" class="services-1">
-							<div class="desc">
-								<h3 class="mb-5">Mortgage Backed Securities</h3>
-							</div>
-							<img src="images/mbs.jpg" alt="Mortgage Backed Securities" style="width: 100%; height: 100%; object-fit: contain;">					
-						</a>
-					</div>
-				
-					<div class="col-md-4 text-center d-flex ftco-animate certificate">
-						<a href="#" class="services-1">
-							<div class="desc">
-								<h3 class="mb-5">Financial Engineering and Risk Management</h3>
-							</div>
-							<img src="images/columbia.png" alt="Financial Engineering and Risk Management" style="width: 100%; height: 100%; object-fit: contain;">
-						</a>
-					</div>
-					<!-- <div class="col-md-4 text-center d-flex ftco-animate">
+				</div>
+				<div class="col-md-4 text-center d-flex ftco-animate certificate">
+					<a href="#" class="services-1">
+						<div class="desc">
+							<h3 class="mb-5">Mortgage Backed Securities</h3>
+						</div>
+						<img src="images/mbs.jpg" alt="Mortgage Backed Securities"
+							style="width: 100%; height: 100%; object-fit: contain;">
+					</a>
+				</div>
+
+				<div class="col-md-4 text-center d-flex ftco-animate certificate">
+					<a href="#" class="services-1">
+						<div class="desc">
+							<h3 class="mb-5">Financial Engineering and Risk Management</h3>
+						</div>
+						<img src="images/columbia.png" alt="Financial Engineering and Risk Management"
+							style="width: 100%; height: 100%; object-fit: contain;">
+					</a>
+				</div>
+				<!-- <div class="col-md-4 text-center d-flex ftco-animate">
 						<a href="#" class="services-1">
 							<span class="icon">
 								<i class="flaticon-flasks"></i>
@@ -659,10 +744,10 @@
 							</div>
 						</a>
 					</div> -->
-				</div>
-    	</div>
-  	</section>
-		
+			</div>
+		</div>
+	</section>
+
 	<section class="ftco-section" id="skills-section">
 		<div class="container">
 			<div class="row justify-content-center pb-5">
@@ -671,67 +756,96 @@
 					<h2 class="mb-4">Skills</h2>
 				</div>
 			</div>
-			
+
 			<div class="row mb-2">
 				<div class="col-md-3 d-flex align-items-center">
-					<div class="icon d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background: linear-gradient(135deg, #FFB8FF 0%, #8a2be2 100%); border-radius: 50%; color: white; font-size: 1rem; margin-right: 12px; flex-shrink: 0;">
+					<div class="icon d-flex align-items-center justify-content-center"
+						style="width: 40px; height: 40px; background: linear-gradient(135deg, #FFB8FF 0%, #8a2be2 100%); border-radius: 50%; color: white; font-size: 1rem; margin-right: 12px; flex-shrink: 0;">
 						<span class="icon-code"></span>
 					</div>
 					<h5 style="color: white; font-weight: 600; margin: 0; font-size: 1rem;">Programming Languages:</h5>
 				</div>
 				<div class="col-md-9 d-flex flex-wrap align-items-center">
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Python</span>
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">JavaScript</span>
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">C++</span>
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">R</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Python</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">JavaScript</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">C++</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">R</span>
 				</div>
 			</div>
 
 			<div class="row mb-2">
 				<div class="col-md-3 d-flex align-items-center">
-					<div class="icon d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background: linear-gradient(135deg, #FFB8FF 0%, #8a2be2 100%); border-radius: 50%; color: white; font-size: 1rem; margin-right: 12px; flex-shrink: 0;">
+					<div class="icon d-flex align-items-center justify-content-center"
+						style="width: 40px; height: 40px; background: linear-gradient(135deg, #FFB8FF 0%, #8a2be2 100%); border-radius: 50%; color: white; font-size: 1rem; margin-right: 12px; flex-shrink: 0;">
 						<span class="icon-globe"></span>
 					</div>
 					<h5 style="color: white; font-weight: 600; margin: 0; font-size: 1rem;">Web Development:</h5>
 				</div>
 				<div class="col-md-9 d-flex flex-wrap align-items-center">
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2; font-weight: 500; font-size: 0.85rem;">React</span>
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">RESTful APIs</span>
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">AG Grid</span>
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Streamlit</span>
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Dash</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">React</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">RESTful
+						APIs</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">AG
+						Grid</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Streamlit</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Dash</span>
 				</div>
 			</div>
 
 			<div class="row mb-2">
 				<div class="col-md-3 d-flex align-items-center">
-					<div class="icon d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background: linear-gradient(135deg, #FFB8FF 0%, #8a2be2 100%); border-radius: 50%; color: white; font-size: 1rem; margin-right: 12px; flex-shrink: 0;">
+					<div class="icon d-flex align-items-center justify-content-center"
+						style="width: 40px; height: 40px; background: linear-gradient(135deg, #FFB8FF 0%, #8a2be2 100%); border-radius: 50%; color: white; font-size: 1rem; margin-right: 12px; flex-shrink: 0;">
 						<span class="icon-bar-chart"></span>
 					</div>
 					<h5 style="color: white; font-weight: 600; margin: 0; font-size: 1rem;">Data Science:</h5>
 				</div>
 				<div class="col-md-9 d-flex flex-wrap align-items-center">
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Machine Learning</span>
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Data Mining</span>
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Large Language Models</span>
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Tableau</span>
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Microsoft Excel</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Machine
+						Learning</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Data
+						Mining</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Large
+						Language Models</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Tableau</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Microsoft
+						Excel</span>
 				</div>
 			</div>
 
 			<div class="row mb-2">
 				<div class="col-md-3 d-flex align-items-center">
-					<div class="icon d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background: linear-gradient(135deg, #FFB8FF 0%, #8a2be2 100%); border-radius: 50%; color: white; font-size: 1rem; margin-right: 12px; flex-shrink: 0;">
+					<div class="icon d-flex align-items-center justify-content-center"
+						style="width: 40px; height: 40px; background: linear-gradient(135deg, #FFB8FF 0%, #8a2be2 100%); border-radius: 50%; color: white; font-size: 1rem; margin-right: 12px; flex-shrink: 0;">
 						<span class="icon-database"></span>
 					</div>
 					<h5 style="color: white; font-weight: 600; margin: 0; font-size: 1rem;">Databases & Cloud:</h5>
 				</div>
 				<div class="col-md-9 d-flex flex-wrap align-items-center">
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">SQL</span>
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Neo4j</span>
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">q/kdb+</span>
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">AWS</span>
-					<span class="skill-item-inline" style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">MongoDB</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">SQL</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">Neo4j</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">q/kdb+</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">AWS</span>
+					<span class="skill-item-inline"
+						style="background: rgba(138, 43, 226, 0.1); color: #8a2be2; padding: 4px 10px; margin: 2px; border-radius: 15px; border: 1px solid rgba(138, 43, 226, 0.2); font-weight: 500; font-size: 0.85rem;">MongoDB</span>
 				</div>
 			</div>
 		</div>
@@ -743,51 +857,75 @@
 				<div class="col-md-12 heading-section text-center ftco-animate">
 					<h1 class="big big-2" style="color: rgba(255,255,255,0.1);">Achievements</h1>
 					<h2 class="mb-4" style="color: white;">Achievements </h2>
-					</div>
+				</div>
 			</div>
-			
+
 			<div class="row justify-content-center">
 				<div class="col-md-4 mb-4">
-					<div class="achievement-card ftco-animate" style="background: #000000; border-radius: 20px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(138, 43, 226, 0.3); transform: translateY(0); transition: all 0.3s ease; border: 2px solid #8a2be2;">
-						<div style="width: 100%; height: 200px; margin-bottom: 20px; border-radius: 10px; overflow: hidden;">
-							<img src="images/numerix-scholarship.jpeg" alt="Numerix Scholarship" style="width: 100%; height: 100%; object-fit: cover;">
+					<div class="achievement-card ftco-animate"
+						style="background: #000000; border-radius: 20px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(138, 43, 226, 0.3); transform: translateY(0); transition: all 0.3s ease; border: 2px solid #8a2be2;">
+						<div
+							style="width: 100%; height: 200px; margin-bottom: 20px; border-radius: 10px; overflow: hidden;">
+							<img src="images/numerix-scholarship.jpeg" alt="Numerix Scholarship"
+								style="width: 100%; height: 100%; object-fit: cover;">
 						</div>
-						<h3 style="color: white; font-weight: 700; margin-bottom: 15px; font-size: 1.3rem;"><a href="https://www.numerix.com/resources/blog/numerix-names-isha-patro-recipient-2025-women-finance-scholarship?utm_source=linkedin&utm_medium=social" target="_blank" style="color: white; text-decoration: none;">Numerix Women in Finance Scholarship</a></h3>
+						<h3 style="color: white; font-weight: 700; margin-bottom: 15px; font-size: 1.3rem;"><a
+								href="https://www.numerix.com/resources/blog/numerix-names-isha-patro-recipient-2025-women-finance-scholarship?utm_source=linkedin&utm_medium=social"
+								target="_blank" style="color: white; text-decoration: none;">Numerix Women in Finance
+								Scholarship</a></h3>
 						<h4 style="color: #8a2be2; font-weight: 600; margin-bottom: 10px;">2025 Recipient</h4>
-						<p style="color: #cccccc; margin-bottom: 20px; line-height: 1.6;">Awarded the prestigious Numerix Women in Finance Scholarship</p><br>
-						<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+						<p style="color: #cccccc; margin-bottom: 20px; line-height: 1.6;">Awarded the prestigious
+							Numerix Women in Finance Scholarship</p><br>
+						<div
+							style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
 							<span style="color: #8a2be2; font-size: 1.5rem; font-weight: 700;">$20,000</span>
 							<span style="color: #8a2be2; font-weight: 600;">2025</span>
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="col-md-4 mb-4">
-					<div class="achievement-card ftco-animate" style="background: #000000; border-radius: 20px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(138, 43, 226, 0.3); transform: translateY(0); transition: all 0.3s ease; border: 2px solid #8a2be2;">
-						<div style="width: 100%; height: 200px; margin-bottom: 20px; border-radius: 10px; overflow: hidden;">
-							<img src="images/cloudGen.jpeg" alt="Cloud Generator" style="width: 100%; height: 100%; object-fit: cover;">
+					<div class="achievement-card ftco-animate"
+						style="background: #000000; border-radius: 20px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(138, 43, 226, 0.3); transform: translateY(0); transition: all 0.3s ease; border: 2px solid #8a2be2;">
+						<div
+							style="width: 100%; height: 200px; margin-bottom: 20px; border-radius: 10px; overflow: hidden;">
+							<img src="images/cloudGen.jpeg" alt="Cloud Generator"
+								style="width: 100%; height: 100%; object-fit: cover;">
 						</div>
-						<h3 style="color: white; font-weight: 700; margin-bottom: 15px; font-size: 1.3rem;">Cloud Generator - CG0R</h3>
-						<h4 style="color: rgba(255,255,255,0.9); font-weight: 600; margin-bottom: 15px; font-size: 1.1rem;">Engineering Clinics Expo</h4>
+						<h3 style="color: white; font-weight: 700; margin-bottom: 15px; font-size: 1.3rem;">Cloud
+							Generator - CG0R</h3>
+						<h4
+							style="color: rgba(255,255,255,0.9); font-weight: 600; margin-bottom: 15px; font-size: 1.1rem;">
+							Engineering Clinics Expo</h4>
 						<h4 style="color: #8a2be2; font-weight: 600; margin-bottom: 10px;">1st Prize</h4>
-						<p style="color: #cccccc; margin-bottom: 20px; line-height: 1.6;">Designed an autonomous floating buoy system for oil spill cleanup and cloud formation acceleration</p>
-						<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+						<p style="color: #cccccc; margin-bottom: 20px; line-height: 1.6;">Designed an autonomous
+							floating buoy system for oil spill cleanup and cloud formation acceleration</p>
+						<div
+							style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
 							<span style="color: #8a2be2; font-size: 1.5rem; font-weight: 700;">$600</span>
 							<span style="color: #8a2be2; font-weight: 600;">2018</span>
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="col-md-4 mb-4">
-					<div class="achievement-card ftco-animate" style="background: #000000; border-radius: 20px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(138, 43, 226, 0.3); transform: translateY(0); transition: all 0.3s ease; border: 2px solid #8a2be2;">
-						<div style="width: 100%; height: 200px; margin-bottom: 20px; border-radius: 10px; overflow: hidden;">
-							<img src="images/robot.jpeg" alt="Autonomous Humanoid Robot" style="width: 100%; height: 100%; object-fit: cover;">
+					<div class="achievement-card ftco-animate"
+						style="background: #000000; border-radius: 20px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(138, 43, 226, 0.3); transform: translateY(0); transition: all 0.3s ease; border: 2px solid #8a2be2;">
+						<div
+							style="width: 100%; height: 200px; margin-bottom: 20px; border-radius: 10px; overflow: hidden;">
+							<img src="images/robot.jpeg" alt="Autonomous Humanoid Robot"
+								style="width: 100%; height: 100%; object-fit: cover;">
 						</div>
-						<h3 style="color: white; font-weight: 700; margin-bottom: 15px; font-size: 1.3rem;">Humanoid Robot</h3>
-						<h4 style="color: rgba(255,255,255,0.9); font-weight: 600; margin-bottom: 15px; font-size: 1.1rem;">Engineering Clinics Expo</h4>
+						<h3 style="color: white; font-weight: 700; margin-bottom: 15px; font-size: 1.3rem;">Humanoid
+							Robot</h3>
+						<h4
+							style="color: rgba(255,255,255,0.9); font-weight: 600; margin-bottom: 15px; font-size: 1.1rem;">
+							Engineering Clinics Expo</h4>
 						<h4 style="color: #8a2be2; font-weight: 600; margin-bottom: 10px;">1st Prize</h4>
-						<p style="color: #cccccc; margin-bottom: 20px; line-height: 1.6;">Created a biped robot powered by Amazon's Alexa with custom skills using Raspberry Pi and Arduino</p>
-						<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+						<p style="color: #cccccc; margin-bottom: 20px; line-height: 1.6;">Created a biped robot powered
+							by Amazon's Alexa with custom skills using Raspberry Pi and Arduino</p>
+						<div
+							style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
 							<span style="color: #8a2be2; font-size: 1.5rem; font-weight: 700;">$600</span>
 							<span style="color: #8a2be2; font-weight: 600;">2017</span>
 						</div>
@@ -796,345 +934,396 @@
 			</div>
 		</div>
 	</section>
- 
 
 
-    <section class="ftco-section ftco-project" id="projects-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-          </div>
-        </div>
-		<div class="row mb-4">
-			<div class="col-md-4">
-				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/spot-curve.png);">
-					<a href="https://ishapatro.github.io/Yield-Curve-Valuation/" class="overlay"></a>
-					<div class="text text-center p-4">
-						<a href="https://ishapatro.github.io/Yield-Curve-Valuation/">
-							<h3>Spot Curve Modeling</h3>
-							<p style="color: aliceblue;">Developed an arbitrage-free yield curve model using multi-objective optimization with monotonicity constraints for accuracy and smoothness.</p>
-						</a>
-					</div>
+
+	<section class="ftco-section ftco-project" id="projects-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Projects</h2>
 				</div>
 			</div>
-			
-			<div class="col-md-4">
-				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/mintedWealth.webp);">
-					<a href="https://mintedwealth.netlify.app/" class="overlay"></a>
-					<div class="text text-center p-4">
-						<a href="https://mintedwealth.netlify.app/">
-							<h3>Minted Wealth</h3>
-							<p style="color: #D3D3D3;">Real-time stock market data platform for informed financial decisions</p>
-						</a>
+			<div class="row mb-4">
+				<div class="col-md-6">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/barrier-options.png);">
+						<a href="https://github.com/IshaPatro/Pricing-Barrier-Options-Using-Monte-Carlo-Simulation"
+							class="overlay"></a>
+						<div class="text text-center p-4">
+							<a href="https://github.com/IshaPatro/Pricing-Barrier-Options-Using-Monte-Carlo-Simulation">
+								<h3>Monte Carlo Pricing of European Barrier Options</h3>
+								<p style="color: aliceblue;">A Monte Carlo framework for pricing path-dependent barrier
+									options with rigorous modeling of activation, extinction, and convergence behavior.
+								</p>
+							</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			
-			<div class="col-md-4">
-				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/riskdashboard.jpg);">
-					<a href="https://ishapatro-risk-dashboard-app-vgw6f6.streamlit.app/" class="overlay"></a>
-					<div class="text text-center p-4">
-						<a href="https://ishapatro-risk-dashboard-app-vgw6f6.streamlit.app/">
-							<h3>Risk Radar</h3>
-							<p style="color: aliceblue;">Risk Radar is a real-time stock dashboard using AI to assess market volatility, stock performance, and financial risks with key indicators like beta, VaR, and Sharpe Ratio.</p>
-						</a>
+
+				<div class="col-md-6">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/spot-curve.png);">
+						<a href="https://ishapatro.github.io/Yield-Curve-Valuation/" class="overlay"></a>
+						<div class="text text-center p-4">
+							<a href="https://ishapatro.github.io/Yield-Curve-Valuation/">
+								<h3>Spot Curve Modeling</h3>
+								<p style="color: aliceblue;">Developed an arbitrage-free yield curve model using
+									multi-objective optimization with monotonicity constraints for accuracy and
+									smoothness.</p>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/mintedWealth.jpg);">
+						<a href="https://mintedwealth.netlify.app/" class="overlay"></a>
+						<div class="text text-center p-4">
+							<a href="https://mintedwealth.netlify.app/">
+								<h3>Minted Wealth</h3>
+								<p style="color: #D3D3D3;">Real-time stock market data platform for informed financial
+									decisions</p>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/riskdashboard.jpg);">
+						<a href="https://ishapatro-risk-dashboard-app-vgw6f6.streamlit.app/" class="overlay"></a>
+						<div class="text text-center p-4">
+							<a href="https://ishapatro-risk-dashboard-app-vgw6f6.streamlit.app/">
+								<h3>Risk Radar</h3>
+								<p style="color: aliceblue;">Risk Radar is a real-time stock dashboard using AI to
+									assess market volatility, stock performance, and financial risks with key indicators
+									like beta, VaR, and Sharpe Ratio.</p>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/algo-trading.jpg);">
+						<a href="https://algo-trading-4p6d.onrender.com/" class="overlay"></a>
+						<div class="text text-center p-4">
+							<a href="https://algo-trading-4p6d.onrender.com/">
+								<h3>Trade Pulse</h3>
+								<p style="color: aliceblue;">TradePulse is an algorithmic trading platform that
+									implements SMA-based trading strategies for the EUR/USD forex pair on OANDA. It
+									features a real-time dashboard for monitoring trades, visualizing price movements
+									with technical indicators, and includes machine learning-based price prediction
+									capabilities to assist with trading decisions.</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/tariff.png);">
+						<a href="https://ishapatro-echoesofliberationday-app-sohfck.streamlit.app/" class="overlay"></a>
+						<div class="text text-center p-4">
+							<a href="https://ishapatro-echoesofliberationday-app-sohfck.streamlit.app/">
+								<h3>Echoes of Liberation Day</h3>
+								<p style="color: aliceblue;">An AI-powered project that generates dynamic financial
+									reports by analyzing real-time stock market data and news</p>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-md-8">
-				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/algo-trading.jpg);">
-					<a href="https://algo-trading-4p6d.onrender.com/" class="overlay"></a>
-					<div class="text text-center p-4">
-						<a href="https://algo-trading-4p6d.onrender.com/">
-							<h3>Trade Pulse</h3>
-							<p style="color: aliceblue;">TradePulse is an algorithmic trading platform that implements SMA-based trading strategies for the EUR/USD forex pair on OANDA. It features a real-time dashboard for monitoring trades, visualizing price movements with technical indicators, and includes machine learning-based price prediction capabilities to assist with trading decisions.</p>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/global-trade-dominance.gif);">
+						<a href="https://ishapatro-global-trade-dominance-app-07fpgj.streamlit.app/"
+							class="overlay"></a>
+						<div class="text text-center p-4">
+							<a href="https://ishapatro-echoesofliberationday-app-sohfck.streamlit.app/">
+								<h3>Global Trade Dominance</h3>
+								<p style="color: aliceblue;">Built an interactive data project visualizing global trade
+									shifts from 2000–2024, showing China’s rise as the top trade partner for 149
+									countries.</p>
+							</a>
+						</div>
 						</a>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/tariff.png);">
-					<a href="https://ishapatro-echoesofliberationday-app-sohfck.streamlit.app/" class="overlay"></a>
-					<div class="text text-center p-4">
-						<a href="https://ishapatro-echoesofliberationday-app-sohfck.streamlit.app/">
-							<h3>Echoes of Liberation Day</h3>
-							<p style="color: aliceblue;">An AI-powered project that generates dynamic financial reports by analyzing real-time stock market data and news</p>
-						</a>
+				<div class="col-md-8">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/news-flashback.jpg);">
+						<a href="https://ishapatro-newsflashback-app-8oypph.streamlit.app/" class="overlay"></a>
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<a href="https://ishapatro-newsflashback-app-8oypph.streamlit.app/">
+								<h3>New Flashback</h3>
+								<p style="color: aliceblue;">Applied NLP techniques to categorize and analyze financial
+									news. Used knowledge graphs and LLMs to uncover historical parallels and generate
+									comparative insights from unstructured market data.</p>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-md-4">
-				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/global-trade-dominance.gif);">
-					<a href="https://ishapatro-global-trade-dominance-app-07fpgj.streamlit.app/" class="overlay"></a>	
-					<div class="text text-center p-4">
-						<a href="https://ishapatro-echoesofliberationday-app-sohfck.streamlit.app/">
-							<h3>Global Trade Dominance</h3>
-							<p style="color: aliceblue;">Built an interactive data project visualizing global trade shifts from 2000–2024, showing China’s rise as the top trade partner for 149 countries.</p>
-						</a>
-					</div>
-				</a>
-				</div>
-			</div>
-			<div class="col-md-8">
-				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/news-flashback.jpg);">
-					<a href="https://ishapatro-newsflashback-app-8oypph.streamlit.app/" class="overlay"></a>
-					<div class="overlay"></div>
-					<div class="text text-center p-4">
-						<a href="https://ishapatro-newsflashback-app-8oypph.streamlit.app/">
-							<h3>New Flashback</h3>
-							<p style="color: aliceblue;">Applied NLP techniques to categorize and analyze financial news. Used knowledge graphs and LLMs to uncover historical parallels and generate comparative insights from unstructured market data.</p>
-						</a>
-					</div>
-				</div>  			
-			</div>
-    	</div>
-    </section>
+	</section>
 
 	<section class="ftco-section ftco-project" id="publications-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Research & Open Source Contribution</h1>
-            <h2 class="mb-4">Research & Open Source Contribution</h2>
-          </div>
-        </div>
-		<br><br><br><br>
-		<div class="col-md-12">
-			<div class="project video ftco-animate d-flex justify-content-center align-items-center">
-				<div class="row">
-					<a href="https://ijrar.org/viewfull.php?&p_id=IJRAR24C2439">
-						<video autoplay muted loop class="w-100">
-							<source src="images/obsidianDemo.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						</video>
-					</a>
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Research & Open Source Contribution</h1>
+					<h2 class="mb-4">Research & Open Source Contribution</h2>
 				</div>
-				<div class="row">
-					<a href="https://ijrar.org/viewfull.php?&p_id=IJRAR24C2439"></a>
-					<h3><a href="https://ijrar.org/viewfull.php?&p_id=IJRAR24C2439">Knowledge Graphs from Investopedia</a></h3>
-					<p style="color: aliceblue;">Financial knowledge graph by extracting, processing, and visualizing financial terms and definitions from Investopedia, integrating it into Obsidian for interactive exploration.</p>
+			</div>
+			<br><br><br><br>
+			<div class="col-md-12">
+				<div class="project video ftco-animate d-flex justify-content-center align-items-center">
+					<div class="row">
+						<a href="https://ijrar.org/viewfull.php?&p_id=IJRAR24C2439">
+							<video autoplay muted loop class="w-100">
+								<source src="images/obsidianDemo.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</a>
+					</div>
+					<div class="row">
+						<a href="https://ijrar.org/viewfull.php?&p_id=IJRAR24C2439"></a>
+						<h3><a href="https://ijrar.org/viewfull.php?&p_id=IJRAR24C2439">Knowledge Graphs from
+								Investopedia</a></h3>
+						<p style="color: aliceblue;">Financial knowledge graph by extracting, processing, and
+							visualizing financial terms and definitions from Investopedia, integrating it into Obsidian
+							for interactive exploration.</p>
+					</div>
+				</div>
+			</div>
+
+			<br><br>
+
+			<div class="col-md-12">
+				<a href="https://pypi.org/project/qutePandas/" target="_blank" style="text-decoration: none;">
+					<div class="project img ftco-animate d-flex justify-content-start align-items-center" style="background-image: url(images/qutePandas.png);
+			       height: 350px;
+			       background-size: contain;
+			       background-repeat: no-repeat;
+			       background-position: right center;
+			       cursor: pointer;">
+
+						<div class="overlay" style="background: linear-gradient(90deg,
+					rgba(0,0,0,0.5) 0%,
+					rgba(0,0,0,0.3) 50%,
+					rgba(0,0,0,0.1) 100%);">
+						</div>
+
+						<div class="text text-right" style="max-width: 55%;
+				       margin-left: 15%;
+				       z-index: 10;
+				       position: relative;
+				       opacity: 1 !important;
+				       visibility: visible !important;">
+
+							<h3 style="font-size: 1.8rem; margin-bottom: 15px; color: #8a2be2 !important;">
+								qutePandas
+							</h3>
+
+							<p style="color: aliceblue; font-size: 1rem; line-height: 1.5;">
+								Published a high-performance Pandas-compatible execution layer backed by kdb+/q,
+								achieving order-of-magnitude speedups(10×–100×+) on large-scale analytical workloads
+								while preserving Python-first research ergonomics.
+							</p>
+
+						</div>
+					</div>
+				</a>
+			</div>
+
+	</section>
+
+
+	<section class="ftco-section" id="blog-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Blogs</h1>
+					<h2 class="mb-4">Blogs</h2>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://medium.com/@isha.patro.215/unlocking-the-power-of-obsidian-vaults-with-python-a-simple-guide-to-supercharge-your-note-taking-e8c1d3011635"
+							class="block-20" style="background-image: url('images/obsidian.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
+								<p class="mb-0">
+									<span class="mr-2">June 28, 2024</span>
+								</p>
+							</div>
+							<h3 class="heading"><a
+									href="https://medium.com/@isha.patro.215/unlocking-the-power-of-obsidian-vaults-with-python-a-simple-guide-to-supercharge-your-note-taking-e8c1d3011635">Unlocking
+									the Power of Obsidian Vaults with Python</a></h3>
+							<p>A Simple Guide to Supercharge Your Note-Taking!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://medium.com/@isha.patro.215/breaking-down-the-32nd-price-format-339bc0a7ccc8"
+							class="block-20"
+							style="background-image: url('images/price-format.webp'); border-radius: 70px; ">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
+								<p class="mb-0">
+									<span class="mr-2">Sep 10, 2024</span>
+								</p>
+							</div>
+							<h3 class="heading"><a
+									href="https://medium.com/@isha.patro.215/breaking-down-the-32nd-price-format-339bc0a7ccc8">Breaking
+									Down the 32nd Bond Price Format</a></h3>
+							<p>Explained the complexities of the 32nd bond price format</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="https://medium.com/@isha.patro.215/fed-slashes-rates-what-a-half-point-cut-means-for-you-and-your-wallet-88f493d3208b"
+							class="block-20"
+							style="background-image: url('images/rate-cut.jpg');  border-radius: 70px; ">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
+								<p class="mb-0">
+									<span class="mr-2">Sep 18, 2024</span>
+								</p>
+							</div>
+							<h3 class="heading"><a
+									href="https://medium.com/@isha.patro.215/fed-slashes-rates-what-a-half-point-cut-means-for-you-and-your-wallet-88f493d3208b">Fed
+									Slashes Rates</a></h3>
+							<p>What a Half-Point Cut Means for You and Your Wallet</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="https://medium.com/@isha.patro.215/the-ultimate-guide-to-building-animated-globe-visualizations-for-your-data-projects-4b64a71477be"
+							class="block-20"
+							style="background-image: url('images/spinning-globe.gif');  border-radius: 70px; ">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
+								<p class="mb-0">
+									<span class="mr-2">Apr 14, 2025</span>
+								</p>
+							</div>
+							<h3 class="heading"><a
+									href="https://medium.com/@isha.patro.215/the-ultimate-guide-to-building-animated-globe-visualizations-for-your-data-projects-4b64a71477be">The
+									Ultimate Guide to Building Animated Globe Visualizations for Your Data Projects</a>
+							</h3>
+							<p>This blog briefly explains how I built the rotating globe visualization</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		
-		<br><br>
-		
-		<div class="col-md-12">
-			<div class="project img ftco-animate d-flex justify-content-start align-items-center" style="background-image: url(images/qutePandas.png); height: 350px; background-size: contain; background-repeat: no-repeat; background-position: right center;">
-				<div class="overlay" style="background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.1) 100%);"></div>
-				<div class="text text-right" style="max-width: 55%; margin-left: 15%; z-index: 10; position: relative; opacity: 1 !important; visibility: visible !important;">
-					<h3 style="font-size: 1.8rem; margin-bottom: 15px; color: #8a2be2 !important;">qutePandas</h3>
-					<p style="color: aliceblue; font-size: 1rem; line-height: 1.5;">An open-source Python library that provides a cute and user-friendly interface for pandas DataFrames. Features include enhanced data visualization, simplified data manipulation methods, and adorable panda-themed styling that makes data analysis more enjoyable and accessible for beginners.</p>
+	</section>
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact</h2>
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p>Shree Villa, Indiranagar, Berhampur, Odisha, India</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel://1234567920">+91 7809 3562 99</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<a href="mailto:ishapatro21@gmail.com">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="icon-paper-plane"></span>
+							</div>
+						</a>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto:ishapatro21@gmail.com">ishapatro21@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<a href="https://github.com/IshaPatro">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="icon-github"></span>
+							</div>
+						</a>
+						<h3 class="mb-4">Github</h3>
+						<p><a href="https://github.com/IshaPatro">IshaPatro</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<a href="https://www.linkedin.com/in/isha-patro-128466152/">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="icon-linkedin"></span>
+							</div>
+						</a>
+						<h3 class="mb-4">LinkedIn</h3>
+						<p><a href="https://www.linkedin.com/in/isha-patro-128466152/">Isha Patro</a></p>
+					</div>
 				</div>
 			</div>
 		</div>
-    </section>
+		</div>
+	</section>
 
 
-    <section class="ftco-section" id="blog-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Blogs</h1>
-            <h2 class="mb-4">Blogs</h2>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://medium.com/@isha.patro.215/unlocking-the-power-of-obsidian-vaults-with-python-a-simple-guide-to-supercharge-your-note-taking-e8c1d3011635" class="block-20" style="background-image: url('images/obsidian.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">June 28, 2024</span>
-	                </p>
-                </div>
-                <h3 class="heading"><a href="https://medium.com/@isha.patro.215/unlocking-the-power-of-obsidian-vaults-with-python-a-simple-guide-to-supercharge-your-note-taking-e8c1d3011635">Unlocking the Power of Obsidian Vaults with Python</a></h3>
-                <p>A Simple Guide to Supercharge Your Note-Taking!</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://medium.com/@isha.patro.215/breaking-down-the-32nd-price-format-339bc0a7ccc8" class="block-20" style="background-image: url('images/price-format.webp'); border-radius: 70px; ">
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">Sep 10, 2024</span>
-	                </p>
-                </div>
-                <h3 class="heading"><a href="https://medium.com/@isha.patro.215/breaking-down-the-32nd-price-format-339bc0a7ccc8">Breaking Down the 32nd Bond Price Format</a></h3>
-                <p>Explained the complexities of the 32nd bond price format</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://medium.com/@isha.patro.215/fed-slashes-rates-what-a-half-point-cut-means-for-you-and-your-wallet-88f493d3208b" class="block-20" style="background-image: url('images/rate-cut.jpg');  border-radius: 70px; ">
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">Sep 18, 2024</span>
-	                </p>
-                </div>
-                <h3 class="heading"><a href="https://medium.com/@isha.patro.215/fed-slashes-rates-what-a-half-point-cut-means-for-you-and-your-wallet-88f493d3208b">Fed Slashes Rates</a></h3>
-                <p>What a Half-Point Cut Means for You and Your Wallet</p>
-              </div>
-            </div>
-          </div> 
-		  <div class="col-md-4 d-flex ftco-animate">
-			<div class="blog-entry">
-			<a href="https://medium.com/@isha.patro.215/the-ultimate-guide-to-building-animated-globe-visualizations-for-your-data-projects-4b64a71477be" class="block-20" style="background-image: url('images/spinning-globe.gif');  border-radius: 70px; ">
-			</a>
-			<div class="text mt-3 float-right d-block">
-				<div class="d-flex align-items-center mb-3 meta">
-				  <p class="mb-0">
-					  <span class="mr-2">Apr 14, 2025</span>
-				  </p>
-			  </div>
-			  <h3 class="heading"><a href="https://medium.com/@isha.patro.215/the-ultimate-guide-to-building-animated-globe-visualizations-for-your-data-projects-4b64a71477be">The Ultimate Guide to Building Animated Globe Visualizations for Your Data Projects</a></h3>
-			  <p>This blog briefly explains how I built the rotating globe visualization</p>
-			</div>
-		  </div>
-		</div> 
-        </div>
-      </div>
-    </section>
 
-    <!-- <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-    	<div class="container">
-				<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="100">0</strong>
-                <span>Awards</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="1200">0</strong>
-                <span>Complete Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="1200">0</strong>
-                <span>Happy Customers</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact</h2>
-          </div>
-        </div>
-
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Shree Villa, Indiranagar, Berhampur, Odisha, India</p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://1234567920">+91 7809 3562 99</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-				<a href="mailto:ishapatro21@gmail.com">
-					<div class="icon d-flex align-items-center justify-content-center">
-						<span class="icon-paper-plane"></span>
-					</div>
-				</a>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:ishapatro21@gmail.com">ishapatro21@gmail.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-				<a href="https://github.com/IshaPatro">
-					<div class="icon d-flex align-items-center justify-content-center">
-						<span class="icon-github"></span>
-					</div>
-				</a>
-          		<h3 class="mb-4">Github</h3>
-	            <p><a href="https://github.com/IshaPatro">IshaPatro</a></p>
-	        </div>
-          </div>
-          <div class="col-md-6 col-lg d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-				<a href="https://www.linkedin.com/in/isha-patro-128466152/">
-					<div class="icon d-flex align-items-center justify-content-center">
-						<span class="icon-linkedin"></span>
-					</div>
-				</a>
-          		<h3 class="mb-4">LinkedIn</h3>
-	            <p><a href="https://www.linkedin.com/in/isha-patro-128466152/">Isha Patro</a></p>
-	        </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
-    
-  
-
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
 
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+
 </html>
