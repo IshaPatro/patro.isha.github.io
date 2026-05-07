@@ -10143,7 +10143,7 @@ textarea.form-control {
   background: rgba(138,43,226,0.15);
   padding: 3px 10px;
   border-radius: 20px;
-  width: auto;
+  width: fit-content;
 }
 .proj-title {
   font-size: 1.05rem;
