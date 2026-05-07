@@ -9199,6 +9199,36 @@ textarea.form-control {
       -webkit-text-stroke: 2px #8f00ff;
       -moz-text-fill-color: transparent;
     }
+  .typewriter-line {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 28px;
+      line-height: 1.3;
+      font-weight: 500;
+      color: #ffffff !important;
+      letter-spacing: 0.5px;
+      margin-bottom: 28px;
+      min-height: 1.5em;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+    }
+    @media (max-width: 767.98px) {
+      .typewriter-line { font-size: 22px; }
+    }
+    .typewriter-line .js-typewriter {
+      white-space: pre;
+      color: #ffffff;
+    }
+    .typewriter-cursor {
+      display: inline-block;
+      margin-left: 3px;
+      color: #ffffff;
+      font-weight: 300;
+      transform: translateY(-2px);
+      animation: typewriter-blink 1s steps(1) infinite;
+    }
+  @keyframes typewriter-blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
   .name-solid{
       left: 50%;
       top: 50%;
