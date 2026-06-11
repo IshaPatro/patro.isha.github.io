@@ -1,0 +1,415 @@
+{
+  "meta": {
+    "name": "Isha Patro",
+    "title": "Isha Patro",
+    "description": "Isha Patro — Financial Engineering graduate student at NYU, former SDE at J.P. Morgan. Quantitative research, machine learning, and software engineering.",
+    "email": "ishapatro21@gmail.com",
+    "phone": "+1 347 241 6603",
+    "phoneHref": "tel:+13472416603",
+    "location": "Brooklyn, NY",
+    "portrait": "images/portfolio-image-2.png",
+    "resume": "resume.pdf",
+    "github": "https://github.com/IshaPatro",
+    "linkedin": "https://www.linkedin.com/in/isha-patro-128466152/"
+  },
+
+  "about": {
+    "title": "About me",
+    "intro": "Hey, I'm Isha. I build models & systems for markets. Sometimes for the desks & teams I work with, sometimes for my own research.",
+    "introSub": "Currently pursuing an MS in Financial Engineering at NYU Tandon, previously a Software Engineer II at J.P. Morgan working on fixed-income trading systems.",
+    "facts": [
+      {
+        "label": "Experience",
+        "value": "4+ years shipping software & models at J.P. Morgan and Amazon."
+      },
+      {
+        "label": "Off hours",
+        "value": "Painting, digital art, classical & tribal dance, candle making, and leading DIY builds. Former school leader & NCC cadet."
+      },
+      {
+        "label": "Location",
+        "value": "Brooklyn, NY 11213"
+      },
+      {
+        "label": "Phone",
+        "value": "+1 347 241 6603",
+        "href": "tel:+13472416603"
+      }
+    ],
+    "skills": [
+      {
+        "label": "Programming languages",
+        "items": ["Python", "JavaScript", "C++", "R", "VBA"]
+      },
+      {
+        "label": "Quantitative finance",
+        "items": [
+          "Alpha Mining",
+          "Financial Modeling",
+          "Risk Management",
+          "Fixed Income Analytics",
+          "Time Series Forecasting"
+        ]
+      },
+      {
+        "label": "Data science",
+        "items": [
+          "Statistical Modeling",
+          "Machine Learning",
+          "Deep Learning",
+          "LLMs",
+          "RAG",
+          "AI Agents",
+          "Causal Inference"
+        ]
+      },
+      {
+        "label": "Databases & cloud",
+        "items": [
+          "SQL",
+          "Neo4j",
+          "q/kdb+",
+          "AWS",
+          "MongoDB",
+          "Microsoft Excel",
+          "Bloomberg Terminal"
+        ]
+      },
+      {
+        "label": "Web development",
+        "items": ["React", "RESTful APIs", "AG Grid", "Streamlit", "Dash"]
+      }
+    ]
+  },
+
+  "career": {
+    "title": "Career journey",
+    "axis": {
+      "startYear": 2027,
+      "endYear": 2015,
+      "topStart": 81,
+      "step": 88
+    },
+    "items": [
+      {
+        "top": 53,
+        "height": 152,
+        "edu": true,
+        "role": "MS, Financial Engineering",
+        "org": "NYU Tandon",
+        "dates": "Aug 25 — May 27 (exp.)",
+        "desc": "GPA 3.6 / 4.0 · Brooklyn, NY. 2025 Numerix Women in Finance scholar, focused on quant research & ML for markets."
+      },
+      {
+        "top": 217,
+        "height": 148,
+        "role": "Software Engineer II",
+        "org": "J.P. Morgan Chase",
+        "dates": "Jan 24 — Aug 25",
+        "desc": "Epic Owner of Trade Activity Monitoring — 50% latency reduction. Architected Mortgage Matrix modernization supporting $5B+ annual volume."
+      },
+      {
+        "top": 377,
+        "height": 188,
+        "size": "big",
+        "role": "Software Engineer I",
+        "org": "J.P. Morgan Chase",
+        "dates": "Aug 21 — Jan 24",
+        "desc": "Designed and implemented the Trade Reporting and Compliance Engine (TRACE), boosting data processing efficiency by 30% and streamlining regulatory reporting workflows."
+      },
+      {
+        "top": 577,
+        "height": 132,
+        "lane": "l",
+        "role": "Software Intern",
+        "org": "J.P. Morgan Chase",
+        "dates": "Jan — Jul 21",
+        "desc": "JIRA bulk-ticket app, −70% handling time."
+      },
+      {
+        "top": 577,
+        "height": 300,
+        "lane": "r",
+        "edu": true,
+        "size": "tall",
+        "role": "B.Tech, Computer Science",
+        "org": "VIT-AP",
+        "dates": "2017 — 2021",
+        "desc": "156 credits, CGPA 8.8/10. Led the university DIY club and built award-winning robots at Engineering Clinics."
+      },
+      {
+        "top": 723,
+        "height": 132,
+        "lane": "l",
+        "role": "ACMS Intern",
+        "org": "Amazon",
+        "dates": "May — Jun 20",
+        "desc": "Appointment Scheduler website, Chime integration."
+      },
+      {
+        "top": 869,
+        "height": 132,
+        "lane": "l",
+        "role": "Data Analyst Intern",
+        "org": "Octathorpe",
+        "dates": "Apr — Jul 19",
+        "desc": "+15% engagement, +6% revenue from analytics."
+      },
+      {
+        "top": 931,
+        "height": 172,
+        "lane": "r",
+        "edu": true,
+        "size": "big",
+        "role": "Senior Secondary",
+        "org": "Khalikote University",
+        "dates": "2015 — 2017",
+        "desc": "Meritorious student award — Govt. of Odisha laptop award (75%, CHSE Science)."
+      },
+      {
+        "top": 1015,
+        "height": 132,
+        "lane": "l",
+        "role": "Data Eng. Intern",
+        "org": "Collpoll",
+        "dates": "Apr — May 18",
+        "desc": "+10% feature adoption, +18% active users."
+      }
+    ],
+    "markers": [
+      {
+        "top": 1171,
+        "text": "Graduated — D.A.V. Public School · CBSE, CGPA 9.6"
+      }
+    ]
+  },
+
+  "highlightedWork": {
+    "title": "Highlighted work",
+    "items": [
+      {
+        "name": "Implied Prepayment Surfaces via PINNs in Agency MBS Markets",
+        "media": {
+          "type": "image",
+          "src": "images/mbs-research.png",
+          "alt": "Implied prepayment surfaces research figures"
+        },
+        "badge": {
+          "text": "Under review · J. Comp. Finance",
+          "style": "review"
+        },
+        "desc": "PINN-based inverse modeling to estimate market-implied CPR from TBA prices under the Hull–White PDE — +15% incremental return in backtests."
+      },
+      {
+        "name": "qutePandas",
+        "url": "https://pypi.org/project/qutePandas/",
+        "media": {
+          "type": "image",
+          "src": "images/qutePandas.png",
+          "alt": "qutePandas logo"
+        },
+        "badge": { "text": "Open source · PyPI", "style": "pub" },
+        "desc": "Pandas-compatible execution layer backed by kdb+/q — 10×–100×+ speedups on large analytical workloads."
+      },
+      {
+        "name": "DREAM-α — Robust Alpha Mining under MRM Constraints",
+        "media": {
+          "type": "image",
+          "src": "images/dream-alpha.png",
+          "alt": "DREAM-alpha framework diagram"
+        },
+        "badge": { "text": "In progress", "style": "" },
+        "desc": "RL alpha-mining framework with a novel DeflatedUCB algorithm penalizing multiple-testing bias; combinatorial purged CV for regime-robust, SR 26-2 compliant portfolios."
+      },
+      {
+        "name": "GSHA — Multi-Modal GNN for Commodity Futures",
+        "media": {
+          "type": "image",
+          "src": "images/gsha.png",
+          "alt": "GSHA architecture diagram"
+        },
+        "badge": { "text": "In progress", "style": "" },
+        "desc": "Graph-Spectral Hyperbolic Attention: GNNs + spectral convolution + hyperbolic attention to model financial news hierarchies for futures prediction."
+      },
+      {
+        "name": "Knowledge Graphs from Investopedia",
+        "url": "https://ijrar.org/viewfull.php?&p_id=IJRAR24C2439",
+        "media": {
+          "type": "video",
+          "src": "images/obsidianDemo.mp4",
+          "alt": "Knowledge graph demo in Obsidian"
+        },
+        "badge": { "text": "Published · IJRAR", "style": "pub" },
+        "desc": "Financial knowledge graph extracted from Investopedia, integrated into Obsidian for interactive exploration."
+      }
+    ]
+  },
+
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "name": "VORTEX",
+        "date": "May 26",
+        "url": "https://ishapatro-vortex-app-xfs1ye.streamlit.app/",
+        "domain": "streamlit.app",
+        "color": "#ff5e62",
+        "icon": "spiral",
+        "desc": "Multi-agent AI risk analytics — LangGraph, LangChain & LlamaIndex orchestrating regime-aware VaR, stress testing & market-risk interpretation."
+      },
+      {
+        "name": "CryptoHedgeLab",
+        "date": "Mar 26",
+        "url": "https://github.com/IshaPatro/CryptoHedgeLab#-cryptohedgelab",
+        "domain": "github.com",
+        "color": "#f7931a",
+        "icon": "candles",
+        "desc": "Crypto trading & backtesting in C++ with kdb+/q — microsecond-level execution, real-time hedging, tick-level storage."
+      },
+      {
+        "name": "Cross-Currency Crypto Dynamics",
+        "date": "Jan 26",
+        "url": "https://ishapatro-iaqf-app-iaaexz.streamlit.app/",
+        "domain": "streamlit.app",
+        "color": "#5ad48a",
+        "icon": "swap",
+        "desc": "Cross-currency basis & liquidity fragmentation in crypto using high-frequency data — stablecoin pricing inefficiencies under the GENIUS Act."
+      },
+      {
+        "name": "Barrier Option Pricing",
+        "date": "Oct 25",
+        "url": "https://github.com/IshaPatro/Pricing-Barrier-Options-Using-Monte-Carlo-Simulation",
+        "domain": "github.com",
+        "color": "#a78bfa",
+        "icon": "barrier",
+        "desc": "Monte Carlo engine under risk-neutral GBM for path-dependent barrier options with sensitivity analysis."
+      },
+      {
+        "name": "NASDAQ Prediction System",
+        "date": "Aug 25",
+        "url": "https://ishapatro-bootca-projectnasdaq-time-series-predictionapp-nfddda.streamlit.app/",
+        "domain": "streamlit.app",
+        "color": "#4f9cf9",
+        "icon": "trend",
+        "desc": "LSTM system for high-frequency NASDAQ prediction — +26.7% forecasting accuracy via hyperparameter optimization."
+      },
+      {
+        "name": "Risk Stress-Testing Dashboard",
+        "date": "May 25",
+        "url": "https://ishapatro-risk-dashboard-app-vgw6f6.streamlit.app/",
+        "domain": "streamlit.app",
+        "color": "#ffb86b",
+        "icon": "gauge",
+        "desc": "Quant risk terminal — portfolio exposure, market stress simulation & downside risk with Monte Carlo scenarios."
+      },
+      {
+        "name": "Minted Wealth",
+        "date": "Mar 25",
+        "url": "https://mintedwealth.netlify.app/",
+        "domain": "netlify.app",
+        "color": "#34d399",
+        "icon": "wallet",
+        "desc": "Financial intelligence dashboard — live market data, portfolio analytics & net-worth insights."
+      }
+    ]
+  },
+
+  "achievements": {
+    "title": "Achievements & certs",
+    "items": [
+      {
+        "name": "Numerix Women in Finance Scholarship",
+        "url": "https://www.numerix.com/resources/blog/numerix-names-isha-patro-recipient-2025-women-finance-scholarship?utm_source=linkedin&utm_medium=social",
+        "amount": "$20,000",
+        "year": "2025",
+        "desc": "2025 recipient of the prestigious Numerix Women in Finance Scholarship."
+      },
+      {
+        "name": "Cloud Generator — CG0R",
+        "amount": "$600",
+        "year": "2018",
+        "desc": "1st Prize, Engineering Clinics Expo — autonomous floating buoy system for oil spill cleanup and cloud formation acceleration."
+      },
+      {
+        "name": "Humanoid Robot",
+        "amount": "$600",
+        "year": "2017",
+        "desc": "1st Prize, Engineering Clinics Expo — biped robot powered by Alexa with custom skills, built on Raspberry Pi and Arduino."
+      }
+    ],
+    "certificationsTitle": "Certifications",
+    "certifications": [
+      {
+        "name": "Financial Engineering & Risk Management",
+        "issuer": "Columbia University",
+        "image": "images/columbia.png"
+      },
+      {
+        "name": "Bloomberg Market Concepts",
+        "issuer": "Bloomberg for Education",
+        "image": "images/bloomberg-certificate.png"
+      },
+      {
+        "name": "Machine Learning",
+        "issuer": "Stanford University",
+        "image": "images/machine-learning.jpg"
+      },
+      {
+        "name": "Mortgage-Backed Securities",
+        "issuer": "Professional certificate",
+        "image": "images/mbs.jpg"
+      },
+      {
+        "name": "AWS Cloud Practitioner",
+        "issuer": "Amazon Web Services",
+        "image": "images/aws.png"
+      }
+    ]
+  },
+
+  "blogs": {
+    "title": "Blogs",
+    "items": [
+      {
+        "date": "Feb 2026",
+        "datetime": "2026-02-24",
+        "name": "Geometry of Intelligence",
+        "url": "https://geometry-of-intelligence.netlify.app/",
+        "domain": "geometry-of-intelligence.netlify.app",
+        "desc": "Series decoding the math powering machine learning and deep learning."
+      },
+      {
+        "date": "Jan 2026",
+        "datetime": "2026-01-29",
+        "name": "A Better Way to Resample Macroeconomic Time Series",
+        "url": "https://medium.com/@isha.patro.215/a-better-way-to-resample-macroeconomic-time-series-decay-weighted-forward-fill-4e423a5546c1",
+        "domain": "medium.com",
+        "desc": "A time-aware, decay-weighted forward-fill method for macro series."
+      },
+      {
+        "date": "Apr 2025",
+        "datetime": "2025-04-14",
+        "name": "Building Animated Globe Visualizations",
+        "url": "https://medium.com/@isha.patro.215/the-ultimate-guide-to-building-animated-globe-visualizations-for-your-data-projects-4b64a71477be",
+        "domain": "medium.com",
+        "desc": "How I built the rotating globe visualization, step by step."
+      },
+      {
+        "date": "Sep 2024",
+        "datetime": "2024-09-10",
+        "name": "Breaking Down the 32nd Bond Price Format",
+        "url": "https://medium.com/@isha.patro.215/breaking-down-the-32nd-price-format-339bc0a7ccc8",
+        "domain": "medium.com",
+        "desc": "Demystifying the complexities of the 32nd bond price format."
+      },
+      {
+        "date": "Jun 2024",
+        "datetime": "2024-06-28",
+        "name": "Unlocking the Power of Obsidian Vaults with Python",
+        "url": "https://medium.com/@isha.patro.215/unlocking-the-power-of-obsidian-vaults-with-python-a-simple-guide-to-supercharge-your-note-taking-e8c1d3011635",
+        "domain": "medium.com",
+        "desc": "A simple guide to supercharge your note-taking."
+      }
+    ]
+  }
+}
