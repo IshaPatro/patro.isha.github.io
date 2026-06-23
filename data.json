@@ -127,15 +127,15 @@
         "desc": "JIRA bulk-ticket app, −70% handling time."
       },
       {
-        "top": 577,
-        "height": 300,
+        "top": 609,
+        "height": 348,
         "lane": "r",
         "edu": true,
         "size": "tall",
         "role": "B.Tech, Computer Science",
         "org": "VIT-AP",
         "dates": "2017 — 2021",
-        "desc": "156 credits, CGPA 8.8/10. Led the university DIY club and built award-winning robots at Engineering Clinics."
+        "desc": "156 credits, CGPA 8.8/10. Led the university DIY club and won 1st prize twice at the Engineering Clinics Expo — for an Alexa-powered humanoid robot and an autonomous oil-spill cleanup buoy (CG0R)."
       },
       {
         "top": 723,
@@ -156,15 +156,15 @@
         "desc": "+15% engagement, +6% revenue from analytics."
       },
       {
-        "top": 931,
-        "height": 172,
+        "top": 961,
+        "height": 204,
         "lane": "r",
         "edu": true,
         "size": "big",
         "role": "Senior Secondary",
         "org": "Khalikote University",
         "dates": "2015 — 2017",
-        "desc": "Meritorious student award — Govt. of Odisha laptop award (75%, CHSE Science)."
+        "desc": "Govt. of Odisha Meritorious Student laptop award — 75%, CHSE Science."
       },
       {
         "top": 1015,
@@ -178,7 +178,7 @@
     ],
     "markers": [
       {
-        "top": 1171,
+        "top": 1189,
         "text": "Graduated — D.A.V. Public School · CBSE, CGPA 9.6"
       }
     ]
@@ -251,8 +251,8 @@
       {
         "name": "VORTEX",
         "date": "May 26",
-        "url": "https://ishapatro-vortex-app-xfs1ye.streamlit.app/",
-        "domain": "streamlit.app",
+        "url": "https://ishapatro.github.io/VORTEX/index.html",
+        "domain": "github.com",
         "color": "#ff5e62",
         "icon": "spiral",
         "desc": "Multi-agent AI risk analytics — LangGraph, LangChain & LlamaIndex orchestrating regime-aware VaR, stress testing & market-risk interpretation."

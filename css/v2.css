@@ -425,11 +425,11 @@ h3 {
 }
 
 .tl-card.big .tl-desc {
-	-webkit-line-clamp: 4;
+	-webkit-line-clamp: 5;
 }
 
 .tl-card.tall .tl-desc {
-	-webkit-line-clamp: 7;
+	-webkit-line-clamp: 11;
 }
 
 .tl-marker {
