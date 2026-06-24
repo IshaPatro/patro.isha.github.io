@@ -165,7 +165,7 @@
 			if (it.size) cls += " " + it.size;
 			return el("article", {
 				class: cls,
-				style: "top:" + it.top + "px;height:" + it.height + "px"
+				style: "top:" + it.top + "px;height:" + it.height + "px;--tl-h:" + it.height + "px"
 			}, [
 				el("h3", null, [it.role]),
 				el("p", { class: "tl-org" }, [it.org]),

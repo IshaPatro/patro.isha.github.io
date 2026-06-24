@@ -15,13 +15,9 @@
 
   "about": {
     "title": "About me",
-    "intro": "Hey, I'm Isha. I build models & systems for markets. Sometimes for the desks & teams I work with, sometimes for my own research.",
-    "introSub": "Currently pursuing an MS in Financial Engineering at NYU Tandon, previously a Software Engineer II at J.P. Morgan working on fixed-income trading systems.",
+    "intro": "I am Isha",
+    "introSub": "Quantitative Finance & AI Research",
     "facts": [
-      {
-        "label": "Experience",
-        "value": "4+ years shipping software & models at J.P. Morgan and Amazon."
-      },
       {
         "label": "Off hours",
         "value": "Painting, digital art, classical & tribal dance, candle making, and leading DIY builds. Former school leader & NCC cadet."
@@ -92,8 +88,8 @@
     },
     "items": [
       {
-        "top": 53,
-        "height": 152,
+        "top": 52,
+        "height": 154,
         "edu": true,
         "role": "MS, Financial Engineering",
         "org": "NYU Tandon",
@@ -101,87 +97,93 @@
         "desc": "GPA 3.6 / 4.0 · Brooklyn, NY. 2025 Numerix Women in Finance scholar, focused on quant research & ML for markets."
       },
       {
-        "top": 217,
-        "height": 148,
+        "top": 214,
+        "height": 131,
         "role": "Software Engineer II",
         "org": "J.P. Morgan Chase",
         "dates": "Jan 24 — Aug 25",
-        "desc": "Epic Owner of Trade Activity Monitoring — 50% latency reduction. Architected Mortgage Matrix modernization supporting $5B+ annual volume."
+        "desc": "Led development and post-launch ownership of Trade Activity Monitoring (TAM) as Epic Owner, achieving a 50% latency reduction and improving trading-floor execution efficiency. Architected the Mortgage Matrix modernization initiative — 12% latency improvement supporting $5B+ annual trading volume."
       },
       {
-        "top": 377,
-        "height": 188,
+        "top": 353,
+        "height": 205,
         "size": "big",
         "role": "Software Engineer I",
         "org": "J.P. Morgan Chase",
         "dates": "Aug 21 — Jan 24",
-        "desc": "Designed and implemented the Trade Reporting and Compliance Engine (TRACE), boosting data processing efficiency by 30% and streamlining regulatory reporting workflows."
+        "desc": "Designed and implemented the Trade Reporting and Compliance Engine (TRACE) in an agile environment, collaborating with cross-functional teams to boost data-processing efficiency by 30% and streamline regulatory reporting workflows."
       },
       {
-        "top": 577,
-        "height": 132,
+        "top": 565,
+        "height": 90,
         "lane": "l",
         "role": "Software Intern",
         "org": "J.P. Morgan Chase",
         "dates": "Jan — Jul 21",
-        "desc": "JIRA bulk-ticket app, −70% handling time."
+        "desc": "Built a JIRA ticket-management app enabling bulk creation and updates, reducing ticket handling time by ~70% and improving cross-team collaboration."
       },
       {
-        "top": 609,
-        "height": 348,
+        "top": 565,
+        "height": 345,
         "lane": "r",
         "edu": true,
         "size": "tall",
         "role": "B.Tech, Computer Science",
         "org": "VIT-AP",
         "dates": "2017 — 2021",
-        "desc": "156 credits, CGPA 8.8/10. Led the university DIY club and won 1st prize twice at the Engineering Clinics Expo — for an Alexa-powered humanoid robot and an autonomous oil-spill cleanup buoy (CG0R)."
+        "desc": "Completed 156 credits with an overall CGPA of 8.8/10. Led the college DIY club and won 1st prize twice at the Engineering Clinics Expo — an Alexa-powered humanoid robot and the CG0R autonomous oil-spill cleanup buoy."
       },
       {
-        "top": 723,
-        "height": 132,
+        "top": 659,
+        "height": 90,
         "lane": "l",
         "role": "ACMS Intern",
         "org": "Amazon",
         "dates": "May — Jun 20",
-        "desc": "Appointment Scheduler website, Chime integration."
+        "desc": "Designed wireframes and contributed across the full lifecycle of a responsive Appointment Scheduler website, preparing it for Chime integration with best practices for a seamless user experience."
       },
       {
-        "top": 869,
-        "height": 132,
+        "top": 753,
+        "height": 90,
         "lane": "l",
         "role": "Data Analyst Intern",
-        "org": "Octathorpe",
+        "org": "Octathorpe Web Consultant",
         "dates": "Apr — Jul 19",
-        "desc": "+15% engagement, +6% revenue from analytics."
+        "desc": "Sourced and analyzed data from primary and secondary sources to drive a 15% increase in user engagement; tracked conversion, retention and monetization metrics, supporting a 6% boost in revenue."
       },
       {
-        "top": 961,
-        "height": 204,
+        "top": 847,
+        "height": 90,
+        "lane": "l",
+        "role": "Data Eng. Intern",
+        "org": "Collpoll",
+        "dates": "Apr — May 18",
+        "desc": "Extracted and analyzed large datasets and contributed to product strategies that improved feature adoption by 10% and increased active users by 18%."
+      },
+      {
+        "top": 918,
+        "height": 168,
         "lane": "r",
         "edu": true,
         "size": "big",
         "role": "Senior Secondary",
         "org": "Khalikote University",
         "dates": "2015 — 2017",
-        "desc": "Govt. of Odisha Meritorious Student laptop award — 75%, CHSE Science."
+        "desc": "Recognized as a meritorious student by the Government of Odisha — laptop award under the Biju Yuva Sashaktikaran Yojana for a 75% score in the CHSE Science stream."
       },
       {
-        "top": 1015,
-        "height": 132,
-        "lane": "l",
-        "role": "Data Eng. Intern",
-        "org": "Collpoll",
-        "dates": "Apr — May 18",
-        "desc": "+10% feature adoption, +18% active users."
+        "top": 1100,
+        "height": 178,
+        "lane": "r",
+        "edu": true,
+        "size": "big",
+        "role": "High School",
+        "org": "D.A.V. Public School",
+        "dates": "2003 — 2015",
+        "desc": "Completed high school under the CBSE board with a CGPA of 9.6."
       }
     ],
-    "markers": [
-      {
-        "top": 1189,
-        "text": "Graduated — D.A.V. Public School · CBSE, CGPA 9.6"
-      }
-    ]
+    "markers": []
   },
 
   "highlightedWork": {

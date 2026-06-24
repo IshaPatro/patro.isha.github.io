@@ -229,7 +229,8 @@ h3 {
 
 .intro-sub {
 	font-size: 0.86rem;
-	color: var(--text-soft);
+	font-weight: 500;
+	color: var(--green);
 	margin-bottom: 1.1rem;
 }
 
@@ -323,7 +324,7 @@ h3 {
 	position: relative;
 	display: flex;
 	gap: 12px;
-	min-height: 1230px;
+	min-height: 1280px;
 }
 
 .tl-axis {
@@ -370,6 +371,11 @@ h3 {
 .tl-card:hover {
 	background: var(--card-hover);
 	border-color: var(--line-strong);
+	height: auto !important;
+	min-height: var(--tl-h, auto);
+	overflow: visible;
+	z-index: 10;
+	box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
 }
 
 .tl-card.lane-l {
@@ -430,6 +436,20 @@ h3 {
 
 .tl-card.tall .tl-desc {
 	-webkit-line-clamp: 11;
+}
+
+.tl-card:hover .tl-desc {
+	-webkit-line-clamp: unset;
+	display: block;
+	overflow: visible;
+}
+
+.tl-card.lane-l .tl-desc {
+	display: none;
+}
+
+.tl-card.lane-l:hover .tl-desc {
+	display: block;
 }
 
 .tl-marker {
