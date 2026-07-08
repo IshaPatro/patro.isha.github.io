@@ -214,24 +214,24 @@
         "desc": "Pandas-compatible execution layer backed by kdb+/q — 10×–100×+ speedups on large analytical workloads."
       },
       {
-        "name": "DREAM-α — Robust Alpha Mining under MRM Constraints",
+        "name": "FinOKF: Typed Data Format and Certification Protocol for Trustworthy LLM Financial Reasoning",
         "media": {
           "type": "image",
-          "src": "images/dream-alpha.png",
-          "alt": "DREAM-alpha framework diagram"
+          "src": "images/finokf.png",
+          "alt": "FinOKF framework diagram"
         },
         "badge": { "text": "In progress", "style": "" },
-        "desc": "RL alpha-mining framework with a novel DeflatedUCB algorithm penalizing multiple-testing bias; combinatorial purged CV for regime-robust, SR 26-2 compliant portfolios."
+        "desc": "Architecting a typed profile of the Open Knowledge Format with a certification layer whose soundness is mechanically proven in Lean 4, re-executing LLM-generated financial calculations in exact rational arithmetic, then stress-testing the system against 100+ adversarial attacks on real SEC EDGAR filing data."
       },
       {
-        "name": "GSHA — Multi-Modal GNN for Commodity Futures",
+        "name": "Narrative Risk Allocation for Commodity Portfolios",
         "media": {
           "type": "image",
-          "src": "images/gsha.png",
-          "alt": "GSHA architecture diagram"
+          "src": "images/nra.png",
+          "alt": "NRA framework diagram"
         },
         "badge": { "text": "In progress", "style": "" },
-        "desc": "Graph-Spectral Hyperbolic Attention: GNNs + spectral convolution + hyperbolic attention to model financial news hierarchies for futures prediction."
+        "desc": "Engineering an end-to-end differentiable deep-learning portfolio allocator that embeds 125K+ financial news articles into volatility-spillover signals across 9 commodity futures, achieving a 1.73 Sharpe ratio over a 16-year walk-forward backtest."
       },
       {
         "name": "Knowledge Graphs from Investopedia",
@@ -257,7 +257,7 @@
         "domain": "github.com",
         "color": "#ff5e62",
         "icon": "spiral",
-        "desc": "Multi-agent AI risk analytics — LangGraph, LangChain & LlamaIndex orchestrating regime-aware VaR, stress testing & market-risk interpretation."
+        "desc": "Architected a full-stack quantitative risk analytics platform: Gaussian HMM regime detection, 5-method VaR backtesting, XGBoost volatility forecasting, and a LangGraph multi-agent LLM system."
       },
       {
         "name": "CryptoHedgeLab",
@@ -266,43 +266,43 @@
         "domain": "github.com",
         "color": "#f7931a",
         "icon": "candles",
-        "desc": "Crypto trading & backtesting in C++ with kdb+/q — microsecond-level execution, real-time hedging, tick-level storage."
+        "desc": "Engineered a high-performance crypto trading and backtesting system in C++ with kdb+/q, achieving microsecond-level execution, real-time hedging, and tick-level data storage for deterministic strategy evaluation."
       },
       {
-        "name": "Cross-Currency Crypto Dynamics",
+        "name": "Cross-Currency Dynamics in Cryptocurrencies under Stablecoin Regulation",
         "date": "Jan 26",
         "url": "https://ishapatro-iaqf-app-iaaexz.streamlit.app/",
         "domain": "streamlit.app",
         "color": "#5ad48a",
         "icon": "swap",
-        "desc": "Cross-currency basis & liquidity fragmentation in crypto using high-frequency data — stablecoin pricing inefficiencies under the GENIUS Act."
+        "desc": "Analyzed cross-currency basis and liquidity fragmentation in crypto markets using high-frequency data across exchanges, evaluating stablecoin-driven pricing inefficiencies and regulatory impact (GENIUS Act)"
       },
       {
-        "name": "Barrier Option Pricing",
+        "name": "Monte Carlo Pricing of European Barrier Options",
         "date": "Oct 25",
         "url": "https://github.com/IshaPatro/Pricing-Barrier-Options-Using-Monte-Carlo-Simulation",
         "domain": "github.com",
         "color": "#a78bfa",
         "icon": "barrier",
-        "desc": "Monte Carlo engine under risk-neutral GBM for path-dependent barrier options with sensitivity analysis."
+        "desc": "Developed a Monte Carlo engine under risk-neutral GBM to price path-dependent barrier options (Down-and-Out, Knock-In/Out), incorporating barrier monitoring and sensitivity analysis."
       },
       {
-        "name": "NASDAQ Prediction System",
+        "name": "Advanced NASDAQ Market Prediction System with Deep Learning Optimization",
         "date": "Aug 25",
         "url": "https://ishapatro-bootca-projectnasdaq-time-series-predictionapp-nfddda.streamlit.app/",
         "domain": "streamlit.app",
         "color": "#4f9cf9",
         "icon": "trend",
-        "desc": "LSTM system for high-frequency NASDAQ prediction — +26.7% forecasting accuracy via hyperparameter optimization."
+        "desc": "Engineered a sophisticated LSTM neural network system for high-frequency NASDAQ market prediction, achieving 26.7% improvement in forecasting accuracy through advanced hyperparameter optimization."
       },
       {
-        "name": "Risk Stress-Testing Dashboard",
+        "name": "Portfolio Risk Stress Testing Dashboard",
         "date": "May 25",
         "url": "https://ishapatro-risk-dashboard-app-vgw6f6.streamlit.app/",
         "domain": "streamlit.app",
         "color": "#ffb86b",
         "icon": "gauge",
-        "desc": "Quant risk terminal — portfolio exposure, market stress simulation & downside risk with Monte Carlo scenarios."
+        "desc": "A quantitative risk analytics terminal that empowers traders and investors to measure portfolio exposure, simulate market stress events, and quantify downside risk using institutional-level metrics and Monte Carlo scenario analysis."
       },
       {
         "name": "Minted Wealth",
@@ -311,7 +311,7 @@
         "domain": "netlify.app",
         "color": "#34d399",
         "icon": "wallet",
-        "desc": "Financial intelligence dashboard — live market data, portfolio analytics & net-worth insights."
+        "desc": "Developed a comprehensive financial intelligence dashboard integrating live market data, portfolio performance analytics, and net worth insights for smarter investment decisions."
       }
     ]
   },
