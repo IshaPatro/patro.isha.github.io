@@ -102,7 +102,7 @@
         "role": "Software Engineer II",
         "org": "J.P. Morgan Chase",
         "dates": "Jan 24 — Aug 25",
-        "desc": "Led development and post-launch ownership of Trade Activity Monitoring (TAM) as Epic Owner, achieving a 50% latency reduction and improving trading-floor execution efficiency. Architected the Mortgage Matrix modernization initiative — 12% latency improvement supporting $5B+ annual trading volume."
+        "desc": "Project owner of Trade Activity Monitoring (TAM); reduced latency by 50% compared to the legacy app, directly improving trade execution and monitoring on the trading floor. Modernized the Mortgage Matrix tool to enhance performance in real-world MBS trading. Achieved a 12% reduction in latency and supported over $5B in annual trading volume, with growing impact."
       },
       {
         "top": 353,
@@ -111,7 +111,7 @@
         "role": "Software Engineer I",
         "org": "J.P. Morgan Chase",
         "dates": "Aug 21 — Jan 24",
-        "desc": "Designed and implemented the Trade Reporting and Compliance Engine (TRACE) in an agile environment, collaborating with cross-functional teams to boost data-processing efficiency by 30% and streamline regulatory reporting workflows."
+        "desc": "Developed and enhanced the Trade Reporting and Compliance Engine (TRACE), improving data processing efficiency by ~30% and supporting timely, accurate regulatory reporting for trade operations. Implemented improvements to streamline data processing and reporting workflows, contributing to more efficient and compliant trade operations."
       },
       {
         "top": 565,
@@ -120,7 +120,7 @@
         "role": "Software Intern",
         "org": "J.P. Morgan Chase",
         "dates": "Jan — Jul 21",
-        "desc": "Built a JIRA ticket-management app enabling bulk creation and updates, reducing ticket handling time by ~70% and improving cross-team collaboration."
+        "desc": "Built a JIRA ticket management app that enabled bulk creation and updates, reducing ticket handling time by ~70% and improving cross-team collaboration at J.P. Morgan."
       },
       {
         "top": 565,
@@ -140,7 +140,7 @@
         "role": "ACMS Intern",
         "org": "Amazon",
         "dates": "May — Jun 20",
-        "desc": "Designed wireframes and contributed across the full lifecycle of a responsive Appointment Scheduler website, preparing it for Chime integration with best practices for a seamless user experience."
+        "desc": "Designed wireframes and contributed to the full lifecycle of a responsive Appointment Scheduler website, focusing on user needs and goals. Prepared the website for integration with Chime and implemented best practices to ensure a seamless user experience and robust functionality."
       },
       {
         "top": 753,
@@ -149,7 +149,7 @@
         "role": "Data Analyst Intern",
         "org": "Octathorpe Web Consultant",
         "dates": "Apr — Jul 19",
-        "desc": "Sourced and analyzed data from primary and secondary sources to drive a 15% increase in user engagement; tracked conversion, retention and monetization metrics, supporting a 6% boost in revenue."
+        "desc": "Procured and analyzed data from diverse primary and secondary sources to extract insights contributing to a 15% increase in user engagement. Tracked Conversion, Retention, and Monetization metrics to provide a comprehensive analysis of business performance, supporting a 6% boost in revenue."
       },
       {
         "top": 847,
@@ -158,7 +158,7 @@
         "role": "Data Eng. Intern",
         "org": "Collpoll",
         "dates": "Apr — May 18",
-        "desc": "Extracted and analyzed large datasets and contributed to product strategies that improved feature adoption by 10% and increased active users by 18%."
+        "desc": "Extracted and analyzed large datasets; contributed to product strategies that improved feature adoption by 10% and increased active users by 18%."
       },
       {
         "top": 918,
