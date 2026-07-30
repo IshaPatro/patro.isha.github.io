@@ -195,6 +195,7 @@
           "src": "images/qfcd.png",
           "alt": "Quantitative Financial Corpus Development"
         },
+        "badge": { "text": "In progress", "style": "" },
         "desc": "Collaborating with finance professionals to curate a rigorous, error-annotated corpus of complex fixed-income and derivatives problems to improve mathematical precision and reduce hallucination in AI-driven quantitative finance systems."
       },
       {
