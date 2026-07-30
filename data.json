@@ -40,7 +40,10 @@
           "Financial Modeling",
           "Risk Management",
           "Fixed Income Analytics",
-          "Time Series Forecasting"
+          "Time Series Forecasting",
+          "Portfolio Management",
+          "Fixed Income",
+          "Prediction Markets"
         ]
       },
       {
@@ -69,7 +72,7 @@
       },
       {
         "label": "Web development",
-        "items": ["React", "RESTful APIs", "AG Grid", "Streamlit", "Dash"]
+        "items": ["React", "RESTful APIs", "AG Grid", "Streamlit", "Dash", "Tablue"]
       }
     ]
   },
@@ -98,7 +101,7 @@
         "role": "Software Engineer II",
         "org": "J.P. Morgan Chase",
         "dates": "Jan 24 — Aug 25",
-        "desc": "Project owner of Trade Activity Monitoring (TAM); reduced latency by 50% compared to the legacy app, directly improving trade execution and monitoring on the trading floor. Modernized the Mortgage Matrix tool to enhance performance in real-world MBS trading. Achieved a 12% reduction in latency and supported over $5B in annual trading volume, with growing impact."
+        "desc": "Led the development and post-launch ownership of Trade Activity Monitoring (TAM) as Epic Owner, collaborating with stakeholders to achieve a 50% latency reduction and significantly improve trading floor execution efficiency. Pioneered and architected a comprehensive Mortgage Matrix modernization initiative driving 12% latency improvement supporting $5B+ annual trading volume."
       },
       {
         "top": 353,
@@ -107,7 +110,7 @@
         "role": "Software Engineer I",
         "org": "J.P. Morgan Chase",
         "dates": "Aug 21 — Jan 24",
-        "desc": "Developed and enhanced the Trade Reporting and Compliance Engine (TRACE), improving data processing efficiency by ~30% and supporting timely, accurate regulatory reporting for trade operations. Implemented improvements to streamline data processing and reporting workflows, contributing to more efficient and compliant trade operations."
+        "desc": "Designed and implemented Trade Reporting and Compliance Engine (TRACE) in an agile environment collaborating with cross-functional teams to boost data processing efficiency by 30% and streamline regulatory reporting workflows."
       },
       {
         "top": 565,
@@ -186,7 +189,16 @@
     "title": "Highlighted work",
     "items": [
       {
-        "name": "Implied Prepayment Surfaces via PINNs in Agency MBS Markets",
+        "name": "Quantitative Financial Corpus Development",
+        "media": {
+          "type": "image",
+          "src": "images/qfcd.png",
+          "alt": "Quantitative Financial Corpus Development"
+        },
+        "desc": "Collaborating with finance professionals to curate a rigorous, error-annotated corpus of complex fixed-income and derivatives problems to improve mathematical precision and reduce hallucination in AI-driven quantitative finance systems."
+      },
+      {
+        "name": "Implied Prepayment Surfaces via Finance-Informed Neural Networks in Agency MBS Markets",
         "media": {
           "type": "image",
           "src": "images/mbs-research.png",
@@ -196,7 +208,7 @@
           "text": "Under review · J. Comp. Finance",
           "style": "review"
         },
-        "desc": "PINN-based inverse modeling to estimate market-implied CPR from TBA prices under the Hull–White PDE — +15% incremental return in backtests."
+        "desc": "Built a finance-informed neural network that inverts agency TBA prices into a market-implied prepayment (CPR) surface under a Hull–White no-arbitrage constraint, showing the implied–realized divergence is a predictor of forward TBA returns."
       },
       {
         "name": "qutePandas",
@@ -207,17 +219,17 @@
           "alt": "qutePandas logo"
         },
         "badge": { "text": "Open source · PyPI", "style": "pub" },
-        "desc": "Pandas-compatible execution layer backed by kdb+/q — 10×–100×+ speedups on large analytical workloads."
+        "desc": "Published a high-performance Pandas-compatible execution layer backed by kdb+/q, achieving order-of-magnitude speedups(10x--100x+) on large-scale analytical workloads while preserving Python-first research ergonomics."
       },
       {
-        "name": "FinOKF: Typed Data Format and Certification Protocol for Trustworthy LLM Financial Reasoning",
+        "name": "FinOKF — Clearbox Financial Research and Caching System",
         "media": {
           "type": "image",
           "src": "images/finokf.png",
-          "alt": "FinOKF framework diagram"
+          "alt": "FinOKF Clearbox diagram"
         },
-        "badge": { "text": "In progress", "style": "" },
-        "desc": "Architecting a typed profile of the Open Knowledge Format with a certification layer whose soundness is mechanically proven in Lean 4, re-executing LLM-generated financial calculations in exact rational arithmetic, then stress-testing the system against 100+ adversarial attacks on real SEC EDGAR filing data."
+        "badge": { "text": "Under review · AAAI", "style": "review" },
+        "desc": "Developing a clear-box financial RAG and enterprise caching platform leveraging open-weight models to transform SEC EDGAR filings and portfolio context into structured knowledge graphs for low-latency, hallucination-resistant equity research."
       },
       {
         "name": "Narrative Risk Allocation for Commodity Portfolios",
@@ -230,7 +242,7 @@
         "desc": "Engineering an end-to-end differentiable deep-learning portfolio allocator that embeds 125K+ financial news articles into volatility-spillover signals across 9 commodity futures, achieving a 1.73 Sharpe ratio over a 16-year walk-forward backtest."
       },
       {
-        "name": "Knowledge Graphs from Investopedia",
+        "name": "Unlocking Financial Wisdom: Building Knowledge Graphs from Investopedia",
         "url": "https://ijrar.org/viewfull.php?&p_id=IJRAR24C2439",
         "media": {
           "type": "video",
@@ -238,7 +250,7 @@
           "alt": "Knowledge graph demo in Obsidian"
         },
         "badge": { "text": "Published · IJRAR", "style": "pub" },
-        "desc": "Financial knowledge graph extracted from Investopedia, integrated into Obsidian for interactive exploration."
+        "desc": "Built a financial knowledge graph from 6,000+ Investopedia terms using data extraction and relationship mapping, enabling semantic visualization in Obsidian; presented at PitchWell Season 3 Finals at J.P. Morgan"
       }
     ]
   },
@@ -246,6 +258,15 @@
   "projects": {
     "title": "Projects",
     "items": [
+      {
+        "name": "2WIN",
+        "date": "Jun 26",
+        "url": "https://api.187-127-175-14.sslip.io/",
+        "domain": "server",
+        "color": "#3b82f6",
+        "icon": "chart",
+        "desc": "Designed and backtested quantitative prediction-market strategies using tick-level order-book data, dynamic risk-based sizing, automated execution logic, and portfolio PnL attribution across real-time Polymarket markets."
+      },
       {
         "name": "VORTEX",
         "date": "May 26",
@@ -337,6 +358,11 @@
     ],
     "certificationsTitle": "Certifications",
     "certifications": [
+      {
+        "name": "Advanced Risk and Portfolio Management",
+        "issuer": "ARPM",
+        "image": "images/arpm.png"
+      },
       {
         "name": "Financial Engineering & Risk Management",
         "issuer": "Columbia University",
