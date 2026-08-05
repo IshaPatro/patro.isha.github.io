@@ -190,6 +190,7 @@
     "items": [
       {
         "name": "Quantitative Financial Corpus Development",
+        "demo": "docs/Corpus.pdf",
         "media": {
           "type": "image",
           "src": "images/qfcd.png",

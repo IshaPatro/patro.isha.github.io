@@ -88,6 +88,12 @@
 		wallet: [
 			{ tag: "rect", x: "3", y: "7", width: "18", height: "13", rx: "2.5" },
 			{ tag: "path", d: "M16 13.5h2.5M7 7V5.5A1.5 1.5 0 0 1 8.5 4H17" }
+		],
+		chart: [
+			{ tag: "path", d: "M3 3v18h18" },
+			{ tag: "rect", x: "7", y: "14", width: "3", height: "7", rx: "1" },
+			{ tag: "rect", x: "12", y: "9", width: "3", height: "12", rx: "1" },
+			{ tag: "rect", x: "17", y: "4", width: "3", height: "17", rx: "1" }
 		]
 	};
 
@@ -212,14 +218,25 @@
 				it.url ? extLink(null, it.url, [it.name]) : it.name
 			]);
 
-			var badgeCls = "badge" + (it.badge.style ? " badge-" + it.badge.style : "");
+			var badgeCls = "badge" + (it.badge && it.badge.style ? " badge-" + it.badge.style : "");
+			var badgeElements = [];
+			if (it.badge && it.badge.text) {
+				badgeElements.push(el("span", { class: badgeCls }, [it.badge.text]));
+			}
+			if (it.demo) {
+				var demoUrl = typeof it.demo === "string" ? it.demo : it.demo.url;
+				var demoText = (typeof it.demo === "object" && it.demo.text) ? it.demo.text : "Demo";
+				badgeElements.push(extLink("badge badge-demo", demoUrl, [demoText]));
+			}
+
+			var metaChildren = [heading];
+			if (badgeElements.length > 0) {
+				metaChildren.push(el("div", { class: "work-badges" }, badgeElements));
+			}
 
 			return el("article", { class: "work-card" }, [
 				mediaWrap,
-				el("div", { class: "work-meta" }, [
-					heading,
-					el("span", { class: badgeCls }, [it.badge.text])
-				]),
+				el("div", { class: "work-meta" }, metaChildren),
 				el("p", { class: "work-desc" }, [it.desc])
 			]);
 		});
