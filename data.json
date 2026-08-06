@@ -82,12 +82,12 @@
     "axis": {
       "startYear": 2027,
       "endYear": 2015,
-      "topStart": 81,
+      "topStart": 33,
       "step": 88
     },
     "items": [
       {
-        "top": 52,
+        "top": 4,
         "height": 154,
         "edu": true,
         "role": "MS, Financial Engineering",
@@ -96,7 +96,7 @@
         "desc": "GPA 3.6 / 4.0 · Brooklyn, NY. Focused on quant research & ML for markets."
       },
       {
-        "top": 214,
+        "top": 166,
         "height": 131,
         "role": "Software Engineer II",
         "org": "J.P. Morgan Chase",
@@ -104,7 +104,7 @@
         "desc": "Led the development and post-launch ownership of Trade Activity Monitoring (TAM) as Epic Owner, collaborating with stakeholders to achieve a 50% latency reduction and significantly improve trading floor execution efficiency. Pioneered and architected a comprehensive Mortgage Matrix modernization initiative driving 12% latency improvement supporting $5B+ annual trading volume."
       },
       {
-        "top": 353,
+        "top": 305,
         "height": 205,
         "size": "big",
         "role": "Software Engineer I",
@@ -113,7 +113,7 @@
         "desc": "Designed and implemented Trade Reporting and Compliance Engine (TRACE) in an agile environment collaborating with cross-functional teams to boost data processing efficiency by 30% and streamline regulatory reporting workflows."
       },
       {
-        "top": 565,
+        "top": 517,
         "height": 90,
         "lane": "l",
         "role": "Software Intern",
@@ -122,7 +122,7 @@
         "desc": "Built a JIRA ticket management app that enabled bulk creation and updates, reducing ticket handling time by ~70% and improving cross-team collaboration at J.P. Morgan."
       },
       {
-        "top": 565,
+        "top": 517,
         "height": 345,
         "lane": "r",
         "edu": true,
@@ -133,7 +133,7 @@
         "desc": "Completed 156 credits with an overall CGPA of 8.8/10. Led the college DIY club and won 1st prize twice at the Engineering Clinics Expo — an Alexa-powered humanoid robot and the CG0R autonomous oil-spill cleanup buoy."
       },
       {
-        "top": 659,
+        "top": 611,
         "height": 90,
         "lane": "l",
         "role": "ACMS Intern",
@@ -142,7 +142,7 @@
         "desc": "Designed wireframes and contributed to the full lifecycle of a responsive Appointment Scheduler website, focusing on user needs and goals. Prepared the website for integration with Chime and implemented best practices to ensure a seamless user experience and robust functionality."
       },
       {
-        "top": 753,
+        "top": 705,
         "height": 90,
         "lane": "l",
         "role": "Data Analyst Intern",
@@ -151,7 +151,7 @@
         "desc": "Procured and analyzed data from diverse primary and secondary sources to extract insights contributing to a 15% increase in user engagement. Tracked Conversion, Retention, and Monetization metrics to provide a comprehensive analysis of business performance, supporting a 6% boost in revenue."
       },
       {
-        "top": 847,
+        "top": 799,
         "height": 90,
         "lane": "l",
         "role": "Data Eng. Intern",
@@ -160,7 +160,7 @@
         "desc": "Extracted and analyzed large datasets; contributed to product strategies that improved feature adoption by 10% and increased active users by 18%."
       },
       {
-        "top": 918,
+        "top": 870,
         "height": 168,
         "lane": "r",
         "edu": true,
@@ -171,7 +171,7 @@
         "desc": "Recognized as a meritorious student by the Government of Odisha — laptop award under the Biju Yuva Sashaktikaran Yojana for a 75% score in the CHSE Science stream."
       },
       {
-        "top": 1100,
+        "top": 1052,
         "height": 178,
         "lane": "r",
         "edu": true,
@@ -190,7 +190,8 @@
     "items": [
       {
         "name": "Quantitative Financial Corpus Development",
-        "demo": "docs/Corpus.pdf",
+        "url": "docs/Corpus.pdf",
+        "url_text": "Demo",
         "media": {
           "type": "image",
           "src": "images/qfcd.png",
@@ -215,12 +216,13 @@
       {
         "name": "qutePandas",
         "url": "https://pypi.org/project/qutePandas/",
+        "url_text": "PyPI",
         "media": {
           "type": "image",
           "src": "images/qutePandas.png",
           "alt": "qutePandas logo"
         },
-        "badge": { "text": "Open source · PyPI", "style": "pub" },
+        "badge": { "text": "Open source Contribution", "style": "pub" },
         "desc": "Published a high-performance Pandas-compatible execution layer backed by kdb+/q, achieving order-of-magnitude speedups(10x--100x+) on large-scale analytical workloads while preserving Python-first research ergonomics."
       },
       {
@@ -246,6 +248,7 @@
       {
         "name": "Unlocking Financial Wisdom: Building Knowledge Graphs from Investopedia",
         "url": "https://ijrar.org/viewfull.php?&p_id=IJRAR24C2439",
+        "url_text": "Paper",
         "media": {
           "type": "video",
           "src": "images/obsidianDemo.mp4",

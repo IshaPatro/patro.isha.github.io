@@ -319,12 +319,16 @@ h3 {
 	padding: 0.32rem 0.7rem;
 }
 
+.col-career .col-body {
+	padding-top: 0.8rem;
+}
+
 /* ---------- career timeline ---------- */
 .timeline {
 	position: relative;
 	display: flex;
 	gap: 12px;
-	min-height: 1280px;
+	min-height: 1230px;
 }
 
 .tl-axis {
@@ -335,7 +339,7 @@ h3 {
 .tl-axis::after {
 	content: "";
 	position: absolute;
-	top: 60px;
+	top: 15px;
 	bottom: 10px;
 	right: 0;
 	width: 1px;
@@ -474,16 +478,29 @@ h3 {
 
 /* ---------- highlighted work ---------- */
 .work-card {
+	display: block;
+	text-decoration: none;
+	color: inherit;
 	background: var(--card);
 	border: 1px solid var(--line);
 	border-radius: 12px;
 	overflow: hidden;
 	margin-bottom: 0.9rem;
-	transition: border-color 0.15s;
+	transition: border-color 0.15s, background-color 0.15s;
 }
 
 .work-card:hover {
 	border-color: var(--line-strong);
+}
+
+a.work-card:hover .work-meta h3 {
+	color: var(--green);
+}
+
+a.work-card:hover .badge-demo {
+	background: rgba(164, 196, 101, 0.25);
+	border-color: var(--green);
+	color: #c6e088;
 }
 
 .work-media {

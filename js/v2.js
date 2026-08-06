@@ -210,20 +210,20 @@
 				media = el("img", { src: it.media.src, alt: it.media.alt, loading: "lazy" });
 			}
 
-			var mediaWrap = it.url
-				? extLink("work-media", it.url, [media])
-				: el("div", { class: "work-media" }, [media]);
+			var mediaWrap = el("div", { class: "work-media" }, [media]);
 
-			var heading = el("h3", null, [
-				it.url ? extLink(null, it.url, [it.name]) : it.name
-			]);
+			var heading = el("h3", null, [it.name]);
 
-			var badgeCls = "badge" + (it.badge && it.badge.style ? " badge-" + it.badge.style : "");
 			var badgeElements = [];
 			if (it.badge && it.badge.text) {
+				var badgeCls = "badge" + (it.badge.style ? " badge-" + it.badge.style : "");
 				badgeElements.push(el("span", { class: badgeCls }, [it.badge.text]));
 			}
-			if (it.demo) {
+
+			if (it.url) {
+				var btnText = it.url_text || (typeof it.demo === "string" ? "Demo" : (it.demo && it.demo.text) ? it.demo.text : "Demo");
+				badgeElements.push(el("span", { class: "badge badge-demo" }, [btnText]));
+			} else if (it.demo) {
 				var demoUrl = typeof it.demo === "string" ? it.demo : it.demo.url;
 				var demoText = (typeof it.demo === "object" && it.demo.text) ? it.demo.text : "Demo";
 				badgeElements.push(extLink("badge badge-demo", demoUrl, [demoText]));
@@ -234,11 +234,15 @@
 				metaChildren.push(el("div", { class: "work-badges" }, badgeElements));
 			}
 
-			return el("article", { class: "work-card" }, [
+			var cardContent = [
 				mediaWrap,
 				el("div", { class: "work-meta" }, metaChildren),
 				el("p", { class: "work-desc" }, [it.desc])
-			]);
+			];
+
+			return it.url
+				? extLink("work-card", it.url, cardContent)
+				: el("article", { class: "work-card" }, cardContent);
 		});
 
 		return column("col-work", "t-work", w.title, cards);
