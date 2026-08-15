@@ -7,6 +7,7 @@ A modern, responsive portfolio website showcasing experience, projects, research
 ## Quick Start
 
 ### Prerequisites
+
 - Python 3.x (usually pre-installed on macOS/Linux)
 
 ### Run Locally

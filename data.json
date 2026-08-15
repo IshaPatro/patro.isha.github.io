@@ -3,12 +3,12 @@
     "name": "Isha Patro",
     "title": "Isha Patro",
     "description": "Isha Patro — Financial Engineering graduate student at NYU, former SDE at J.P. Morgan. Quantitative research, machine learning, and software engineering.",
-    "email": "ishapatro21@gmail.com",
+    "email": "isha.patro@stern.nyu.edu",
     "phone": "+1 347 241 6603",
     "phoneHref": "tel:+13472416603",
     "location": "Brooklyn, NY",
     "portrait": "images/portfolio-image-2.png",
-    "resume": "resume.pdf",
+    "resume": "Isha_Patro_Resume.pdf",
     "github": "https://github.com/IshaPatro",
     "linkedin": "https://www.linkedin.com/in/isha-patro/"
   },
@@ -189,6 +189,32 @@
     "title": "Highlighted work",
     "items": [
       {
+        "name": "Temporal Graph Neural Additive Model for Portfolio Risk Forecasting",
+        "media": {
+          "type": "image",
+          "src": "images/tgnam.png",
+          "alt": "Temporal Graph Neural Additive Model for Portfolio Risk Forecasting"
+        },
+        "badge": {
+          "text": "Master's Thesis",
+          "style": "progress"
+        },
+        "desc": "Building a leakage-aware, interpretable graph-temporal machine learning pipeline for multi-equity volatility forecasting, portfolio risk estimation, and optimization research across U.S. equities with purged walk-forward validation."
+      },
+      {
+        "name": "Modeling Volatility in Polymarket Prices with Binary Jump-Tweedie Dynamics",
+        "media": {
+          "type": "image",
+          "src": "images/poly.png",
+          "alt": "Modeling Volatility in Polymarket Prices with Binary Jump-Tweedie Dynamics"
+        },
+        "badge": {
+          "text": "Under review for the Prediction Markets Conference, Yale School of Management & Swensen Asset Management Institute",
+          "style": "review"
+        },
+        "desc": "Modeled market volatility using arcsine probability geometry, Tweedie likelihood estimation, market-level clustering, category-specific parameter selection, benchmarking performance against GARCH and Hidden Markov baselines."
+      },
+      {
         "name": "Quantitative Financial Corpus Development",
         "url": "docs/Corpus.pdf",
         "url_text": "Demo",
@@ -198,20 +224,7 @@
           "alt": "Quantitative Financial Corpus Development"
         },
         "badge": { "text": "In progress", "style": "" },
-        "desc": "Collaborating with finance professionals to curate a rigorous, error-annotated corpus of complex fixed-income and derivatives problems to improve mathematical precision and reduce hallucination in AI-driven quantitative finance systems."
-      },
-      {
-        "name": "Implied Prepayment Surfaces via Finance-Informed Neural Networks in Agency MBS Markets",
-        "media": {
-          "type": "image",
-          "src": "images/mbs-research.png",
-          "alt": "Implied prepayment surfaces research figures"
-        },
-        "badge": {
-          "text": "Under review · J. Comp. Finance",
-          "style": "review"
-        },
-        "desc": "Built a finance-informed neural network that inverts agency TBA prices into a market-implied prepayment (CPR) surface under a Hull–White no-arbitrage constraint, showing the implied–realized divergence is a predictor of forward TBA returns."
+        "desc": "Collaborated with finance professionals to curate a corpus of fixed-income and derivatives problems, guiding AI agents to match Excel calculations, improving mathematical precision and reducing hallucinations in quantitative finance AI systems."
       },
       {
         "name": "qutePandas",
@@ -233,7 +246,20 @@
           "alt": "FinOKF Clearbox diagram"
         },
         "badge": { "text": "Under review · AAAI", "style": "review" },
-        "desc": "Developing a clear-box financial RAG and enterprise caching platform leveraging open-weight models to transform SEC EDGAR filings and portfolio context into structured knowledge graphs for low-latency, hallucination-resistant equity research."
+        "desc": "Developed an enterprise SEC filing intelligence platform that uses Google's Open Knowledge Format inspired RAG system and per-session LRU(Least Recently Used) caching to minimize token usage, latency, API costs for equity research."
+      },
+      {
+        "name": "Implied Prepayment Surfaces via Finance-Informed Neural Networks in Agency MBS Markets",
+        "media": {
+          "type": "image",
+          "src": "images/mbs-research.png",
+          "alt": "Implied prepayment surfaces research figures"
+        },
+        "badge": {
+          "text": "Under review · J. Comp. Finance",
+          "style": "review"
+        },
+        "desc": "Built a finance-informed neural network that inverts agency TBA prices into a market-implied prepayment (CPR) surface under a Hull–White no-arbitrage constraint, showing the implied–realized divergence is a predictor of forward TBA returns."
       },
       {
         "name": "Narrative Risk Allocation for Commodity Portfolios",
@@ -380,17 +406,17 @@
       },
       {
         "name": "Machine Learning",
-        "issuer": "Stanford University",
+        "issuer": "Udemy",
         "image": "images/machine-learning.jpg"
       },
       {
         "name": "Mortgage-Backed Securities",
-        "issuer": "Professional certificate",
+        "issuer": "Udemy",
         "image": "images/mbs.jpg"
       },
       {
         "name": "AWS Cloud Practitioner",
-        "issuer": "Amazon Web Services",
+        "issuer": "Amazon",
         "image": "images/aws.png"
       }
     ]

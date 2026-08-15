@@ -24,7 +24,6 @@
 		board.appendChild(renderBlogs(data.blogs, data.meta));
 
 		wireArrows();
-		wireCopyEmail();
 		initPixelPortrait(data.meta.portrait);
 	}
 
@@ -145,7 +144,7 @@
 			el("p", { class: "intro" }, [a.intro]),
 			el("p", { class: "intro-sub" }, [a.introSub]),
 			el("div", { class: "about-actions" }, [
-				el("button", { class: "action-btn", id: "copy-email", "data-email": m.email }, ["Copy email"]),
+				el("a", { class: "action-btn", href: "mailto:" + m.email }, ["Email"]),
 				extLink("action-btn", m.github, ["GitHub"]),
 				extLink("action-btn", m.linkedin, ["LinkedIn"]),
 				el("a", { class: "action-btn", href: m.resume, download: "" }, ["Download CV"])
@@ -328,20 +327,6 @@
 		});
 		right.addEventListener("click", function () {
 			board.scrollBy({ left: STEP, behavior: "smooth" });
-		});
-	}
-
-	/* ===== copy email ===== */
-
-	function wireCopyEmail() {
-		var btn = document.getElementById("copy-email");
-		if (!btn) return;
-		btn.addEventListener("click", function () {
-			navigator.clipboard.writeText(btn.getAttribute("data-email")).then(function () {
-				var original = btn.textContent;
-				btn.textContent = "Copied!";
-				setTimeout(function () { btn.textContent = original; }, 1600);
-			});
 		});
 	}
 
