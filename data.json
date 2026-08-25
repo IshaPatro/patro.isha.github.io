@@ -6,7 +6,7 @@
     "email": "isha.patro@stern.nyu.edu",
     "phone": "+1 347 241 6603",
     "phoneHref": "tel:+13472416603",
-    "location": "Brooklyn, NY",
+    "location": "New York City, 11213",
     "portrait": "images/portfolio-image-2.png",
     "resume": "Isha_Patro_Resume.pdf",
     "github": "https://github.com/IshaPatro",
@@ -20,7 +20,7 @@
     "facts": [
       {
         "label": "Location",
-        "value": "Brooklyn, NY 11213"
+        "value": "New York City, 11213"
       },
       {
         "label": "Phone",
@@ -30,39 +30,43 @@
     ],
     "skills": [
       {
-        "label": "Programming languages",
-        "items": ["Python", "JavaScript", "C++", "R", "VBA"]
-      },
-      {
-        "label": "Quantitative finance",
+        "label": "Programming & Development",
         "items": [
-          "Alpha Mining",
-          "Financial Modeling",
-          "Risk Management",
-          "Fixed Income Analytics",
-          "Time Series Forecasting",
-          "Portfolio Management",
-          "Fixed Income",
-          "Prediction Markets"
+          "Python",
+          "JavaScript",
+          "VBA",
+          "React",
+          "REST APIs",
+          "Streamlit",
+          "Dash",
+          "AG Grid",
+          "Tableau"
         ]
       },
       {
-        "label": "Data science",
+        "label": "Data Science",
         "items": [
           "Statistical Modeling",
           "Machine Learning",
           "Deep Learning",
+          "Attention Mechanisms",
           "LLMs",
+          "Generative AI",
           "RAG",
           "AI Agents",
-          "Causal Inference"
+          "Agentic AI",
+          "MCP",
+          "NLP",
+          "Fine-Tuning",
+          "AI Inference",
+          "LLM Evaluation",
+          "Prompt Engineering"
         ]
       },
       {
-        "label": "Databases & cloud",
+        "label": "Databases & Cloud",
         "items": [
           "SQL",
-          "Neo4j",
           "q/kdb+",
           "AWS",
           "MongoDB",
@@ -71,8 +75,14 @@
         ]
       },
       {
-        "label": "Web development",
-        "items": ["React", "RESTful APIs", "AG Grid", "Streamlit", "Dash", "Tablue"]
+        "label": "Quantitative Finance",
+        "items": [
+          "Fixed Income",
+          "Portfolio Management",
+          "Risk Management",
+          "Time Series Forecasting",
+          "Prediction Markets"
+        ]
       }
     ]
   },
@@ -89,6 +99,7 @@
       {
         "top": 4,
         "height": 154,
+        "lane": "r",
         "edu": true,
         "role": "MS, Financial Engineering",
         "org": "NYU Tandon",
@@ -96,9 +107,18 @@
         "desc": "GPA 3.6 / 4.0 · Brooklyn, NY. Focused on quant research & ML for markets."
       },
       {
+        "top": 40,
+        "height": 115,
+        "lane": "l",
+        "role": "Quantitative Finance Research Intern",
+        "org": "Stealth Startup",
+        "dates": "Jul — Sep 26",
+        "desc": "Developed a corpus for Fixed Income Modelling, Credit Card Securitization, and Derivatives workflows to benchmark AI agent outputs against Excel-based models, improving calculation accuracy, reasoning traceability, and hallucination resistance."
+      },
+      {
         "top": 166,
         "height": 131,
-        "role": "Software Engineer II",
+        "role": "Software Engineer II, MBS Division - Fixed Income Pricing Team",
         "org": "J.P. Morgan Chase",
         "dates": "Jan 24 — Aug 25",
         "desc": "Led the development and post-launch ownership of Trade Activity Monitoring (TAM) as Epic Owner, collaborating with stakeholders to achieve a 50% latency reduction and significantly improve trading floor execution efficiency. Pioneered and architected a comprehensive Mortgage Matrix modernization initiative driving 12% latency improvement supporting $5B+ annual trading volume."
@@ -107,7 +127,7 @@
         "top": 305,
         "height": 205,
         "size": "big",
-        "role": "Software Engineer I",
+        "role": "Software Engineer I, MBS Division - Fixed Income Pricing Team",
         "org": "J.P. Morgan Chase",
         "dates": "Aug 21 — Jan 24",
         "desc": "Designed and implemented Trade Reporting and Compliance Engine (TRACE) in an agile environment collaborating with cross-functional teams to boost data processing efficiency by 30% and streamline regulatory reporting workflows."
@@ -213,18 +233,6 @@
           "style": "review"
         },
         "desc": "Modeled market volatility using arcsine probability geometry, Tweedie likelihood estimation, market-level clustering, category-specific parameter selection, benchmarking performance against GARCH and Hidden Markov baselines."
-      },
-      {
-        "name": "Quantitative Financial Corpus Development",
-        "url": "docs/Corpus.pdf",
-        "url_text": "Demo",
-        "media": {
-          "type": "image",
-          "src": "images/qfcd.png",
-          "alt": "Quantitative Financial Corpus Development"
-        },
-        "badge": { "text": "In progress", "style": "" },
-        "desc": "Collaborated with finance professionals to curate a corpus of fixed-income and derivatives problems, guiding AI agents to match Excel calculations, improving mathematical precision and reducing hallucinations in quantitative finance AI systems."
       },
       {
         "name": "qutePandas",
