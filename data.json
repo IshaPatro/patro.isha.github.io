@@ -111,7 +111,7 @@
         "height": 115,
         "lane": "l",
         "role": "Quantitative Finance Research Intern",
-        "org": "Stealth Startup",
+        "org": "Financial Artificial Intelligence Working Group",
         "dates": "Jul — Sep 26",
         "desc": "Developed a corpus for Fixed Income Modelling, Credit Card Securitization, and Derivatives workflows to benchmark AI agent outputs against Excel-based models, improving calculation accuracy, reasoning traceability, and hallucination resistance."
       },
@@ -440,6 +440,14 @@
         "url": "https://geometry-of-intelligence.netlify.app/",
         "domain": "geometry-of-intelligence.netlify.app",
         "desc": "Series decoding the math powering machine learning and deep learning."
+      },
+      {
+        "date": "Feb 2026",
+        "datetime": "2026-02-24",
+        "name": "How to Build a Model Context Protocol (MCP) Server for Real-Time Stock Data",
+        "url": "https://medium.com/@isha.patro.215/how-to-build-a-model-context-protocol-mcp-server-for-real-time-stock-data-f1d9894f88b5?postPublishedType=initial",
+        "domain": "medium.com",
+        "desc": "Build a custom, low-level Model Context Protocol (MCP) server from scratch using Python and Yahoo Finance data."
       },
       {
         "date": "Aug 2026",
