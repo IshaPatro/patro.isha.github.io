@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fixed Income Analytics & Securitization Suite — Isha Patro</title>
+	<meta name="description"
+		content="Fixed Income Analytics & Securitization Suite — Yield curve calibration, credit card ABS, and MBS delta-neutral hedging models by Isha Patro.">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="../css/v2.css">
+	<style>
+		/* override: full-page centered layout */
+		body {
+			overflow: auto;
+			height: auto;
+			position: relative;
+		}
+
+		/* ── pixel canvas background ── */
+		#pixel-bg {
+			position: fixed;
+			inset: 0;
+			z-index: 0;
+			pointer-events: none;
+		}
+
+		.topbar {
+			position: relative;
+			z-index: 10;
+		}
+
+		.board {
+			position: relative;
+			z-index: 10;
+			flex-direction: column;
+			align-items: center;
+			overflow: visible;
+			padding: 0 1.4rem 2rem;
+			gap: 1rem;
+		}
+
+		/* ── page heading ── */
+		.page-heading {
+			text-align: center;
+			padding: 2.5rem 1rem 1.8rem;
+			position: relative;
+			z-index: 10;
+		}
+
+		.page-heading h1 {
+			font-size: 1.8rem;
+			font-weight: 700;
+			color: #ffffff;
+			letter-spacing: -0.02em;
+			line-height: 1.25;
+			margin-bottom: 0.5rem;
+			text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+		}
+
+		.page-heading p {
+			font-size: 0.88rem;
+			color: var(--text-soft);
+			max-width: 520px;
+			margin: 0 auto;
+		}
+
+		/* single centered column */
+		.col-suite {
+			flex: none;
+			width: 100%;
+			max-width: 680px;
+			background: color-mix(in srgb, var(--panel) 92%, transparent);
+			backdrop-filter: blur(12px);
+			-webkit-backdrop-filter: blur(12px);
+		}
+
+		/* project row inside column */
+		.fi-project {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 1rem;
+			padding: 1rem 1.1rem;
+			border-radius: 12px;
+			transition: background 0.15s;
+		}
+
+		.fi-project:hover {
+			background: var(--card);
+		}
+
+		.fi-project+.fi-project {
+			border-top: 1px solid var(--line);
+		}
+
+		.fi-left {
+			display: flex;
+			align-items: center;
+			gap: 0.85rem;
+			min-width: 0;
+		}
+
+		.fi-icon {
+			flex-shrink: 0;
+			width: 38px;
+			height: 38px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #131316;
+			border-radius: 10px;
+		}
+
+		.fi-icon svg {
+			width: 19px;
+			height: 19px;
+		}
+
+		.fi-title {
+			font-size: 0.88rem;
+			font-weight: 600;
+			line-height: 1.35;
+			color: var(--text);
+		}
+
+		.fi-btn {
+			flex-shrink: 0;
+			display: inline-flex;
+			align-items: center;
+			gap: 0.4rem;
+			font-family: var(--sans);
+			font-size: 0.72rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 0.06em;
+			color: var(--text);
+			background: var(--card);
+			border: 1px solid var(--line);
+			border-radius: 8px;
+			padding: 0.45rem 0.8rem;
+			text-decoration: none;
+			transition: background 0.15s, border-color 0.15s, color 0.15s;
+		}
+
+		.fi-btn:hover {
+			background: var(--card-hover);
+			border-color: var(--line-strong);
+			color: var(--green);
+		}
+
+		.fi-btn svg {
+			width: 13px;
+			height: 13px;
+		}
+
+		/* back button in topbar */
+		.back-link {
+			font-family: var(--sans);
+			font-size: 0.78rem;
+			font-weight: 500;
+			color: var(--text-soft);
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+			gap: 0.35rem;
+			padding: 0.45rem 0.8rem;
+			background: color-mix(in srgb, var(--panel) 80%, transparent);
+			backdrop-filter: blur(8px);
+			-webkit-backdrop-filter: blur(8px);
+			border: 1px solid var(--line);
+			border-radius: 8px;
+			transition: color 0.15s, background 0.15s, border-color 0.15s;
+		}
+
+		.back-link:hover {
+			color: var(--text);
+			background: var(--card);
+			border-color: var(--line-strong);
+		}
+
+		@media (max-width: 640px) {
+			.page-heading h1 {
+				font-size: 1.35rem;
+			}
+
+			.fi-project {
+				flex-direction: column;
+				align-items: stretch;
+				gap: 0.7rem;
+			}
+
+			.fi-btn {
+				justify-content: center;
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Animated pixel background canvas -->
+	<canvas id="pixel-bg" aria-hidden="true"></canvas>
+
+	<header class="topbar">
+		<a href="../" class="brand" style="text-decoration:none; position:relative; z-index:10;">Isha Patro</a>
+		<a href="../" class="back-link">
+			<svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+				<path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+					stroke-linejoin="round" />
+			</svg>
+			Back
+		</a>
+	</header>
+
+	<div class="page-heading">
+		<h1>Fixed Income Analytics &amp; Securitization Suite</h1>
+	</div>
+
+	<main class="board" id="board">
+		<section class="col col-suite" aria-labelledby="t-suite">
+			<h2 class="col-title" id="t-suite">Excel Models</h2>
+			<div class="col-body">
+
+				<!-- 1 — Yield Curve -->
+				<div class="fi-project">
+					<div class="fi-left">
+						<span class="fi-icon" style="background: var(--green);">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round">
+								<polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+							</svg>
+						</span>
+						<span class="fi-title">Yield Curve Calibration using Nelson-Siegel Model</span>
+					</div>
+					<a class="fi-btn"
+						href="https://nyu670-my.sharepoint.com/:x:/g/personal/ip2529_nyu_edu/IQAdnNT6BwofRJYV6HE_sS4fAbWPX-lZF9HddRPNC6Y_O9E?rtime=zoYnGMwO30g"
+						target="_blank" rel="noopener noreferrer">
+						Open
+						<svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+							<path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6"
+								stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</a>
+				</div>
+
+				<!-- 2 — Credit Card ABS -->
+				<div class="fi-project">
+					<div class="fi-left">
+						<span class="fi-icon" style="background: var(--violet);">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round">
+								<polygon points="12 2 2 7 12 12 22 7 12 2" />
+								<polyline points="2 17 12 22 22 17" />
+								<polyline points="2 12 12 17 22 12" />
+							</svg>
+						</span>
+						<span class="fi-title">Credit Card Asset-Backed Securitization (ABS)</span>
+					</div>
+					<a class="fi-btn"
+						href="https://nyu670-my.sharepoint.com/:x:/g/personal/ip2529_nyu_edu/IQD3Hv-O3dvERKDfocfLocHkAe0zR7A1U6YTHO46NXFHt-o?e=zujY4t"
+						target="_blank" rel="noopener noreferrer">
+						Open
+						<svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+							<path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6"
+								stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</a>
+				</div>
+
+				<!-- 3 — MBS Hedging -->
+				<div class="fi-project">
+					<div class="fi-left">
+						<span class="fi-icon" style="background: var(--amber);">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round">
+								<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+							</svg>
+						</span>
+						<span class="fi-title">Mortgage-Backed Securities (MBS) Delta-Neutral Hedging</span>
+					</div>
+					<a class="fi-btn"
+						href="https://nyu670-my.sharepoint.com/:x:/g/personal/ip2529_nyu_edu/IQCFqPE40_TJTrjAE2ROqj4EAaiwoDrOa2rs9sbW7Xi0Vyg?e=aJc4YU"
+						target="_blank" rel="noopener noreferrer">
+						Open
+						<svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+							<path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6"
+								stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</a>
+				</div>
+
+			</div>
+		</section>
+	</main>
+
+	<script>
+		/* ── Animated pixel background (same technique as portfolio portrait) ── */
+		(function () {
+			"use strict";
+
+			var canvas = document.getElementById("pixel-bg");
+			if (!canvas) return;
+
+			var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+			var ctx = canvas.getContext("2d");
+
+			// NYU violet ramp — dark to light (same as main portfolio)
+			var RAMP = [
+				"#0d0a10", "#120c18", "#1a1124", "#261735",
+				"#341e49", "#43265e", "#532e74", "#622f8c",
+				"#753ba3", "#894eb6", "#9e66c9", "#b481da"
+			];
+			var CELL = 5;
+
+			var cols = 0, rows = 0, running = false, rafId = 0;
+
+			// 4x4 Bayer matrix for ordered dither
+			var BAYER = [
+				0, 8, 2, 10,
+				12, 4, 14, 6,
+				3, 11, 1, 9,
+				15, 7, 13, 5
+			];
+
+			function resize() {
+				var w = window.innerWidth;
+				var h = window.innerHeight;
+				var dpr = Math.min(window.devicePixelRatio || 1, 2);
+				canvas.width = Math.round(w * dpr);
+				canvas.height = Math.round(h * dpr);
+				canvas.style.width = w + "px";
+				canvas.style.height = h + "px";
+				ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+				cols = Math.ceil(w / CELL);
+				rows = Math.ceil(h / CELL);
+			}
+
+			function paint(t) {
+				var n = RAMP.length;
+				for (var y = 0; y < rows; y++) {
+					for (var x = 0; x < cols; x++) {
+						// Abstract luminance pattern: overlapping sine waves creating
+						// a flowing, organic landscape
+						var v =
+							Math.sin(x * 0.06 + t * 0.00015) * 40 +
+							Math.sin(y * 0.08 - t * 0.00012) * 35 +
+							Math.sin((x + y) * 0.04 + t * 0.0001) * 30 +
+							Math.sin(x * 0.12 - y * 0.09 + t * 0.00018) * 20 +
+							80; // base brightness offset
+
+						var dither = (BAYER[(y % 4) * 4 + (x % 4)] / 16 - 0.5) * 22;
+						var idx = Math.floor(((v + dither) / 255) * n);
+						if (idx < 0) idx = 0;
+						if (idx >= n) idx = n - 1;
+						ctx.fillStyle = RAMP[idx];
+						ctx.fillRect(x * CELL, y * CELL, CELL - 1, CELL - 1);
+					}
+				}
+			}
+
+			function loop(t) {
+				paint(t);
+				rafId = requestAnimationFrame(loop);
+			}
+
+			function start() {
+				if (running || reduceMotion) return;
+				running = true;
+				rafId = requestAnimationFrame(loop);
+			}
+
+			function stop() {
+				running = false;
+				cancelAnimationFrame(rafId);
+			}
+
+			resize();
+			paint(0);
+			if (!reduceMotion) start();
+
+			var resizeTimer;
+			window.addEventListener("resize", function () {
+				clearTimeout(resizeTimer);
+				resizeTimer = setTimeout(function () {
+					resize();
+					paint(performance.now());
+				}, 150);
+			});
+
+			// pause when page not visible
+			document.addEventListener("visibilitychange", function () {
+				document.hidden ? stop() : start();
+			});
+		})();
+	</script>
+
+</body>
+
+</html>

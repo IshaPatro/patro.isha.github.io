@@ -209,19 +209,6 @@
     "title": "Highlighted work",
     "items": [
       {
-        "name": "Temporal Graph Neural Additive Model for Portfolio Risk Forecasting",
-        "media": {
-          "type": "image",
-          "src": "images/tgnam.png",
-          "alt": "Temporal Graph Neural Additive Model for Portfolio Risk Forecasting"
-        },
-        "badge": {
-          "text": "Master's Thesis",
-          "style": "progress"
-        },
-        "desc": "Building a leakage-aware, interpretable graph-temporal machine learning pipeline for multi-equity volatility forecasting, portfolio risk estimation, and optimization research across U.S. equities with purged walk-forward validation."
-      },
-      {
         "name": "Modeling Volatility in Polymarket Prices with Binary Jump-Tweedie Dynamics",
         "media": {
           "type": "image",
@@ -247,14 +234,16 @@
         "desc": "Published a high-performance Pandas-compatible execution layer backed by kdb+/q, achieving order-of-magnitude speedups(10x--100x+) on large-scale analytical workloads while preserving Python-first research ergonomics."
       },
       {
-        "name": "FinOKF — Clearbox Financial Research and Caching System",
+        "name": "FinOKF: Evidence-Aware Finance Open Knowledge Formatting with LRU Caching for Auditable Equity Research",
+        "url": "https://github.com/IshaPatro/FinOKF",
+        "url_text": "Github",
         "media": {
           "type": "image",
           "src": "images/finokf.png",
           "alt": "FinOKF Clearbox diagram"
         },
         "badge": { "text": "Under review · AAAI", "style": "review" },
-        "desc": "Developed an enterprise SEC filing intelligence platform that uses Google's Open Knowledge Format inspired RAG system and per-session LRU(Least Recently Used) caching to minimize token usage, latency, API costs for equity research."
+        "desc": "Architected an evidence-validated LLM system for equity research over SEC filings that cut token usage 97% and latency 16x across GPT-5.5, Claude, and Llama while preserving numerical accuracy on audited financial calculations."
       },
       {
         "name": "Implied Prepayment Surfaces via Finance-Informed Neural Networks in Agency MBS Markets",
@@ -268,16 +257,6 @@
           "style": "review"
         },
         "desc": "Built a finance-informed neural network that inverts agency TBA prices into a market-implied prepayment (CPR) surface under a Hull–White no-arbitrage constraint, showing the implied–realized divergence is a predictor of forward TBA returns."
-      },
-      {
-        "name": "Narrative Risk Allocation for Commodity Portfolios",
-        "media": {
-          "type": "image",
-          "src": "images/nra.png",
-          "alt": "NRA framework diagram"
-        },
-        "badge": { "text": "In progress", "style": "" },
-        "desc": "Engineering an end-to-end differentiable deep-learning portfolio allocator that embeds 125K+ financial news articles into volatility-spillover signals across 9 commodity futures, achieving a 1.73 Sharpe ratio over a 16-year walk-forward backtest."
       },
       {
         "name": "Unlocking Financial Wisdom: Building Knowledge Graphs from Investopedia",
@@ -316,15 +295,6 @@
         "desc": "Architected a full-stack quantitative risk analytics platform: Gaussian HMM regime detection, 5-method VaR backtesting, XGBoost volatility forecasting, and a LangGraph multi-agent LLM system."
       },
       {
-        "name": "CryptoHedgeLab",
-        "date": "Mar 26",
-        "url": "https://github.com/IshaPatro/CryptoHedgeLab#-cryptohedgelab",
-        "domain": "github.com",
-        "color": "#f7931a",
-        "icon": "candles",
-        "desc": "Engineered a high-performance crypto trading and backtesting system in C++ with kdb+/q, achieving microsecond-level execution, real-time hedging, and tick-level data storage for deterministic strategy evaluation."
-      },
-      {
         "name": "Cross-Currency Dynamics in Cryptocurrencies under Stablecoin Regulation",
         "date": "Jan 26",
         "url": "https://ishapatro-iaqf-app-iaaexz.streamlit.app/",
@@ -341,6 +311,15 @@
         "color": "#a78bfa",
         "icon": "barrier",
         "desc": "Developed a Monte Carlo engine under risk-neutral GBM to price path-dependent barrier options (Down-and-Out, Knock-In/Out), incorporating barrier monitoring and sensitivity analysis."
+      },
+      {
+        "name": "Fixed Income Analytics & Securitization Suite",
+        "date": "Sep 25",
+        "url": "fixed-income/",
+        "domain": "ishapatro.in",
+        "color": "#f7931a",
+        "icon": "spreadsheet",
+        "desc": "Built a financial modeling suite in Excel featuring Yield Curve Calibration using Nelson-Siegel model, Mortgage-Backed Securities (MBS) delta-neutral hedging, and multi-tranche credit card ABS cash flow waterfalls."
       },
       {
         "name": "Advanced NASDAQ Market Prediction System with Deep Learning Optimization",

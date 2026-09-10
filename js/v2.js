@@ -93,6 +93,10 @@
 			{ tag: "rect", x: "7", y: "14", width: "3", height: "7", rx: "1" },
 			{ tag: "rect", x: "12", y: "9", width: "3", height: "12", rx: "1" },
 			{ tag: "rect", x: "17", y: "4", width: "3", height: "17", rx: "1" }
+		],
+		spreadsheet: [
+			{ tag: "rect", x: "3", y: "3", width: "18", height: "18", rx: "2" },
+			{ tag: "path", d: "M3 9h18M3 15h18M9 3v18M15 3v18" }
 		]
 	};
 
