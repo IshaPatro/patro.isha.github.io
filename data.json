@@ -34,6 +34,8 @@
         "items": [
           "Python",
           "JavaScript",
+          "HTML",
+          "CSS",
           "VBA",
           "React",
           "REST APIs",
@@ -50,16 +52,16 @@
           "Machine Learning",
           "Deep Learning",
           "Attention Mechanisms",
-          "LLMs",
+          "Large Language Models (LLMs)",
           "Generative AI",
           "RAG",
           "AI Agents",
           "Agentic AI",
-          "MCP",
-          "NLP",
+          "Model Context Protocol (MCP)",
+          "Natural Language Processing (NLP)",
           "Fine-Tuning",
           "AI Inference",
-          "LLM Evaluation",
+          "Large Language Model Evaluation",
           "Prompt Engineering"
         ]
       },
@@ -70,6 +72,7 @@
           "q/kdb+",
           "AWS",
           "MongoDB",
+          "Microsoft Office",
           "Microsoft Excel",
           "Bloomberg Terminal"
         ]
@@ -78,6 +81,7 @@
         "label": "Quantitative Finance",
         "items": [
           "Fixed Income",
+          "Equity Research",
           "Portfolio Management",
           "Risk Management",
           "Time Series Forecasting",
@@ -277,6 +281,33 @@
     "title": "Projects",
     "items": [
       {
+        "name": "Spline-Based Conditional Market Beta & Statistical Arbitrage Framework",
+        "date": "Sep 26",
+        "url": "https://github.com/IshaPatro/Spline-Based-Conditional-Market-Beta-Statistical-Arbitrage-Framework",
+        "domain": "github.com",
+        "color": "#8b5cf6",
+        "icon": "activity",
+        "desc": "Modelled a NumPy-based cubic spline regression and k-fold cross-validated truncated basis engine to capture state-dependent non-linear asset co-movements, extracting idiosyncratic residual spreads for market-neutral statistical arbitrage."
+      },
+      {
+        "name": "Nike Equity Research Dashboard | DCF Valuation & Competitive Channel Analysis",
+        "date": "Sep 26",
+        "url": "https://ishapatro.github.io/Equity-Research-Report-Nike-/",
+        "domain": "github.io",
+        "color": "#ec4899",
+        "icon": "dashboard",
+        "desc": "Built a data-driven equity research platform integrating SEC filings, DCF valuation, peer benchmarking, sentiment-adjusted price targets, and wholesale-channel analysis across Deckers, On, and Foot Locker."
+      },
+      {
+        "name": "Money Talks",
+        "date": "Sep 26",
+        "url": "https://github.com/IshaPatro/MoneyTalks",
+        "domain": "github.com",
+        "color": "#10b981",
+        "icon": "credit-card",
+        "desc": "Engineered an AI-powered SaaS analytics platform that surfaces revenue concentration risk, tracks high-value customer churn, and evaluates go-to-market performance alongside underlying monthly recurring revenue (MRR) health."
+      },
+      {
         "name": "2WIN",
         "date": "Jun 26",
         "url": "https://api.187-127-175-14.sslip.io/",
@@ -295,8 +326,26 @@
         "desc": "Architected a full-stack quantitative risk analytics platform: Gaussian HMM regime detection, 5-method VaR backtesting, XGBoost volatility forecasting, and a LangGraph multi-agent LLM system."
       },
       {
+        "name": "Deep Temporal Models With Attention and Skip Connections",
+        "date": "Mar 26",
+        "url": "https://github.com/IshaPatro/DeepTemporalModelsWithAttentionAndSkipConnections/blob/main/DeepTemporalModelsWithAttentionAndSkipConnection.ipynb",
+        "domain": "github.com",
+        "color": "#f59e0b",
+        "icon": "box",
+        "desc": "Architected an end-to-end commodity intelligence pipeline combining FRED macroeconomic data, FinBERT news embeddings, dynamic graph learning, hybrid hyperbolic attention, and deep temporal models for futures-direction forecasting."
+      },
+      {
+        "name": "Geometry of Intelligence",
+        "date": "Jan 25 — Present",
+        "url": "https://geometry-of-intelligence.netlify.app/",
+        "domain": "netlify.app",
+        "color": "#06b6d4",
+        "icon": "book-open",
+        "desc": "Created an independent machine learning research series explaining algorithms from first principles through mathematical intuition, probability, and clean code implementations."
+      },
+      {
         "name": "Cross-Currency Dynamics in Cryptocurrencies under Stablecoin Regulation",
-        "date": "Jan 26",
+        "date": "Jan 26 — Mar 26",
         "url": "https://ishapatro-iaqf-app-iaaexz.streamlit.app/",
         "domain": "streamlit.app",
         "color": "#5ad48a",
@@ -315,7 +364,7 @@
       {
         "name": "Fixed Income Analytics & Securitization Suite",
         "date": "Sep 25",
-        "url": "fixed-income/",
+        "url": "https://ishapatro.in/fixed-income/",
         "domain": "ishapatro.in",
         "color": "#f7931a",
         "icon": "spreadsheet",
@@ -329,15 +378,6 @@
         "color": "#4f9cf9",
         "icon": "trend",
         "desc": "Engineered a sophisticated LSTM neural network system for high-frequency NASDAQ market prediction, achieving 26.7% improvement in forecasting accuracy through advanced hyperparameter optimization."
-      },
-      {
-        "name": "Portfolio Risk Stress Testing Dashboard",
-        "date": "May 25",
-        "url": "https://ishapatro-risk-dashboard-app-vgw6f6.streamlit.app/",
-        "domain": "streamlit.app",
-        "color": "#ffb86b",
-        "icon": "gauge",
-        "desc": "A quantitative risk analytics terminal that empowers traders and investors to measure portfolio exposure, simulate market stress events, and quantify downside risk using institutional-level metrics and Monte Carlo scenario analysis."
       },
       {
         "name": "Minted Wealth",
