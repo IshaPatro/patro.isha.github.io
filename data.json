@@ -163,7 +163,7 @@
         "role": "ACMS Intern",
         "org": "Amazon",
         "dates": "May — Jun 20",
-        "desc": "Designed wireframes and contributed to the full lifecycle of a responsive Appointment Scheduler website, focusing on user needs and goals. Prepared the website for integration with Chime and implemented best practices to ensure a seamless user experience and robust functionality."
+        "desc": "Maintained and enhanced a COVID-19 data API in Python, integrating government health data, zone thresholds from a partner team's API, and multiple shipping carrier feeds to compute delivery-time estimates, validated and normalized inputs, and applied caching and scheduled refreshes to deliver accurate, low-latency data to the downstream teams."
       },
       {
         "top": 705,
@@ -286,7 +286,7 @@
         "url": "https://github.com/IshaPatro/Spline-Based-Conditional-Market-Beta-Statistical-Arbitrage-Framework",
         "domain": "github.com",
         "color": "#8b5cf6",
-        "icon": "trend",
+        "icon": "activity",
         "desc": "Modelled a NumPy-based cubic spline regression and k-fold cross-validated truncated basis engine to capture state-dependent non-linear asset co-movements, extracting idiosyncratic residual spreads for market-neutral statistical arbitrage."
       },
       {
@@ -295,7 +295,7 @@
         "url": "https://ishapatro.github.io/Equity-Research-Report-Nike-/",
         "domain": "github.io",
         "color": "#ec4899",
-        "icon": "gauge",
+        "icon": "dashboard",
         "desc": "Built a data-driven equity research platform integrating SEC filings, DCF valuation, peer benchmarking, sentiment-adjusted price targets, and wholesale-channel analysis across Deckers, On, and Foot Locker."
       },
       {
@@ -304,7 +304,7 @@
         "url": "https://github.com/IshaPatro/MoneyTalks",
         "domain": "github.com",
         "color": "#10b981",
-        "icon": "wallet",
+        "icon": "credit-card",
         "desc": "Engineered an AI-powered SaaS analytics platform that surfaces revenue concentration risk, tracks high-value customer churn, and evaluates go-to-market performance alongside underlying monthly recurring revenue (MRR) health."
       },
       {
@@ -331,7 +331,7 @@
         "url": "https://github.com/IshaPatro/DeepTemporalModelsWithAttentionAndSkipConnections/blob/main/DeepTemporalModelsWithAttentionAndSkipConnection.ipynb",
         "domain": "github.com",
         "color": "#f59e0b",
-        "icon": "spreadsheet",
+        "icon": "box",
         "desc": "Architected an end-to-end commodity intelligence pipeline combining FRED macroeconomic data, FinBERT news embeddings, dynamic graph learning, hybrid hyperbolic attention, and deep temporal models for futures-direction forecasting."
       },
       {
