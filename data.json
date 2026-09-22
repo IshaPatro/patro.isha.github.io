@@ -286,7 +286,7 @@
         "url": "https://github.com/IshaPatro/Spline-Based-Conditional-Market-Beta-Statistical-Arbitrage-Framework",
         "domain": "github.com",
         "color": "#8b5cf6",
-        "icon": "activity",
+        "icon": "trend",
         "desc": "Modelled a NumPy-based cubic spline regression and k-fold cross-validated truncated basis engine to capture state-dependent non-linear asset co-movements, extracting idiosyncratic residual spreads for market-neutral statistical arbitrage."
       },
       {
@@ -295,7 +295,7 @@
         "url": "https://ishapatro.github.io/Equity-Research-Report-Nike-/",
         "domain": "github.io",
         "color": "#ec4899",
-        "icon": "dashboard",
+        "icon": "gauge",
         "desc": "Built a data-driven equity research platform integrating SEC filings, DCF valuation, peer benchmarking, sentiment-adjusted price targets, and wholesale-channel analysis across Deckers, On, and Foot Locker."
       },
       {
@@ -304,7 +304,7 @@
         "url": "https://github.com/IshaPatro/MoneyTalks",
         "domain": "github.com",
         "color": "#10b981",
-        "icon": "credit-card",
+        "icon": "wallet",
         "desc": "Engineered an AI-powered SaaS analytics platform that surfaces revenue concentration risk, tracks high-value customer churn, and evaluates go-to-market performance alongside underlying monthly recurring revenue (MRR) health."
       },
       {
@@ -331,17 +331,8 @@
         "url": "https://github.com/IshaPatro/DeepTemporalModelsWithAttentionAndSkipConnections/blob/main/DeepTemporalModelsWithAttentionAndSkipConnection.ipynb",
         "domain": "github.com",
         "color": "#f59e0b",
-        "icon": "box",
+        "icon": "spreadsheet",
         "desc": "Architected an end-to-end commodity intelligence pipeline combining FRED macroeconomic data, FinBERT news embeddings, dynamic graph learning, hybrid hyperbolic attention, and deep temporal models for futures-direction forecasting."
-      },
-      {
-        "name": "Geometry of Intelligence",
-        "date": "Jan 25 — Present",
-        "url": "https://geometry-of-intelligence.netlify.app/",
-        "domain": "netlify.app",
-        "color": "#06b6d4",
-        "icon": "book-open",
-        "desc": "Created an independent machine learning research series explaining algorithms from first principles through mathematical intuition, probability, and clean code implementations."
       },
       {
         "name": "Cross-Currency Dynamics in Cryptocurrencies under Stablecoin Regulation",
