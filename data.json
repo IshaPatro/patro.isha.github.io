@@ -109,8 +109,8 @@
         "desc": "GPA 3.6 / 4.0 \u00b7 Brooklyn, NY. Focused on quant research & ML for markets."
       },
       {
-        "top": 40,
-        "height": 220,
+        "top": 60,
+        "height": 100,
         "lane": "l",
         "role": "Founder\u2019s Office, Finance & Business Strategy",
         "org": "SATLYT | NYU Stern MBA, Endless Frontier Labs New York, NY",
@@ -118,7 +118,7 @@
         "desc": "Building an integrated financial model (revenue, hiring, cost structure, burn and runway, deployment unit economics) to plan deployment of the $8M seed round and evaluate Series A scenarios. Developing bottom-up TAM/SAM/SOM market sizing and analyzing the customer base to identify high-value segments, informing beachhead selection, pricing, and pipeline priorities. Designing and running go-to-market and pricing experiments, and evaluating valuation and risk-return profiles, to guide Series A readiness and strategic decisions."
       },
       {
-        "top": 270,
+        "top": 100,
         "height": 115,
         "lane": "l",
         "role": "Quantitative Finance Research Intern",
@@ -127,7 +127,7 @@
         "desc": "Developed a corpus for Fixed Income Modelling, Credit Card Securitization, and Derivatives workflows to benchmark AI agent outputs against Excel-based models, improving calculation accuracy, reasoning traceability, and hallucination resistance."
       },
       {
-        "top": 396,
+        "top": 220,
         "height": 131,
         "role": "Software Engineer II, MBS Division - Fixed Income Pricing Team",
         "org": "J.P. Morgan Chase",
@@ -135,7 +135,7 @@
         "desc": "Led the development and post-launch ownership of Trade Activity Monitoring (TAM) as Epic Owner, collaborating with stakeholders to achieve a 50% latency reduction and significantly improve trading floor execution efficiency. Pioneered and architected a comprehensive Mortgage Matrix modernization initiative driving 12% latency improvement supporting $5B+ annual trading volume."
       },
       {
-        "top": 535,
+        "top": 360,
         "height": 205,
         "size": "big",
         "role": "Software Engineer I, MBS Division - Fixed Income Pricing Team",
@@ -144,7 +144,7 @@
         "desc": "Designed and implemented Trade Reporting and Compliance Engine (TRACE) in an agile environment collaborating with cross-functional teams to boost data processing efficiency by 30% and streamline regulatory reporting workflows."
       },
       {
-        "top": 747,
+        "top": 530,
         "height": 90,
         "lane": "l",
         "role": "Software Intern",
@@ -153,7 +153,7 @@
         "desc": "Built a JIRA ticket management app that enabled bulk creation and updates, reducing ticket handling time by ~70% and improving cross-team collaboration at J.P. Morgan."
       },
       {
-        "top": 747,
+        "top": 530,
         "height": 345,
         "lane": "r",
         "edu": true,
@@ -164,7 +164,7 @@
         "desc": "Completed 156 credits with an overall CGPA of 8.8/10. Led the college DIY club and won 1st prize twice at the Engineering Clinics Expo \u2014 an Alexa-powered humanoid robot and the CG0R autonomous oil-spill cleanup buoy."
       },
       {
-        "top": 841,
+        "top": 620,
         "height": 90,
         "lane": "l",
         "role": "ACMS Intern",
@@ -173,7 +173,7 @@
         "desc": "Maintained and enhanced a COVID-19 data API in Python, integrating government health data, zone thresholds from a partner team's API, and multiple shipping carrier feeds to compute delivery-time estimates, validated and normalized inputs, and applied caching and scheduled refreshes to deliver accurate, low-latency data to the downstream teams."
       },
       {
-        "top": 935,
+        "top": 710,
         "height": 90,
         "lane": "l",
         "role": "Data Analyst Intern",
@@ -182,7 +182,7 @@
         "desc": "Procured and analyzed data from diverse primary and secondary sources to extract insights contributing to a 15% increase in user engagement. Tracked Conversion, Retention, and Monetization metrics to provide a comprehensive analysis of business performance, supporting a 6% boost in revenue."
       },
       {
-        "top": 1029,
+        "top": 800,
         "height": 90,
         "lane": "l",
         "role": "Data Eng. Intern",
@@ -191,7 +191,7 @@
         "desc": "Extracted and analyzed large datasets; contributed to product strategies that improved feature adoption by 10% and increased active users by 18%."
       },
       {
-        "top": 1100,
+        "top": 870,
         "height": 168,
         "lane": "r",
         "edu": true,
@@ -202,7 +202,7 @@
         "desc": "Recognized as a meritorious student by the Government of Odisha \u2014 laptop award under the Biju Yuva Sashaktikaran Yojana for a 75% score in the CHSE Science stream."
       },
       {
-        "top": 1282,
+        "top": 1052,
         "height": 178,
         "lane": "r",
         "edu": true,
