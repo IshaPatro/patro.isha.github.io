@@ -2,7 +2,7 @@
   "meta": {
     "name": "Isha Patro",
     "title": "Isha Patro",
-    "description": "Isha Patro — Financial Engineering graduate student at NYU, former SDE at J.P. Morgan. Quantitative research, machine learning, and software engineering.",
+    "description": "Isha Patro \u2014 Financial Engineering graduate student at NYU, former SDE at J.P. Morgan. Quantitative research, machine learning, and software engineering.",
     "email": "isha.patro@stern.nyu.edu",
     "phone": "+1 347 241 6603",
     "phoneHref": "tel:+13472416603",
@@ -12,7 +12,6 @@
     "github": "https://github.com/IshaPatro",
     "linkedin": "https://www.linkedin.com/in/isha-patro/"
   },
-
   "about": {
     "title": "About me",
     "intro": "I am Isha",
@@ -90,7 +89,6 @@
       }
     ]
   },
-
   "career": {
     "title": "Career journey",
     "axis": {
@@ -107,108 +105,116 @@
         "edu": true,
         "role": "MS, Financial Engineering",
         "org": "NYU Tandon",
-        "dates": "Aug 25 — May 27 (exp.)",
-        "desc": "GPA 3.6 / 4.0 · Brooklyn, NY. Focused on quant research & ML for markets."
+        "dates": "Aug 25 \u2014 May 27 (exp.)",
+        "desc": "GPA 3.6 / 4.0 \u00b7 Brooklyn, NY. Focused on quant research & ML for markets."
       },
       {
         "top": 40,
+        "height": 220,
+        "lane": "l",
+        "role": "Founder\u2019s Office, Finance & Business Strategy",
+        "org": "SATLYT | NYU Stern MBA, Endless Frontier Labs New York, NY",
+        "dates": "Sep 26 \u2014 Present",
+        "desc": "Building an integrated financial model (revenue, hiring, cost structure, burn and runway, deployment unit economics) to plan deployment of the $8M seed round and evaluate Series A scenarios. Developing bottom-up TAM/SAM/SOM market sizing and analyzing the customer base to identify high-value segments, informing beachhead selection, pricing, and pipeline priorities. Designing and running go-to-market and pricing experiments, and evaluating valuation and risk-return profiles, to guide Series A readiness and strategic decisions."
+      },
+      {
+        "top": 270,
         "height": 115,
         "lane": "l",
         "role": "Quantitative Finance Research Intern",
         "org": "Financial Artificial Intelligence Working Group",
-        "dates": "Jul — Sep 26",
+        "dates": "Jul \u2014 Sep 26",
         "desc": "Developed a corpus for Fixed Income Modelling, Credit Card Securitization, and Derivatives workflows to benchmark AI agent outputs against Excel-based models, improving calculation accuracy, reasoning traceability, and hallucination resistance."
       },
       {
-        "top": 166,
+        "top": 396,
         "height": 131,
         "role": "Software Engineer II, MBS Division - Fixed Income Pricing Team",
         "org": "J.P. Morgan Chase",
-        "dates": "Jan 24 — Aug 25",
+        "dates": "Jan 24 \u2014 Aug 25",
         "desc": "Led the development and post-launch ownership of Trade Activity Monitoring (TAM) as Epic Owner, collaborating with stakeholders to achieve a 50% latency reduction and significantly improve trading floor execution efficiency. Pioneered and architected a comprehensive Mortgage Matrix modernization initiative driving 12% latency improvement supporting $5B+ annual trading volume."
       },
       {
-        "top": 305,
+        "top": 535,
         "height": 205,
         "size": "big",
         "role": "Software Engineer I, MBS Division - Fixed Income Pricing Team",
         "org": "J.P. Morgan Chase",
-        "dates": "Aug 21 — Jan 24",
+        "dates": "Aug 21 \u2014 Jan 24",
         "desc": "Designed and implemented Trade Reporting and Compliance Engine (TRACE) in an agile environment collaborating with cross-functional teams to boost data processing efficiency by 30% and streamline regulatory reporting workflows."
       },
       {
-        "top": 517,
+        "top": 747,
         "height": 90,
         "lane": "l",
         "role": "Software Intern",
         "org": "J.P. Morgan Chase",
-        "dates": "Jan — Jul 21",
+        "dates": "Jan \u2014 Jul 21",
         "desc": "Built a JIRA ticket management app that enabled bulk creation and updates, reducing ticket handling time by ~70% and improving cross-team collaboration at J.P. Morgan."
       },
       {
-        "top": 517,
+        "top": 747,
         "height": 345,
         "lane": "r",
         "edu": true,
         "size": "tall",
         "role": "B.Tech, Computer Science",
         "org": "VIT-AP",
-        "dates": "2017 — 2021",
-        "desc": "Completed 156 credits with an overall CGPA of 8.8/10. Led the college DIY club and won 1st prize twice at the Engineering Clinics Expo — an Alexa-powered humanoid robot and the CG0R autonomous oil-spill cleanup buoy."
+        "dates": "2017 \u2014 2021",
+        "desc": "Completed 156 credits with an overall CGPA of 8.8/10. Led the college DIY club and won 1st prize twice at the Engineering Clinics Expo \u2014 an Alexa-powered humanoid robot and the CG0R autonomous oil-spill cleanup buoy."
       },
       {
-        "top": 611,
+        "top": 841,
         "height": 90,
         "lane": "l",
         "role": "ACMS Intern",
         "org": "Amazon",
-        "dates": "May — Jun 20",
+        "dates": "May \u2014 Jun 20",
         "desc": "Maintained and enhanced a COVID-19 data API in Python, integrating government health data, zone thresholds from a partner team's API, and multiple shipping carrier feeds to compute delivery-time estimates, validated and normalized inputs, and applied caching and scheduled refreshes to deliver accurate, low-latency data to the downstream teams."
       },
       {
-        "top": 705,
+        "top": 935,
         "height": 90,
         "lane": "l",
         "role": "Data Analyst Intern",
         "org": "Octathorpe Web Consultant",
-        "dates": "Apr — Jul 19",
+        "dates": "Apr \u2014 Jul 19",
         "desc": "Procured and analyzed data from diverse primary and secondary sources to extract insights contributing to a 15% increase in user engagement. Tracked Conversion, Retention, and Monetization metrics to provide a comprehensive analysis of business performance, supporting a 6% boost in revenue."
       },
       {
-        "top": 799,
+        "top": 1029,
         "height": 90,
         "lane": "l",
         "role": "Data Eng. Intern",
         "org": "Collpoll",
-        "dates": "Apr — May 18",
+        "dates": "Apr \u2014 May 18",
         "desc": "Extracted and analyzed large datasets; contributed to product strategies that improved feature adoption by 10% and increased active users by 18%."
       },
       {
-        "top": 870,
+        "top": 1100,
         "height": 168,
         "lane": "r",
         "edu": true,
         "size": "big",
         "role": "Senior Secondary",
         "org": "Khalikote University",
-        "dates": "2015 — 2017",
-        "desc": "Recognized as a meritorious student by the Government of Odisha — laptop award under the Biju Yuva Sashaktikaran Yojana for a 75% score in the CHSE Science stream."
+        "dates": "2015 \u2014 2017",
+        "desc": "Recognized as a meritorious student by the Government of Odisha \u2014 laptop award under the Biju Yuva Sashaktikaran Yojana for a 75% score in the CHSE Science stream."
       },
       {
-        "top": 1052,
+        "top": 1282,
         "height": 178,
         "lane": "r",
         "edu": true,
         "size": "big",
         "role": "High School",
         "org": "D.A.V. Public School",
-        "dates": "2003 — 2015",
+        "dates": "2003 \u2014 2015",
         "desc": "Completed high school under the CBSE board with a CGPA of 9.6."
       }
     ],
     "markers": []
   },
-
   "highlightedWork": {
     "title": "Highlighted work",
     "items": [
@@ -234,7 +240,10 @@
           "src": "images/qutePandas.png",
           "alt": "qutePandas logo"
         },
-        "badge": { "text": "Open source Contribution", "style": "pub" },
+        "badge": {
+          "text": "Open source Contribution",
+          "style": "pub"
+        },
         "desc": "Published a high-performance Pandas-compatible execution layer backed by kdb+/q, achieving order-of-magnitude speedups(10x--100x+) on large-scale analytical workloads while preserving Python-first research ergonomics."
       },
       {
@@ -246,7 +255,10 @@
           "src": "images/finokf.png",
           "alt": "FinOKF Clearbox diagram"
         },
-        "badge": { "text": "Under review · AAAI", "style": "review" },
+        "badge": {
+          "text": "Under review \u00b7 AAAI",
+          "style": "review"
+        },
         "desc": "Architected an evidence-validated LLM system for equity research over SEC filings that cut token usage 97% and latency 16x across GPT-5.5, Claude, and Llama while preserving numerical accuracy on audited financial calculations."
       },
       {
@@ -257,10 +269,10 @@
           "alt": "Implied prepayment surfaces research figures"
         },
         "badge": {
-          "text": "Under review · J. Comp. Finance",
+          "text": "Under review \u00b7 J. Comp. Finance",
           "style": "review"
         },
-        "desc": "Built a finance-informed neural network that inverts agency TBA prices into a market-implied prepayment (CPR) surface under a Hull–White no-arbitrage constraint, showing the implied–realized divergence is a predictor of forward TBA returns."
+        "desc": "Built a finance-informed neural network that inverts agency TBA prices into a market-implied prepayment (CPR) surface under a Hull\u2013White no-arbitrage constraint, showing the implied\u2013realized divergence is a predictor of forward TBA returns."
       },
       {
         "name": "Unlocking Financial Wisdom: Building Knowledge Graphs from Investopedia",
@@ -271,12 +283,14 @@
           "src": "images/obsidianDemo.mp4",
           "alt": "Knowledge graph demo in Obsidian"
         },
-        "badge": { "text": "Published · IJRAR", "style": "pub" },
+        "badge": {
+          "text": "Published \u00b7 IJRAR",
+          "style": "pub"
+        },
         "desc": "Built a financial knowledge graph from 6,000+ Investopedia terms using data extraction and relationship mapping, enabling semantic visualization in Obsidian; presented at PitchWell Season 3 Finals at J.P. Morgan"
       }
     ]
   },
-
   "projects": {
     "title": "Projects",
     "items": [
@@ -317,15 +331,6 @@
         "desc": "Designed and backtested quantitative prediction-market strategies using tick-level order-book data, dynamic risk-based sizing, automated execution logic, and portfolio PnL attribution across real-time Polymarket markets."
       },
       {
-        "name": "VORTEX",
-        "date": "May 26",
-        "url": "https://ishapatro.github.io/VORTEX/index.html",
-        "domain": "github.com",
-        "color": "#ff5e62",
-        "icon": "spiral",
-        "desc": "Architected a full-stack quantitative risk analytics platform: Gaussian HMM regime detection, 5-method VaR backtesting, XGBoost volatility forecasting, and a LangGraph multi-agent LLM system."
-      },
-      {
         "name": "Deep Temporal Models With Attention and Skip Connections",
         "date": "Mar 26",
         "url": "https://github.com/IshaPatro/DeepTemporalModelsWithAttentionAndSkipConnections/blob/main/DeepTemporalModelsWithAttentionAndSkipConnection.ipynb",
@@ -336,7 +341,7 @@
       },
       {
         "name": "Cross-Currency Dynamics in Cryptocurrencies under Stablecoin Regulation",
-        "date": "Jan 26 — Mar 26",
+        "date": "Jan 26 \u2014 Mar 26",
         "url": "https://ishapatro-iaqf-app-iaaexz.streamlit.app/",
         "domain": "streamlit.app",
         "color": "#5ad48a",
@@ -381,7 +386,6 @@
       }
     ]
   },
-
   "achievements": {
     "title": "Achievements & certs",
     "items": [
@@ -393,16 +397,16 @@
         "desc": "2025 recipient of the prestigious Numerix Women in Finance Scholarship."
       },
       {
-        "name": "Cloud Generator — CG0R",
+        "name": "Cloud Generator \u2014 CG0R",
         "amount": "$600",
         "year": "2018",
-        "desc": "1st Prize, Engineering Clinics Expo — autonomous floating buoy system for oil spill cleanup and cloud formation acceleration."
+        "desc": "1st Prize, Engineering Clinics Expo \u2014 autonomous floating buoy system for oil spill cleanup and cloud formation acceleration."
       },
       {
         "name": "Humanoid Robot",
         "amount": "$600",
         "year": "2017",
-        "desc": "1st Prize, Engineering Clinics Expo — biped robot powered by Alexa with custom skills, built on Raspberry Pi and Arduino."
+        "desc": "1st Prize, Engineering Clinics Expo \u2014 biped robot powered by Alexa with custom skills, built on Raspberry Pi and Arduino."
       }
     ],
     "certificationsTitle": "Certifications",
@@ -439,7 +443,6 @@
       }
     ]
   },
-
   "blogs": {
     "title": "Blogs",
     "items": [
@@ -465,7 +468,7 @@
         "name": "The Bankruptcy of an Oil Giant",
         "url": "https://medium.com/@isha.patro.215/the-bankruptcy-of-an-oil-giant-252c88ceebac",
         "domain": "medium.com",
-        "desc": "Venezuela's severe economic collapse, where a nation with the world’s largest oil reserves endured hyperinflation peaking around 345,000% annually"
+        "desc": "Venezuela's severe economic collapse, where a nation with the world\u2019s largest oil reserves endured hyperinflation peaking around 345,000% annually"
       },
       {
         "date": "Jan 2026",

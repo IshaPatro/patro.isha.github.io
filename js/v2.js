@@ -58,6 +58,24 @@
 	var SVG_NS = "http://www.w3.org/2000/svg";
 
 	var ICONS = {
+		activity: [
+			{ tag: "polyline", points: "22 12 18 12 15 21 9 3 6 12 2 12" }
+		],
+		dashboard: [
+			{ tag: "rect", x: "3", y: "3", width: "7", height: "9", rx: "1" },
+			{ tag: "rect", x: "14", y: "3", width: "7", height: "5", rx: "1" },
+			{ tag: "rect", x: "14", y: "12", width: "7", height: "9", rx: "1" },
+			{ tag: "rect", x: "3", y: "16", width: "7", height: "5", rx: "1" }
+		],
+		"credit-card": [
+			{ tag: "rect", x: "2", y: "5", width: "20", height: "14", rx: "2" },
+			{ tag: "path", d: "M2 10h20" }
+		],
+		box: [
+			{ tag: "path", d: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" },
+			{ tag: "polyline", points: "3.27 6.96 12 12.01 20.73 6.96" },
+			{ tag: "line", x1: "12", y1: "22.08", x2: "12", y2: "12" }
+		],
 		spiral: [
 			{ tag: "path", d: "M12 3a9 9 0 1 0 9 9" },
 			{ tag: "path", d: "M12 7a5 5 0 1 0 5 5" },

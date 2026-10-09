@@ -128,6 +128,12 @@
 			color: var(--text);
 		}
 
+		.fi-actions {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+		}
+
 		.fi-btn {
 			flex-shrink: 0;
 			display: inline-flex;
@@ -194,6 +200,12 @@
 				gap: 0.7rem;
 			}
 
+			.fi-actions {
+				flex-direction: column;
+				align-items: stretch;
+				width: 100%;
+			}
+
 			.fi-btn {
 				justify-content: center;
 				width: 100%;
@@ -236,17 +248,24 @@
 								<polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
 							</svg>
 						</span>
-						<span class="fi-title">Yield Curve Calibration using Nelson-Siegel Model</span>
+						<span class="fi-title">Yield Curve Calibration</span>
 					</div>
-					<a class="fi-btn"
-						href="https://nyu670-my.sharepoint.com/:x:/g/personal/ip2529_nyu_edu/IQAdnNT6BwofRJYV6HE_sS4fAbWPX-lZF9HddRPNC6Y_O9E?rtime=zoYnGMwO30g"
-						target="_blank" rel="noopener noreferrer">
-						Open
-						<svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-							<path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6"
-								stroke-linecap="round" stroke-linejoin="round" />
-						</svg>
-					</a>
+					<div class="fi-actions">
+						<a class="fi-btn"
+							href="../docs/Financial%20Modelling/Yield%20Curve/Yield%20Curve.pdf"
+							target="_blank" rel="noopener noreferrer">
+							Problem Statement
+						</a>
+						<a class="fi-btn"
+							href="https://nyu670-my.sharepoint.com/:x:/g/personal/ip2529_nyu_edu/IQAdnNT6BwofRJYV6HE_sS4fAbWPX-lZF9HddRPNC6Y_O9E?rtime=zoYnGMwO30g"
+							target="_blank" rel="noopener noreferrer">
+							Open
+							<svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+								<path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6"
+									stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</a>
+					</div>
 				</div>
 
 				<!-- 2 — Credit Card ABS -->
@@ -262,15 +281,22 @@
 						</span>
 						<span class="fi-title">Credit Card Asset-Backed Securitization (ABS)</span>
 					</div>
-					<a class="fi-btn"
-						href="https://nyu670-my.sharepoint.com/:x:/g/personal/ip2529_nyu_edu/IQD3Hv-O3dvERKDfocfLocHkAe0zR7A1U6YTHO46NXFHt-o?e=zujY4t"
-						target="_blank" rel="noopener noreferrer">
-						Open
-						<svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-							<path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6"
-								stroke-linecap="round" stroke-linejoin="round" />
-						</svg>
-					</a>
+					<div class="fi-actions">
+						<a class="fi-btn"
+							href="../docs/Financial%20Modelling/Credit%20Card%20Securitization/Credit%20Card%20Securitization.pdf"
+							target="_blank" rel="noopener noreferrer">
+							Problem Statement
+						</a>
+						<a class="fi-btn"
+							href="https://nyu670-my.sharepoint.com/:x:/g/personal/ip2529_nyu_edu/IQD3Hv-O3dvERKDfocfLocHkAe0zR7A1U6YTHO46NXFHt-o?e=zujY4t"
+							target="_blank" rel="noopener noreferrer">
+							Open
+							<svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+								<path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6"
+									stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</a>
+					</div>
 				</div>
 
 				<!-- 3 — MBS Hedging -->
@@ -284,15 +310,53 @@
 						</span>
 						<span class="fi-title">Mortgage-Backed Securities (MBS) Delta-Neutral Hedging</span>
 					</div>
-					<a class="fi-btn"
-						href="https://nyu670-my.sharepoint.com/:x:/g/personal/ip2529_nyu_edu/IQCFqPE40_TJTrjAE2ROqj4EAaiwoDrOa2rs9sbW7Xi0Vyg?e=aJc4YU"
-						target="_blank" rel="noopener noreferrer">
-						Open
-						<svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-							<path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6"
-								stroke-linecap="round" stroke-linejoin="round" />
-						</svg>
-					</a>
+					<div class="fi-actions">
+						<a class="fi-btn"
+							href="../docs/Financial%20Modelling/MBS%20Delta%20Hedging/MBS%20Delta%20Hedging.pdf"
+							target="_blank" rel="noopener noreferrer">
+							Problem Statement
+						</a>
+						<a class="fi-btn"
+							href="https://nyu670-my.sharepoint.com/:x:/g/personal/ip2529_nyu_edu/IQCFqPE40_TJTrjAE2ROqj4EAaiwoDrOa2rs9sbW7Xi0Vyg?e=aJc4YU"
+							target="_blank" rel="noopener noreferrer">
+							Open
+							<svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+								<path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6"
+									stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<!-- 4 — Treasury Hedging Framework -->
+				<div class="fi-project">
+					<div class="fi-left">
+						<span class="fi-icon" style="background: var(--blue, #3b82f6);">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round">
+								<line x1="12" y1="20" x2="12" y2="10"></line>
+								<line x1="18" y1="20" x2="18" y2="4"></line>
+								<line x1="6" y1="20" x2="6" y2="16"></line>
+							</svg>
+						</span>
+						<span class="fi-title">Treasury Hedging Framework &amp; Relative Value Risk Analytics</span>
+					</div>
+					<div class="fi-actions">
+						<a class="fi-btn"
+							href="../docs/Financial%20Modelling/Treasury%20Hedging/Treasury%20Hedging.pdf"
+							target="_blank" rel="noopener noreferrer">
+							Problem Statement
+						</a>
+						<a class="fi-btn"
+							href="#"
+							target="_blank" rel="noopener noreferrer">
+							Open
+							<svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+								<path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6"
+									stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</a>
+					</div>
 				</div>
 
 			</div>
